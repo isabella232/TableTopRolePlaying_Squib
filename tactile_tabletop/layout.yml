@@ -1,12 +1,12 @@
 #This layout inspired by popular economy games
-title1:
+topTitle:
   x: 90
   y: 90
   width: 635
   height: 50
   align: center
   
-title2:
+bottomTitle:
   x: 90
   y: 300
   width: 635
@@ -19,7 +19,7 @@ art:
   width: 675
   height: 520
 
-description1:
+topRules:
   x: 100
   y: 125
   width: 625
@@ -27,10 +27,8 @@ description1:
   valign: middle
   align: center
   font_size: 6
-desc1: # alias
-  extends: description1
   
-description2:
+bottomRules:
   x: 100
   y: 335
   width: 625
@@ -38,8 +36,6 @@ description2:
   valign: middle
   align: center
   font_size: 6
-desc2: # alias
-  extends: description2
 
 type:
   x: 90
