@@ -153,23 +153,28 @@ horizontalLine:
 
   
 
+## card guidelines
   
+#width/height (and calculated x/y offsets) provided by template from BoardGameMaker.com, see American-poker-size.pdf
+#overall card size in manufacturing: width: 816, height: 1110
 
-
-# The "cut line", without rounded corners
+# The "cut area line", everything outside of this area guaranteed to be lost
 cut:
-  x: 37.5
-  y: 37.5
-  width: 750
-  height: 1050
-
-# The "safe zone" as defined by TheGameCrafter poker cards
-safe:
-  x: 75
-  y: 75
-  width: 675
-  height: 975
+  x: 36
+  y: 36
+  width: 744
+  height: 1038
   radius: 16
+  
+#need graphic to fill into gap between safe and cut, and beyond the cut...
+
+# the "safe area line", everything inside of this area guaranteed to be saved
+safe:
+  x: 66
+  y: 64.5
+  width: 684
+  height: 981
+  radius: 8
   dash: 3 3
   
   
