@@ -30,7 +30,7 @@ topRules:
   font_size: 6
   
 topAfterAbilityLocation:
-  x: 25
+  x: 100
   y: 275
   width: 40
   height: 40
@@ -110,14 +110,7 @@ requirementsBody:
   
   
 
-discard:
-  file: to_discard.png
-  
-hand:
-  file: to_hand.png
-  
-exhaust:
-  file: to_exhaust.png
+
 
 
 discardTop:
@@ -145,16 +138,29 @@ exhaustBottom:
   extends: exhaust
 
 
-horizontalLine:
-  x: 75
-  width: 675
-  height: 1.5
 
+## graphics
 
+#grabbing icons from https://game-icons.net/
+#using gem game_icons to be able to load them
+
+discard:
+  svg file: GameIcons.get('card-discard').file
   
-
-## card guidelines
+hand:
+  svg file: GameIcons.get('hand').file
   
+exhaust:
+  svg file: GameIcons.get('card-burn').file
+  
+getACard:
+  svg file: GameIcons.get('card-draw').file
+
+
+
+
+## Borders & Boundaries
+
 #width/height (and calculated x/y offsets) provided by template from BoardGameMaker.com, see American-poker-size.pdf
 #overall card size in manufacturing: width: 816, height: 1110
 
@@ -177,60 +183,9 @@ safe:
   radius: 8
   dash: 3 3
   
+#just a horizontal line, to be placed within safe boundary and at various y co-ords
+horizontalLine:
+  x: 66
+  width: 684
+  height: 1.5
   
-  
-  
-  
-  
-
-art:
-  x: 75
-  y: 150
-  width: 675
-  height: 520
-
-type:
-  x: 90
-  y: 955
-  width: 645
-  height: 50
-  align: center
-
-lower_right:
-  x: 675
-  y: 975
-  width: 75
-  height: 75
-  font_size: 6
-  valign: bottom
-  align: right
-lr: #alias
-  extends: lower_right
-
-lower_left:
-  x: 75
-  y: 975
-  width: 75
-  height: 75
-  font_size: 6
-  valign: bottom
-  align: left
-ll: # alias
-  extends: lower_left
-
-copyright:
-  x: 75
-  y: 1025
-  width: 675
-  height: 25
-  font_size: 5
-  align: center
-  valign: bottom
-#aliases for copyright
-copy:
-  extends: copyright
-credit:
-  extends: copyright
-credits:
-  extends: copyright
-

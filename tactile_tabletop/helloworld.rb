@@ -1,6 +1,8 @@
 require 'squib'
+require 'game_icons'
 
 data = Squib.csv file: 'Action Cards - CharacterCards.csv'
+
 
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see American-poker-size.pdf
 
@@ -13,7 +15,8 @@ Squib::Deck.new(dpi: 300, width: 816, height: 1110, cards: data['Top Ability Nam
   rect layout: 'topTargetBox'
   text str: data['Top Ability Target'], layout: 'topTarget'
   text str: data['Top Ability Rules'], layout: 'topRules'
-  png layout: data['discardTop']
+
+  svg layout: data['discardTop']
   
   rect layout: 'lineTopOfBottomAbility'
   text str: data['Bottom Ability Name'], layout: 'bottomTitle'
