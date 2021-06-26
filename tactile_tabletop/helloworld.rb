@@ -13,10 +13,13 @@ Squib::Deck.new(dpi: 300, width: 816, height: 1110, cards: data['Top Ability Nam
   
   text str: data['Top Ability Name'], layout: 'topTitle'
   rect layout: 'topTargetBox'
-  text str: data['Top Ability Target'], layout: 'topTarget'
-  text str: data['Top Ability Rules'], layout: 'topRules'
+  #text str: data['Top Ability Target'], layout: 'topTarget'
+  #text str: data['Top Ability Rules'], layout: 'topRules'
 
-  svg layout: data['discardTop']
+  #svg layout: data['discardTop']
+  
+  rect layout: 'topTitle'
+  #rect layout: 'topRules'
   
   rect layout: 'lineTopOfBottomAbility'
   text str: data['Bottom Ability Name'], layout: 'bottomTitle'

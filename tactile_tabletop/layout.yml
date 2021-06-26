@@ -1,99 +1,89 @@
-topTitle:
-  x: 90
-  y: 90
-  width: 635
-  height: 50
-  align: center
+
   
 topTargetBox:
-  x: 100
-  y: 100
+  extends: fromTopLeftOfSafe
   width: 100
   height: 50
   radius: 8
 
 topTarget:
-  x: 100
+  x: 96
   y: 105
   width: 100
   height: 100
   align: center
   font_size: 6
   
+  
+  
+  
+  
+topTitle:
+  extends: abilityTitle
+  y: 86
+  height: 50
+  #align: center
+  
 topRules:
-  x: 90
+  extends: abilityTitle
   y: 55
-  width: 625
   height: 275
   valign: middle
-  align: center
+  #align: center
   font_size: 6
   
-topAfterAbilityLocation:
-  x: 100
-  y: 275
-  width: 40
-  height: 40
+
   
 
 
-lineTopOfBottomAbility:
-  extends: horizontalLine
-  y: 400
+
   
 bottomTitle:
-  x: 90
+  extends: abilityTitle
   y: 415
-  width: 635
   height: 50
-  align: center
+  #align: center
 
 bottomRules:
-  x: 90
+  extends: abilityTitle
   y: 400
-  width: 625
   height: 275
-  valign: middle
-  align: center
+  #valign: middle
+  #align: center
   font_size: 6
   
-bottomAfterAbilityLocation:
-  x: 25
-  y: 275
-  width: 40
-  height: 40
 
 
 
-lineTopOfPassives:
-  extends: horizontalLine
-  y: 800
-
-passivesTitle:
-  x: 90
-  y: 815
-  width: 635
-  height: 35
-  align: left
-  font_size: 8
-
-passivesBody:
-  x: 235
-  y: 850
-  width: 400
-  height: 30
-  align: left
-  font_size: 6
 
 
 
-lineTopOfRequirements:
-  extends: horizontalLine
-  y: 950
+  
+  
+  
+## Text Specification
+
+# Neet to specify the font size, x co-ords, width, height, and alignment of all the text
+# overall card size in manufacturing: width: 816, height: 1110
+# middle is a keyword, = card size dimension / 2. so, 408 x 555
+# cut = 36, safe = 66
+# target box = 96, width 100, border on right of box = 216
+# safe border from right safe line = 1110 - 96 = 1014
+# 216 + x = 1014
+#TODO: fix numbers
+
+abilityTitle:
+  x: 206
+  width: 510 #718
+  
+abilityRules:
+  x: 206
+  width: 500
+
 
 requirementsTitle:
   x: 90
-  y: 965
+  y: 965 #we specify the y as well, because there's only one of this element
   width: 635
   height: 35
   align: left
@@ -101,17 +91,71 @@ requirementsTitle:
 
 requirementsBody:
   x: 325
-  y: 1000
+  y: 1000 #we specify the y as well, because there's only one of this element
   width: 400
   height: 30
   align: left
   font_size: 6
   
+passivesTitle:
+  x: 90
+  y: 815 #we specify the y as well, because there's only one of this element
+  width: 635
+  height: 35
+  align: left
+  font_size: 8
+
+passivesBody:
+  x: 235
+  y: 850 #we specify the y as well, because there's only one of this element
+  width: 400
+  height: 30
+  align: left
+  font_size: 6
+
+
+
+## graphics that exist to be used
+
+#grabbing icons from https://game-icons.net/
+#using gem game_icons to be able to load them
+
+discard:
+  svg file: GameIcons.get('card-discard').file
   
+hand:
+  svg file: GameIcons.get('hand').file
   
+exhaust:
+  svg file: GameIcons.get('card-burn').file
+  
+getACard:
+  svg file: GameIcons.get('card-draw').file
 
 
 
+## locations of graphics
+
+# icons have specific locations, this section defines what those are
+
+#after using the top ability of a card, icons in this location dictate where the card goes
+topAfterAbilityLocation:
+  x: 100
+  y: 275
+  width: 40
+  height: 40
+  
+#after using the bottom ability of a card, icons in this location dictate where the card goes
+bottomAfterAbilityLocation:
+  x: 25
+  y: 275
+  width: 40
+  height: 40
+
+
+## Graphics
+
+#combining the graphics introduced and the locations of where they can go
 
 discardTop:
   extends: topAfterAbilityLocation
@@ -138,27 +182,6 @@ exhaustBottom:
   extends: exhaust
 
 
-
-## graphics
-
-#grabbing icons from https://game-icons.net/
-#using gem game_icons to be able to load them
-
-discard:
-  svg file: GameIcons.get('card-discard').file
-  
-hand:
-  svg file: GameIcons.get('hand').file
-  
-exhaust:
-  svg file: GameIcons.get('card-burn').file
-  
-getACard:
-  svg file: GameIcons.get('card-draw').file
-
-
-
-
 ## Borders & Boundaries
 
 #width/height (and calculated x/y offsets) provided by template from BoardGameMaker.com, see American-poker-size.pdf
@@ -183,9 +206,35 @@ safe:
   radius: 8
   dash: 3 3
   
+# 20 pixels from left of safe wall, the closest we'll get to left safe wall without feeling crowded
+fromLeftOfSafe:
+  x: 86
+  
+# same for top
+fromTopOfSafe:
+  y: 86
+  
+#top left is both (can't use extends twice for one element, so hard coding here)
+fromTopLeftOfSafe:
+  x: 86
+  y: 86
+  
 #just a horizontal line, to be placed within safe boundary and at various y co-ords
 horizontalLine:
   x: 66
   width: 684
   height: 1.5
+
+lineTopOfBottomAbility:
+  extends: horizontalLine
+  y: 400
   
+#line to separate out the passives from the bottom action above it
+lineTopOfPassives:
+  extends: horizontalLine
+  y: 800
+
+#line to separate out the requirements from the passives above it
+lineTopOfRequirements:
+  extends: horizontalLine
+  y: 950
