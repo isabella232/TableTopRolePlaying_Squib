@@ -2,3 +2,4 @@ card_*.png
 ttcc*.png
 ~$*
 .DS_Store
+*.lock
