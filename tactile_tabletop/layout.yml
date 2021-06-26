@@ -1,4 +1,3 @@
-#This layout inspired by popular economy games
 topTitle:
   x: 90
   y: 90
@@ -6,36 +5,184 @@ topTitle:
   height: 50
   align: center
   
-bottomTitle:
-  x: 90
-  y: 300
-  width: 635
-  height: 50
-  align: center
-
-art:
-  x: 75
-  y: 150
-  width: 675
-  height: 520
-
-topRules:
+topTargetBox:
   x: 100
-  y: 125
+  y: 100
+  width: 100
+  height: 50
+  radius: 8
+
+topTarget:
+  x: 100
+  y: 105
+  width: 100
+  height: 100
+  align: center
+  font_size: 6
+  
+topRules:
+  x: 90
+  y: 55
   width: 625
   height: 275
   valign: middle
   align: center
   font_size: 6
   
+topAfterAbilityLocation:
+  x: 25
+  y: 275
+  width: 40
+  height: 40
+  
+
+
+lineTopOfBottomAbility:
+  extends: horizontalLine
+  y: 400
+  
+bottomTitle:
+  x: 90
+  y: 415
+  width: 635
+  height: 50
+  align: center
+
 bottomRules:
-  x: 100
-  y: 335
+  x: 90
+  y: 400
   width: 625
   height: 275
   valign: middle
   align: center
   font_size: 6
+  
+bottomAfterAbilityLocation:
+  x: 25
+  y: 275
+  width: 40
+  height: 40
+
+
+
+lineTopOfPassives:
+  extends: horizontalLine
+  y: 800
+
+passivesTitle:
+  x: 90
+  y: 815
+  width: 635
+  height: 35
+  align: left
+  font_size: 8
+
+passivesBody:
+  x: 235
+  y: 850
+  width: 400
+  height: 30
+  align: left
+  font_size: 6
+
+
+
+lineTopOfRequirements:
+  extends: horizontalLine
+  y: 950
+
+requirementsTitle:
+  x: 90
+  y: 965
+  width: 635
+  height: 35
+  align: left
+  font_size: 8
+
+requirementsBody:
+  x: 325
+  y: 1000
+  width: 400
+  height: 30
+  align: left
+  font_size: 6
+  
+  
+  
+
+discard:
+  file: to_discard.png
+  
+hand:
+  file: to_hand.png
+  
+exhaust:
+  file: to_exhaust.png
+
+
+discardTop:
+  extends: topAfterAbilityLocation
+  extends: discard
+
+discardBottom:
+  extends: bottomAfterAbilityLocation
+  extends: discard
+  
+returnTop:
+  extends: topAfterAbilityLocation
+  extends: hand
+
+returnBottom:
+  extends: bottomAfterAbilityLocation
+  extends: hand
+
+exhaustTop:
+  extends: topAfterAbilityLocation
+  extends: exhaust
+
+exhaustBottom:
+  extends: bottomAfterAbilityLocation
+  extends: exhaust
+
+
+horizontalLine:
+  x: 75
+  width: 675
+  height: 1.5
+
+
+  
+
+  
+
+
+# The "cut line", without rounded corners
+cut:
+  x: 37.5
+  y: 37.5
+  width: 750
+  height: 1050
+
+# The "safe zone" as defined by TheGameCrafter poker cards
+safe:
+  x: 75
+  y: 75
+  width: 675
+  height: 975
+  radius: 16
+  dash: 3 3
+  
+  
+  
+  
+  
+  
+
+art:
+  x: 75
+  y: 150
+  width: 675
+  height: 520
 
 type:
   x: 90
@@ -82,18 +229,3 @@ credit:
 credits:
   extends: copyright
 
-# The "cut line", without rounded corners
-cut:
-  x: 37.5
-  y: 37.5
-  width: 750
-  height: 1050
-
-# The "safe zone" as defined by TheGameCrafter poker cards
-safe:
-  x: 75
-  y: 75
-  width: 675
-  height: 975
-  radius: 16
-  dash: 3 3
