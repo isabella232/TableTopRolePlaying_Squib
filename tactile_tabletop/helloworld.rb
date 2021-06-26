@@ -1,8 +1,12 @@
 require 'squib'
+require 'game_icons'
 
 data = Squib.csv file: 'Action Cards - CharacterCards.csv'
 
-Squib::Deck.new cards: data['Top Ability Name'].size, layout: 'layout.yml' do
+
+#width/height/dpi measurements provided by template from BoardGameMaker.com, see American-poker-size.pdf
+
+Squib::Deck.new(dpi: 300, width: 816, height: 1110, cards: data['Top Ability Name'].size, layout: 'layout.yml')  do
   background color: 'white'
   rect layout: 'safe'
   rect layout: 'cut'
@@ -11,7 +15,8 @@ Squib::Deck.new cards: data['Top Ability Name'].size, layout: 'layout.yml' do
   rect layout: 'topTargetBox'
   text str: data['Top Ability Target'], layout: 'topTarget'
   text str: data['Top Ability Rules'], layout: 'topRules'
-  png layout: data['discardTop']
+
+  svg layout: data['discardTop']
   
   rect layout: 'lineTopOfBottomAbility'
   text str: data['Bottom Ability Name'], layout: 'bottomTitle'
