@@ -5,6 +5,8 @@ https://squib.readthedocs.io/en/v0.16.0/install.html
 guide doesn't spell this out, but after installing ruby (which _does_ take forever) you should have a ruby command-line option in your start applications. that's where all the commands function. The minimum you need are:
 
 gem install squib
+gem install game_icons
+bundle install
 
 And then when you want to make the cards:
 
