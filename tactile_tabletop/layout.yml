@@ -6,19 +6,6 @@ topTitle:
   height: 50
   align: center
   
-bottomTitle:
-  x: 90
-  y: 300
-  width: 635
-  height: 50
-  align: center
-
-art:
-  x: 75
-  y: 150
-  width: 675
-  height: 520
-
 topRules:
   x: 100
   y: 125
@@ -28,6 +15,13 @@ topRules:
   align: center
   font_size: 6
   
+bottomTitle:
+  x: 90
+  y: 300
+  width: 635
+  height: 50
+  align: center
+
 bottomRules:
   x: 100
   y: 335
@@ -36,6 +30,89 @@ bottomRules:
   valign: middle
   align: center
   font_size: 6
+  
+topAfterAbilityLocation:
+  x: 25
+  y: 275
+  width: 40
+  height: 40
+
+bottomAfterAbilityLocation:
+  x: 25
+  y: 275
+  width: 40
+  height: 40
+  
+
+discard:
+  file: to_discard.png
+  
+hand:
+  file: to_hand.png
+  
+exhaust:
+  file: to_exhaust.png
+
+
+discardTop:
+  extends: topAfterAbilityLocation
+  extends: discard
+
+discardBottom:
+  extends: bottomAfterAbilityLocation
+  extends: discard
+  
+returnTop:
+  extends: topAfterAbilityLocation
+  extends: hand
+
+returnBottom:
+  extends: bottomAfterAbilityLocation
+  extends: hand
+
+exhaustTop:
+  extends: topAfterAbilityLocation
+  extends: exhaust
+
+exhaustBottom:
+  extends: bottomAfterAbilityLocation
+  extends: exhaust
+
+
+
+line:
+  x: 37.5
+  y: 37.5
+  width: 750
+  height: 1050
+
+# The "cut line", without rounded corners
+cut:
+  x: 37.5
+  y: 37.5
+  width: 750
+  height: 1050
+
+# The "safe zone" as defined by TheGameCrafter poker cards
+safe:
+  x: 75
+  y: 75
+  width: 675
+  height: 975
+  radius: 16
+  dash: 3 3
+  
+  
+  
+  
+  
+  
+
+art:
+  x: 75
+  y: 150
+  width: 675
+  height: 520
 
 type:
   x: 90
@@ -82,18 +159,3 @@ credit:
 credits:
   extends: copyright
 
-# The "cut line", without rounded corners
-cut:
-  x: 37.5
-  y: 37.5
-  width: 750
-  height: 1050
-
-# The "safe zone" as defined by TheGameCrafter poker cards
-safe:
-  x: 75
-  y: 75
-  width: 675
-  height: 975
-  radius: 16
-  dash: 3 3
