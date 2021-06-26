@@ -1,4 +1,4 @@
-_output/*.png
-_output/*.pdf
+*.png
+*.pdf
 ~$*
 .DS_Store
