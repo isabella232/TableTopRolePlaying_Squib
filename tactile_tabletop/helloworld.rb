@@ -3,36 +3,53 @@ require 'game_icons'
 
 data = Squib.csv file: 'Action Cards - CharacterCards.csv'
 
-
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see American-poker-size.pdf
-
 Squib::Deck.new(dpi: 300, width: 816, height: 1110, cards: data['Top Ability Name'].size, layout: 'layout.yml')  do
+
+  ## overall card stuff
+
   background color: 'white'
   rect layout: 'safe'
   rect layout: 'cut'
   
-  text str: data['Top Ability Name'], layout: 'topTitle'
-  #rect layout: 'topTargetBox'
+  ## top ability stuff
+  
   #text str: data['Top Ability Target'], layout: 'topTarget'
+  #rect layout: 'topTargetBox'
+  
+  #rect layout: 'topTitle'
+  #rect layout: 'topRules'
+  text str: data['Top Ability Name'], layout: 'topTitle'
   text str: data['Top Ability Rules'], layout: 'topRules'
-
-  #svg layout: data['discardTop']
+  svg layout: data['discardTop']
+  
+  ## bottom ability stuff
   
   rect layout: 'lineTopOfBottomAbility'
+  #rect layout: 'bottomTitle'
+  #rect layout: 'bottomRules'
   text str: data['Bottom Ability Name'], layout: 'bottomTitle'
   text str: data['Bottom Ability Rules'], layout: 'bottomRules'
-  #png layout: data['discardBottom']
+  svg layout: data['discardBottom']
+  
+  ## passives stuff
   
   rect layout: 'lineTopOfPassives'
-  rect layout: 'passivesTitle'
-  rect layout: 'passivesBody'
+  #rect layout: 'passivesTitle'
+  #rect layout: 'passivesBody'
   text str: "Passives", layout: 'passivesTitle'
   text str: data['Passives'], layout: 'passivesBody'
   
-  rect layout: 'lineTopOfRequirements'
-  #text str: "Requirements", layout: 'requirementsTitle'
-  #text str: data['Requirements'], layout: 'requirementsBody'
+  ## requirements stuff
   
+  rect layout: 'lineTopOfRequirements'
+  #rect layout: 'requirementsTitle'
+  #rect layout: 'requirementsBody'
+  text str: "Requirements", layout: 'requirementsTitle'
+  text str: data['Requirements'], layout: 'requirementsBody'
+
+  ## output file stuff stuff
+
   save_png prefix: 'ttcc_'
   #save_pdf trim: 37.5
 end
