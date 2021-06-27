@@ -7,7 +7,7 @@ data = Squib.csv file: 'Action Cards - CharacterCards.csv'
 
 
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see American-poker-size.pdf
-Squib::Deck.new(dpi: 300, width: 816, height: 1110, cards: data['Top Ability Name'].size, layout: 'layout.yml')  do
+Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Name'].size, layout: 'layout.yml')  do
 
   ## overall card stuff
 

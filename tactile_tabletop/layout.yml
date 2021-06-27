@@ -12,11 +12,11 @@ abilityText:
 title:
   height: 100 # allows for 2 lines at font 12
   align: center
-  font_size: 12
+  font_size: 10
   
 rules:
   height: 250
-  font_size: 6
+  font_size: 7.5
   
   
 
@@ -126,48 +126,83 @@ bottomAfterAbilityLocation:
   height: 60
 
 
-## Borders & Boundaries
+### Borders & Boundaries ###
 
-#width/height (and calculated x/y offsets) provided by template from BoardGameMaker.com, see American-poker-size.pdf
-#overall card size in manufacturing: width: 816, height: 1110
+#width/height (and calculated x/y offsets) provided by template from BoardGameMaker.com, see poker-size.pdf
+#overall card size in manufacturing: width: 822, height: 1122 (2.74 x 3.74)
+  
+## Card Overall Dimensions
+  
+# box for cut line
 
+#822 - 750 = 72
+fromLeftBleedToCut:
+  x: 72
+  
+#1122 - 1050 = 72
+fromTopBleedToCut:
+  y: 72
+  
+fromTopLeftBleedToCut:
+  extends:
+   - fromLeftBleedToCut
+   - fromTopBleedToCut
+   
 # The "cut area line", everything outside of this area guaranteed to be lost
 cut:
-  x: 36
-  y: 36
-  width: 744
-  height: 1038
+  extends: fromTopLeftBleedToCut
+  width: 750
+  height: 1050
   radius: 16
   
-#need graphic to fill into gap between safe and cut, and beyond the cut...
+# box for safe line
 
+#750 - 690 = 60
+fromLeftCutToSafe:
+  extends: fromLeftBleedToCut
+  x: += 60
+  
+#1050 - 990 = 60
+fromTopCutToSafe:
+  extends: fromTopBleedToCut
+  y: += 60
+
+fromTopLeftCutToSafe:
+  extends: 
+   - fromTopCutToSafe
+   - fromLeftCutToSafe
+   
+widthSafeArea:
+  width: 690
+  
+heightSafeArea:
+  height: 990
+  
 # the "safe area line", everything inside of this area guaranteed to be saved
 safe:
-  x: 66
-  y: 64.5
-  width: 684
-  height: 981
+  extends: 
+   - fromTopLeftCutToSafe
+   - widthSafeArea
+   - heightSafeArea
   radius: 8
   dash: 3 3
+#need graphic to fill into gap between safe and cut, and beyond the cut...
   
-# 20 pixels from left of safe wall, the closest we'll get to left safe wall without feeling crowded
-fromLeftOfSafe:
-  x: 86
-  
-# same for top
-fromTopOfSafe:
-  y: 86
-  
-#top left is both
+# closest top left co-ord without things feeling crowded
+
+#adding 20 pixel buffer from safe area line for clean look
 fromTopLeftOfSafe:
-  extends:
-   - fromLeftOfSafe
-   - fromTopOfSafe
-  
+  extends: fromTopLeftCutToSafe
+  x += 20
+  y += 20
+
+## lines
+
 #just a horizontal line, to be placed within safe boundary and at various y co-ords
 horizontalLine:
-  x: 66
-  width: 684
+  extends: 
+   - fromLeftCutToSafe
+   - widthSafeArea
   height: 1.5
 
 #96 (from safe line) + 392 = 488
