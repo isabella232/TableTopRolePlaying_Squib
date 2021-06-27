@@ -46,13 +46,18 @@ abilityText:
   x: += 120
   width: 522 #738
   
-
-topTitle:
-  extends: abilityText
-  y: 86
-  height: 100 # allows for 2 lines at font 16
+title:
+  height: 100 # allows for 2 lines at font 12
   align: center
   font_size: 12
+  
+
+topTitle:
+  extends: 
+   - abilityText
+   - title
+  y: 86
+  
   
 #880 - 20 = 860
 topRules:
@@ -199,10 +204,11 @@ fromLeftOfSafe:
 fromTopOfSafe:
   y: 86
   
-#top left is both (can't use extends twice for one element, so hard coding here)
+#top left is both
 fromTopLeftOfSafe:
-  x: 86
-  y: 86
+  extends:
+   - fromLeftOfSafe
+   - fromTopOfSafe
   
 #just a horizontal line, to be placed within safe boundary and at various y co-ords
 horizontalLine:
@@ -218,14 +224,14 @@ lineTopOfBottomAbility:
 #line to separate out the passives from the bottom action above it
 #96 + 392 + 392 = 880
 lineTopOfPassives:
-  extends: horizontalLine
-  y: 880
+  extends: lineTopOfBottomAbility
+  y: += 392
 
 #line to separate out the requirements from the passives above it
 #96 + 392 + 392 + 84 = 964
 lineTopOfRequirements:
-  extends: horizontalLine
-  y: 964
+  extends: lineTopOfPassives
+  y: += 84
 
 
   
