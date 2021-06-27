@@ -13,12 +13,12 @@ Squib::Deck.new(dpi: 300, width: 816, height: 1110, cards: data['Top Ability Nam
   rect layout: 'cut'
   
   ## top ability stuff
+  rect layout: 'lineRightOfBubbles'
+  text str: data['Top Ability Target'], layout: 'topTarget'
+  rect layout: 'topTargetBox'
   
-  #text str: data['Top Ability Target'], layout: 'topTarget'
-  #rect layout: 'topTargetBox'
-  
-  #rect layout: 'topTitle'
-  #rect layout: 'topRules'
+  rect layout: 'topTitle'
+  rect layout: 'topRules'
   text str: data['Top Ability Name'], layout: 'topTitle'
   text str: data['Top Ability Rules'], layout: 'topRules'
   svg layout: data['discardTop']
@@ -26,8 +26,8 @@ Squib::Deck.new(dpi: 300, width: 816, height: 1110, cards: data['Top Ability Nam
   ## bottom ability stuff
   
   rect layout: 'lineTopOfBottomAbility'
-  #rect layout: 'bottomTitle'
-  #rect layout: 'bottomRules'
+  rect layout: 'bottomTitle'
+  rect layout: 'bottomRules'
   text str: data['Bottom Ability Name'], layout: 'bottomTitle'
   text str: data['Bottom Ability Rules'], layout: 'bottomRules'
   svg layout: data['discardBottom']
