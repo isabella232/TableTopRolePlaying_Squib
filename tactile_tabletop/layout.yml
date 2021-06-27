@@ -1,44 +1,9 @@
 
   
-topTargetBox:
-  extends: fromTopLeftOfSafe
-  width: 100
-  height: 50
-  radius: 8
-
-topTarget:
-  extends: topTargetBox
-  y: += 10
-  align: center
-  font_size: 6
-  
-  
-  
-  
-  
-
-  
-
-
-
-
-
-
-  
-  
-  
 ## Text Specification
 
-# Neet to specify the font size, x co-ords, width, height, and alignment of all the text
-# overall card size in manufacturing: width: 816, height: 1110
-# middle is a keyword, = card size dimension / 2. so, 408 x 555
-# cut = 36, safe = 66
-# target box = 96, width 100, +20 for space, border on right of box = 216
-# safe border from right safe line = 1110 - 96 = 1014
-# 216 + x = 1014 ; x = 
-#TODO: fix numbers
+# Need to specify the font size, x co-ords, width, height, and alignment of all th
 
-# target box = 96, width 100, +20 for space, border on right of box = where we should start the title: 216
 abilityText:
   extends: lineRightOfBubbles
   x: += 20
@@ -49,6 +14,9 @@ title:
   align: center
   font_size: 12
   
+rules:
+  height: 250
+  font_size: 6
   
   
 
@@ -58,26 +26,38 @@ topTitle:
    - title
   y: 86
   
-  
-#880 - 20 = 860
 topRules:
-  extends: topTitle
-  y: += 120 # 86 + 100 (title height) + 20 (spacing) = 206
-  height: 250
-  font_size: 6
+  extends: 
+   - topTitle
+   - rules
+  y: += 120
   
+
 
 bottomTitle:
-  extends: topRules
-  
-  y: += 290 # 206 + 250 (top rules height) + 20 (spacing to line) + 20 (spacing from line) = 496
-  height: 100
-  font_size: 12
+  extends: 
+   - abilityText
+   - title 
+   - topOfBottomAbility
+  y: += 20
 
 bottomRules:
-  extends: bottomTitle
-  y: += 120 # 496 + 100 (bottom title height) + 20 (spacing)
-  height: 250
+  extends: 
+   - bottomTitle
+   - rules
+  y: += 120
+  
+  
+topTargetBox:
+  extends: fromTopLeftOfSafe
+  width: 100
+  height: 50
+  radius: 8
+
+topTarget:
+  extends: topTargetBox
+  y: += 10
+  align: center
   font_size: 6
   
 
@@ -101,6 +81,8 @@ passivesBody:
   align: center
   font_size: 6
 
+
+
 #doesn't ever change, the word "Requirements
 requirementsTitle:
   extends: lineTopOfRequirements
@@ -122,22 +104,6 @@ requirementsBody:
   font_size: 6
 
 
-## graphics that exist to be used
-
-#grabbing icons from https://game-icons.net/
-#using gem game_icons to be able to load them
-
-discard:
-  svg file: GameIcons.get('card-discard').file
-
-hand:
-  svg file: GameIcons.get('hand').file
-
-exhaust:
-  svg file: GameIcons.get('card-burn').file
-
-getACard:
-  svg file: GameIcons.get('card-draw').file
 
 ## locations of graphics
 
@@ -145,52 +111,19 @@ getACard:
 
 #after using the top ability of a card, icons in this location dictate where the card goes
 topAfterAbilityLocation:
-  x: 100
-  y: 275
-  width: 40
-  height: 40
+  extends: topRules
+  x: += 460
+  y: += 200
+  width: 60
+  height: 60
   
 #after using the bottom ability of a card, icons in this location dictate where the card goes
 bottomAfterAbilityLocation:
-  x: 25
-  y: 275
-  width: 40
-  height: 40
-
-
-## Graphics
-
-#combining the graphics introduced and the locations of where they can go
-
-discardTop:
-  extends: 
-   - topAfterAbilityLocation
-   - discard
-
-discardBottom:
-  extends: 
-   - bottomAfterAbilityLocation
-   - discard
-  
-returnTop:
-  extends: 
-   - bottomAfterAbilityLocation
-   - hand
-
-returnBottom:
-  extends: 
-   - bottomAfterAbilityLocation
-   - hand
-
-exhaustTop:
-  extends: 
-   - bottomAfterAbilityLocation
-   - exhaust
-
-exhaustBottom:
-  extends: 
-   - bottomAfterAbilityLocation
-   - exhaust
+  extends: bottomRules
+  x: += 460
+  y: += 170
+  width: 60
+  height: 60
 
 
 ## Borders & Boundaries
@@ -238,9 +171,13 @@ horizontalLine:
   height: 1.5
 
 #96 (from safe line) + 392 = 488
-lineTopOfBottomAbility:
-  extends: horizontalLine
+topOfBottomAbility:
   y: 488
+
+lineTopOfBottomAbility:
+  extends: 
+   - horizontalLine
+   - topOfBottomAbility
   
 #line to separate out the passives from the bottom action above it
 #96 + 392 + 392 = 880
@@ -259,11 +196,10 @@ verticalLine:
   y: 66
   width: 1.5
   height: 918
-  
+
 lineRightOfBubbles:
   extends: verticalLine
   x: 186
-  
   
 
 
