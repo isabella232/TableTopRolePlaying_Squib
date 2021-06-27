@@ -120,7 +120,22 @@ requirementsBody:
   font_size: 6
 
 
+## graphics that exist to be used
 
+#grabbing icons from https://game-icons.net/
+#using gem game_icons to be able to load them
+
+discard:
+  svg file: GameIcons.get('card-discard').file
+
+hand:
+  svg file: GameIcons.get('hand').file
+
+exhaust:
+  svg file: GameIcons.get('card-burn').file
+
+getACard:
+  svg file: GameIcons.get('card-draw').file
 
 ## locations of graphics
 
@@ -144,32 +159,36 @@ bottomAfterAbilityLocation:
 ## Graphics
 
 #combining the graphics introduced and the locations of where they can go
-#grabbing icons from https://game-icons.net/
-#using gem game_icons to be able to load them
 
 discardTop:
-  extends: topAfterAbilityLocation
-  svg file: GameIcons.get('card-discard').file
+  extends: 
+   - topAfterAbilityLocation
+   - discard
 
 discardBottom:
-  extends: bottomAfterAbilityLocation
-  svg file: GameIcons.get('card-discard').file
+  extends: 
+   - bottomAfterAbilityLocation
+   - discard
   
 returnTop:
-  extends: topAfterAbilityLocation
-  svg file: GameIcons.get('hand').file
+  extends: 
+   - bottomAfterAbilityLocation
+   - hand
 
 returnBottom:
-  extends: bottomAfterAbilityLocation
-  svg file: GameIcons.get('hand').file
+  extends: 
+   - bottomAfterAbilityLocation
+   - hand
 
 exhaustTop:
-  extends: topAfterAbilityLocation
-  svg file: GameIcons.get('card-burn').file
+  extends: 
+   - bottomAfterAbilityLocation
+   - exhaust
 
 exhaustBottom:
-  extends: bottomAfterAbilityLocation
-  svg file: GameIcons.get('card-burn').file
+  extends: 
+   - bottomAfterAbilityLocation
+   - exhaust
 
 
 ## Borders & Boundaries
