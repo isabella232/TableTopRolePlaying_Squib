@@ -18,39 +18,7 @@ topTarget:
   
   
   
-topTitle:
-  extends: abilityTitle
-  y: 86
-  height: 50
-  #align: center
-  
-topRules:
-  extends: abilityTitle
-  y: 55
-  height: 275
-  valign: middle
-  #align: center
-  font_size: 6
-  
 
-  
-
-
-
-  
-bottomTitle:
-  extends: abilityTitle
-  y: 415
-  height: 50
-  #align: center
-
-bottomRules:
-  extends: abilityTitle
-  y: 400
-  height: 275
-  #valign: middle
-  #align: center
-  font_size: 6
   
 
 
@@ -67,51 +35,47 @@ bottomRules:
 # overall card size in manufacturing: width: 816, height: 1110
 # middle is a keyword, = card size dimension / 2. so, 408 x 555
 # cut = 36, safe = 66
-# target box = 96, width 100, border on right of box = 216
+# target box = 96, width 100, +20 for space, border on right of box = 216
 # safe border from right safe line = 1110 - 96 = 1014
-# 216 + x = 1014
+# 216 + x = 1014 ; x = 
 #TODO: fix numbers
 
-abilityTitle:
-  x: 206
-  width: 510 #718
+# target box = 96, width 100, +20 for space, border on right of box = where we should start the title: 216
+abilityText:
+  extends: topTargetBox
+  x: += 120
+  width: 522 #738
   
-abilityRules:
-  x: 206
-  width: 500
 
-
-requirementsTitle:
-  x: 90
-  y: 965 #we specify the y as well, because there's only one of this element
-  width: 635
-  height: 35
-  align: left
-  font_size: 8
-
-requirementsBody:
-  x: 325
-  y: 1000 #we specify the y as well, because there's only one of this element
-  width: 400
-  height: 30
-  align: left
+topTitle:
+  extends: abilityText
+  y: 86
+  height: 100 # allows for 2 lines at font 16
+  align: center
+  font_size: 12
+  
+#880 - 20 = 860
+topRules:
+  extends: topTitle
+  y: += 120 # 86 + 100 (title height) + 20 (spacing) = 206
+  height: 250
   font_size: 6
   
-passivesTitle:
-  x: 90
-  y: 815 #we specify the y as well, because there's only one of this element
-  width: 635
-  height: 35
-  align: left
-  font_size: 8
 
-passivesBody:
-  x: 235
-  y: 850 #we specify the y as well, because there's only one of this element
-  width: 400
-  height: 30
-  align: left
+bottomTitle:
+  extends: topRules
+  y: += 290 # 206 + 250 (top rules height) + 20 (spacing to line) + 20 (spacing from line) = 496
+  height: 100
+  font_size: 12
+
+bottomRules:
+  extends: bottomTitle
+  y: += 120 # 496 + 100 (bottom title height) + 20 (spacing)
+  height: 250
   font_size: 6
+  
+
+
 
 
 
@@ -225,16 +189,57 @@ horizontalLine:
   width: 684
   height: 1.5
 
+#96 (from safe line) + 392 = 488
 lineTopOfBottomAbility:
   extends: horizontalLine
-  y: 400
+  y: 488
   
 #line to separate out the passives from the bottom action above it
+#96 + 392 + 392 = 880
 lineTopOfPassives:
   extends: horizontalLine
-  y: 800
+  y: 880
 
 #line to separate out the requirements from the passives above it
+#96 + 392 + 392 + 84 = 964
 lineTopOfRequirements:
   extends: horizontalLine
-  y: 950
+  y: 964
+
+#964 + 84 + 96 = 
+
+
+requirementsTitle:
+  extends: lineTopOfRequirements
+  x: 90
+  y: += 20
+  width: 635
+  height: 35
+  align: left
+  font_size: 8
+
+requirementsBody:
+  extends: requirementsTitle
+  x: 325
+  y: 1000 #we specify the y as well, because there's only one of this element
+  width: 400
+  height: 30
+  align: left
+  font_size: 6
+  
+passivesTitle:
+  x: 90
+  y: 815 #we specify the y as well, because there's only one of this element
+  width: 635
+  height: 35
+  align: left
+  font_size: 8
+
+passivesBody:
+  x: 235
+  y: 850 #we specify the y as well, because there's only one of this element
+  width: 400
+  height: 30
+  align: left
+  font_size: 6
+
