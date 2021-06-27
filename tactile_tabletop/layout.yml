@@ -7,10 +7,8 @@ topTargetBox:
   radius: 8
 
 topTarget:
-  x: 96
-  y: 105
-  width: 100
-  height: 100
+  extends: topTargetBox
+  y: += 10
   align: center
   font_size: 6
   
@@ -42,14 +40,16 @@ topTarget:
 
 # target box = 96, width 100, +20 for space, border on right of box = where we should start the title: 216
 abilityText:
-  extends: topTargetBox
-  x: += 120
+  extends: lineRightOfBubbles
+  x: += 20
   width: 522 #738
   
 title:
   height: 100 # allows for 2 lines at font 12
   align: center
   font_size: 12
+  
+  
   
 
 topTitle:
@@ -69,6 +69,7 @@ topRules:
 
 bottomTitle:
   extends: topRules
+  
   y: += 290 # 206 + 250 (top rules height) + 20 (spacing to line) + 20 (spacing from line) = 496
   height: 100
   font_size: 12
@@ -79,6 +80,7 @@ bottomRules:
   height: 250
   font_size: 6
   
+
 #doesn't ever change, the word "Passives"
 passivesTitle:
   extends: lineTopOfPassives
@@ -253,6 +255,15 @@ lineTopOfRequirements:
   y: += 84
 
 
+verticalLine:
+  y: 66
+  width: 1.5
+  height: 918
+  
+lineRightOfBubbles:
+  extends: verticalLine
+  x: 186
+  
   
 
 
