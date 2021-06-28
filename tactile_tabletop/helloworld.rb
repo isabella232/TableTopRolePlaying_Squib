@@ -14,6 +14,12 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Nam
   background color: 'black'
   rect layout: 'cut'
   rect layout: 'safe'
+  rect layout: 'topAbilityColorBox'
+  rect layout: 'topAbilityColorBoxBorderCover'
+  rect layout: 'bottomAbilityColorBox'
+  rect layout: 'passivesColorBox'
+  rect layout: 'requirementsColorBox'
+  rect layout: 'requirementsColorBoxBorderCover'
   
   ## top ability stuff
   #rect layout: 'lineRightOfBubbles'
