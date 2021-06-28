@@ -3,8 +3,8 @@ Nurture Nature,Plant,Instant,Level (X) + 1,Increase/decrease size of plant by X,
 Level (Y)","Create 1 foot thick wall, X+Y tall and wide, X feet away",Exhaust,1 Skill Point,N/A,,Attack die are responded to with Defence Die
 Revive,Ally,Instant,Level (X),"Target is revived from downed state, their health is = X",Exhaust,Mend The Masses,Ally,Instant,"Influence (X)
 Level (Y)","X are targeted, healed by Y amount",Discard,1 Skill Point,N/A,,Influence die are responded to with Influence Die
-Thoughtful Strike,Enemy,Instant,Attack,Return card from discard after attack,Discard,Recollection of Events,Self,Instant,N/A,Return 3 cards from discard,Exhaust,"1 Health, 1 Skill Point",N/A,,All targets must be within range or whatever your weapon is (within Close range if no weapon is present)
-Inspection,Enemy,Instant,N/A,Know an enemies weaknesses or resistances,Discard,Pinpoint Punishment,Enemy,Instant,"Attack 
+Thoughtful Strike,Enemy,Instant,Attack,Return card from discard after attack,Discard,Recollection of Events,Self,Instant,,Return 3 cards from discard,Exhaust,"1 Health, 1 Skill Point",N/A,,All targets must be within range or whatever your weapon is (within Close range if no weapon is present)
+Inspection,Enemy,Instant,,Know an enemies weaknesses or resistances,Discard,Pinpoint Punishment,Enemy,Instant,"Attack 
 Level (X)",Add X to attack value,Exhaust,"1 Health, 1 Skill Point",N/A,,
 Flip,Enemy,Instant,"Attack
 Level (X)",Topple if damage is dealt,Discard,Out,Enemy,1 Rnd,Attack ,Respond to every attack with an attack,Exhaust,2 Skill Points,N/A,,
@@ -18,12 +18,12 @@ Influence (X)","If marked, add influence to attack value, then unmark target",Di
 Transmorph,Self,X Rnds,"Influence (X)
 Level (Y)","Transform into similar-sized creature. Add X to defence values, attack values, or health. After duration, lose Y in Health Points",Discard,Transmute,Self,X Rnds,"Influence (X)
 Level (Y)","Summon: 
-1) a plant [all die = your influence die, range 5 feet, health = X, no movement]
-2) a creature [attack die = your attack die, defense = Y, range 5 feet, health = Y, movement = your movement]",Exhaust,1 Health,N/A,,
+1) plant [all die=your influence die, range 5ft, health=X, no movement]
+2) creature [attack die=your attack die, defense=Y, range 5ft, health=Y, movement=your movement]",Exhaust,1 Health,N/A,,
 Pay to Punish,Enemy,Instant,"Attack
 Level (X)","Lose X health points, attack target X times",Discard,Pay to Protect,Self,1 Rnd,"Defense
 Level (X)",Lose X health points. Increase all defense values by X,Discard,1 Health,N/A,,
-Aid,Ally,Instant,Influence (X),Heal target by X,Exhaust,Replenish,Ally,Instant,N/A,Target returns 1 card from discard,Hand,"1 Health, 2 Skill Points",N/A,,
+Aid,Ally,Instant,Influence (X),Heal target by X,Exhaust,Replenish,Ally,Instant,,Target returns 1 card from discard,Hand,"1 Health, 2 Skill Points",N/A,,
 Lunging Strike,Enemy,Instant,Attack,"Attack, increasing range by 5 feet and movement by 15 feet",Discard,Double Strike,Enemy,Instant,Attack ,"Attack target twice, lose 15 feet of movement",Discard,1 Health,N/A,,
 Bolster,Self,1 Rnd,"Defense
 Level (X)",Add X to next defense value,Discard,Baited Bash,Self,1 Rnd,Defense,"If next defense value is greater than opposing attack value, attacker takes difference in damage",Discard,"1 Health, 1 Skill Point",N/A,,
@@ -48,7 +48,7 @@ Appear Aggressive,Enemy,1 Rnd,Influence,"On success, discard a card, and target 
 Summon the Many,Area,Day,"Influence (X)
 Level(Y)",Summon X beings with 1 health. Their defense die is a 1d4. Their Attack Value is Y. Their movement is equal to yours,Exhaust,Summon the Single,Area,Day,"Influence (X)
 Level(Y)",Summon a being with X health. Its Attack/Defense Value is 1d4 + Y. Its movement is equal to yours,Exhaust,1 Skill Point,N/A,,
-Painful Reflection,Self,Instant,Level (X),"Lose X health points, return X cards from discard",Discard,Re-Strategize,Self,Instant,N/A,"Discard a card, exchange a card from discard with a card from your deck, which goes into discard",Exhaust,"1 Health, 1 Skill Point",N/A,,
+Painful Reflection,Self,Instant,Level (X),"Lose X health points, return X cards from discard",Discard,Re-Strategize,Self,Instant,,"Discard a card, exchange a card from discard with a card from your deck, which goes into discard",Exhaust,"1 Health, 1 Skill Point",N/A,,
 Order Up!,Enemy,Instant,"Attack
 Level(X)","If damage is dealt, target's next defense roll is reduced by X",Discard,You want a side?,Self,Instant,Influence (X),"If X%2, heal X. If X%3, recover discarded card. else, next attack value increases by 1",Discard,"2 Health, 1 Skill Points",N/A,,
 Cost of Living,Self,Instant,Cards discarded (X),"Discard X cards, heal for X",Exhaust,Cycle Thoughts,Self,Instant,Cards discarded (X),"Discard X card, return X cards from discard",Discard,2 Skill Points,N/A,,
@@ -59,7 +59,7 @@ Weighted Slam,Enemy,Instant,"Attack
 Cards discarded (X)","Add X to attack value. On damage being dealt, enemy is moved X*5 feet away from you",Discard,Blasting Box,Area,Instant,"Attack (X)
 Cards discarded (Y)",Type token must be used. Discard Y cards. all targets in 5*Y ft area roll Defense against X.,Exhaust,1 Health,N/A,,
 All In,Enemy,Instant,"Attack
-Cards discarded (X)",Target up to X enemies. Attack each Target Enemy X times. Add X damage to each attack value,Exhaust,I'm In,Self,Instant,N/A,Add 25 movement to your turn and return a target card from discard to your hand,Discard,"1 Health, 1 Skill Point",N/A,,
+Cards discarded (X)",Target up to X enemies. Attack each Target Enemy X times. Add X damage to each attack value,Exhaust,I'm In,Self,Instant,,Add 25 movement to your turn and return a target card from discard to your hand,Discard,"1 Health, 1 Skill Point",N/A,,
 Dodge,Self,1 Rnd,Level (X),"Until your next turn, if an attack is made against you roll a die. If even, take no damage. If odd, add X to your Defense Value.",Discard,Expect,Enemy,1 Rnd,"Attack
 Level (X)",If the targetted enemy attacks you before your next turrn then add X to your Defense Value,Discard,1 Skill Point,N/A,,
 Fly Swatter,Enemy,Instant,Attack,"If your attack kills the targetted enemy, gain another attack. Repeat this until you attack an enemy and they survive.",Exhaust,Bee Sting,Enemy,Instant,"Attack
