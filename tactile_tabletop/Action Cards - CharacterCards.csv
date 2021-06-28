@@ -49,8 +49,6 @@ Summon the Many,Area,Day,"Influence (X)
 Level(Y)",Summon X beings with 1 health. Their defense die is a 1d4. Their Attack Value is Y. Their movement is equal to yours,Exhaust,Summon the Single,Area,Day,"Influence (X)
 Level(Y)",Summon a being with X health. Its Attack/Defense Value is 1d4 + Y. Its movement is equal to yours,Exhaust,1 Skill Point,N/A,,
 Painful Reflection,Self,Instant,Level (X),"Lose X health points, return X cards from discard",Discard,Re-Strategize,Self,Instant,,"Discard a card, exchange a card from discard with a card from your deck, which goes into discard",Exhaust,"1 Health, 1 Skill Point",N/A,,
-Order Up!,Enemy,Instant,"Attack
-Level(X)","If damage is dealt, target's next defense roll is reduced by X",Discard,You want a side?,Self,Instant,Influence (X),"If X%2, heal X. If X%3, recover discarded card. else, next attack value increases by 1",Discard,"2 Health, 1 Skill Points",N/A,,
 Cost of Living,Self,Instant,Cards discarded (X),"Discard X cards, heal for X",Exhaust,Cycle Thoughts,Self,Instant,Cards discarded (X),"Discard X card, return X cards from discard",Discard,2 Skill Points,N/A,,
 Quick Strike,Enemy,Instant,Attack,Discard a card,Hand,Basic Strike,Enemy,Instant,Attack,Attack target,Discard,"1 Health, 3 Skill Points",N/A,,
 Meal of the Marked,Enemy,Instant,"Attack
@@ -65,3 +63,10 @@ Level (X)",If the targetted enemy attacks you before your next turrn then add X 
 Fly Swatter,Enemy,Instant,Attack,"If your attack kills the targetted enemy, gain another attack. Repeat this until you attack an enemy and they survive.",Exhaust,Bee Sting,Enemy,Instant,"Attack
 Level (X)",If your attack deals damage to target enemy then add X to your next attack if it is agaisnt that enemy,Discard,1 Health,N/A,,
 Dissassociate,Enemy,1 Rnd,Attack,"If your attack deals damage to Target Enemy, then that Target Enemys next Influence Roll will use a reduced die down to a minimum of a 1d4",Hand,Unsettled,Enemy,1 Rnd,Influence,If your Influence Value is greater than Target Enemys Influence Value then their next Attack or Defense roll will use reduced die/dice with a minimum od a d4.,Discard,3 Skill Points,N/A,,
+A#,Enemy,Instant,Attack,Increase attack value by 1 for every piercing token used,Hand,Eb,Enemy,Instant,Attack,Increase attack value by 1 for every blunt token used,Hand,"1 Health, 2 Skill Points",N/A,,
+One for One,Enemy,1 Rnd,"Attack
+Level (X)","For next attack against you, if damage is taken, attack in response. Otherwise, heal for X",Discard,Now I'm Your Problem,Enemy,1 Rnd,"Attack
+Level (X)","For next attack against you, if damage is taken, gain 20 ft movement. otherwise, add X to next attack",Discard,"1 Health, 1 Skill Point",N/A,,
+Just a Bite,Enemy,Instant,"Attack
+Attack Reduced (X)","Reduce this attack value by X, if damage is still dealt then heal for X",Discard,Appetizer,Enemy,Instant,,Mark target,Discard,1 Skill Point,N/A,,
+Salt Circle,Enemy,1 Rnd,Level (X),All attacks are reduced by X. You may not attack with your other actions.,Hand,Boney Curse,Enemy,Instant,Attack,"If damage is dealt, target and targets within 5ft are marked",Exhaust,2 Health,N/A,,
