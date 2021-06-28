@@ -26,6 +26,7 @@ cut:
   width: 750
   height: 1050
   radius: 16
+  fill_color: '#111'
   
 # box for safe line
 
@@ -58,6 +59,7 @@ safe:
    - heightSafeArea
   radius: 8
   dash: 3 3
+  fill_color: '#fff'
 #need graphic to fill into gap between safe and cut, and beyond the cut...
   
 # adding 20 pixel buffer from safe area line for clean look
@@ -198,6 +200,7 @@ topRules:
   extends: 
    - topDuration
    - rules
+  x: 171
   y: += 100
   
 ## Bottom Ability Section
@@ -247,6 +250,7 @@ bottomRules:
   extends: 
    - bottomDuration
    - rules
+  x: 171
   y: += 90
   
   
@@ -311,7 +315,7 @@ topAfterAbilityLocation:
   extends: 
    - lineTopOfBottomAbility
    - iconsWidthHeight
-  x: += 600
+  x: += 20
   y: -= 90
   
 #after using the bottom ability of a card, icons in this location dictate where the card goes
@@ -319,7 +323,7 @@ bottomAfterAbilityLocation:
   extends: 
    - lineTopOfPassives
    - iconsWidthHeight
-  x: += 600
+  x: += 20
   y: -= 90
 
 

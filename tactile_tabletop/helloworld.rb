@@ -11,9 +11,9 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Nam
 
   ## overall card stuff
 
-  background color: 'white'
-  rect layout: 'safe'
+  background color: 'black'
   rect layout: 'cut'
+  rect layout: 'safe'
   
   ## top ability stuff
   #rect layout: 'lineRightOfBubbles'
