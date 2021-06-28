@@ -81,10 +81,9 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: 1, layout: 'layout.ym
   background color: 'black'
   rect layout: 'cut'
   rect layout: 'backOfCards'
-  svg data: GameIcons.get('glass-heart').
-                    recolor(fg: '333', bg: 'ccc').
-                    string
-
+  svg data: GameIcons.get('rolling-dices').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'diceBack'
+  svg data: GameIcons.get('card-random').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'cardBack'
+  svg data: GameIcons.get('two-coins').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'tokensBack'
   ## output file stuff
 
   save_png prefix: 'ttcc_BACK'

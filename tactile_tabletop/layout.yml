@@ -395,4 +395,22 @@ backOfCards:
   extends: safe
   fill_color: :raw_umber
 
+diceBack:
+  x: 430
+  y: 420
+  width: 250
+  height: 250
+  angle: 2
 
+cardBack:
+  x: 550
+  y: 290
+  width: 250
+  height: 250
+  angle: 120
+  
+tokensBack:
+  x: 270
+  y: 500
+  width: 250
+  height: 250
