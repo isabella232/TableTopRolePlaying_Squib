@@ -68,8 +68,25 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Nam
   text str: "Requirements", layout: 'requirementsTitle'
   text str: data['Requirements'], layout: 'requirementsBody'
 
-  ## output file stuff stuff
+  ## output file stuff
 
   save_png prefix: 'ttcc_'
+  #save_pdf trim: 37.5
+end
+
+Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: 1, layout: 'layout.yml')  do
+
+  ## overall card stuff
+
+  background color: 'black'
+  rect layout: 'cut'
+  rect layout: 'backOfCards'
+  svg data: GameIcons.get('glass-heart').
+                    recolor(fg: '333', bg: 'ccc').
+                    string
+
+  ## output file stuff
+
+  save_png prefix: 'ttcc_BACK'
   #save_pdf trim: 37.5
 end

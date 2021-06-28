@@ -58,7 +58,7 @@ safe:
    - widthSafeArea
    - heightSafeArea
   radius: 8
-  dash: 3 3
+  #dash: 3 3
   fill_color: '#fff'
 
 topAbilityColorBox:
@@ -363,6 +363,7 @@ requirementsBody:
 
 ## locations of graphics
 
+
 # icons have specific locations, this section defines what those are
 
 iconsWidthHeight:
@@ -387,8 +388,11 @@ bottomAfterAbilityLocation:
   y: -= 90
 
 
+## back of card
 
-  
 
+backOfCards:
+  extends: safe
+  fill_color: :raw_umber
 
 
