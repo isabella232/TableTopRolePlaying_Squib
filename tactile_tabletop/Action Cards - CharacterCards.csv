@@ -49,6 +49,8 @@ Summon the Many,Area,Day,"Influence (X)
 Level(Y)",Summon X beings with 1 health. Their defense die is a 1d4. Their Attack Value is Y. Their movement is equal to yours,Exhaust,Summon the Single,Area,Day,"Influence (X)
 Level(Y)",Summon a being with X health. Its Attack/Defense Value is 1d4 + Y. Its movement is equal to yours,Exhaust,1 Skill Point,N/A,,
 Painful Reflection,Self,Instant,Level (X),"Lose X health points, return X cards from discard",Discard,Re-Strategize,Self,Instant,,"Discard a card, exchange a card from discard with a card from your deck, which goes into discard",Exhaust,"1 Health, 1 Skill Point",N/A,,
+Order Up!,Enemy,Instant,"Attack
+Level(X)","If damage is dealt, target's next defense roll is reduced by X",Discard,You want a side?,Self,Instant,Influence (X),"If X%2, heal X. If X%3, recover discarded card. else, next attack value increases by 1",Discard,"2 Health, 1 Skill Points",N/A,,
 Cost of Living,Self,Instant,Cards discarded (X),"Discard X cards, heal for X",Exhaust,Cycle Thoughts,Self,Instant,Cards discarded (X),"Discard X card, return X cards from discard",Discard,2 Skill Points,N/A,,
 Quick Strike,Enemy,Instant,Attack,Discard a card,Hand,Basic Strike,Enemy,Instant,Attack,Attack target,Discard,"1 Health, 3 Skill Points",N/A,,
 Meal of the Marked,Enemy,Instant,"Attack
