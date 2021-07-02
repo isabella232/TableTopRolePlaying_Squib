@@ -201,7 +201,7 @@ topTarget:
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
   
 topDurationBubble:
   extends: topTargetBubble
@@ -212,7 +212,7 @@ topDuration:
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 # abilities
 
@@ -225,18 +225,18 @@ title:
   height: 50
   align: center
   font_size: 10
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 variables:
   font_size: 7.5
   height: 110
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
   
 rules:
   height: 240
   font_size: 7.5
   width: 550
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
   
 topTitle:
   extends: 
@@ -275,7 +275,7 @@ bottomTarget:
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
   
 bottomDurationBubble:
   extends: bottomTargetBubble
@@ -286,7 +286,7 @@ bottomDuration:
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 # Abilities
 
@@ -327,7 +327,7 @@ passivesTitle:
   height: 35
   align: left
   font_size: 7.5
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 #often `# health`, `# stats`, or both
 passivesBody:
@@ -349,7 +349,7 @@ requirementsTitle:
   height: 35
   align: left
   font_size: 7.5
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 #depends on the card, usually N/A, otherwise Stat #
 requirementsBody:
