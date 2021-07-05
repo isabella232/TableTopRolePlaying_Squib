@@ -65,8 +65,8 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :beer
-  stroke_color: :beer
+  fill_color: :metallic_orange
+  stroke_color: :metallic_orange
   height: 452
   radius: 8
   
@@ -259,12 +259,14 @@ topTitle:
    - abilityHighText
    - title
    - fromTopSafeToMargin
+  color: :white
   
 topVariables:
   extends:
    - topTitle
    - variables
   y: += 60
+  color: :white
   
 topRules:
   extends: 
@@ -272,6 +274,7 @@ topRules:
    - rules
   x: 171
   y: += 100
+  color: :white
   
 ## Bottom Ability Section
 
