@@ -65,3 +65,10 @@ Level (X)",If the targetted enemy attacks you before your next turrn then add X 
 Fly Swatter,Enemy,Instant,Attack,"If your attack kills the targetted enemy, gain another attack. Repeat this until you attack an enemy and they survive.",Exhaust,Bee Sting,Enemy,Instant,"Attack
 Level (X)",If your attack deals damage to target enemy then add X to your next attack if it is agaisnt that enemy,Discard,1 Health,N/A,,
 Dissassociate,Enemy,1 Rnd,Attack,"If your attack deals damage to Target Enemy, then that Target Enemys next Influence Roll will use a reduced die down to a minimum of a 1d4",Hand,Unsettled,Enemy,1 Rnd,Influence,If your Influence Value is greater than Target Enemys Influence Value then their next Attack or Defense roll will use reduced die/dice with a minimum od a d4.,Discard,3 Skill Points,N/A,,
+A#,Enemy,Instant,Attack,Increase attack value by 1 for every piercing token used,Hand,Eb,Enemy,Instant,Attack,Increase attack value by 1 for every blunt token used,Hand,"1 Health, 2 Skill Points",N/A,,
+One for One,Enemy,1 Rnd,"Attack
+Level (X)","For next attack against you, if damage is taken, attack in response. Otherwise, heal for X",Discard,Now I'm Your Problem,Enemy,1 Rnd,"Attack
+Level (X)","For next attack against you, if damage is taken, gain 20 ft movement. otherwise, add X to next attack",Discard,"1 Health, 1 Skill Point",N/A,,
+Just a Bite,Enemy,Instant,"Attack
+Attack Reduced (X)","Reduce this attack value by X, if damage is still dealt then heal for X",Discard,Appetizer,Enemy,Instant,,Mark target,Discard,1 Skill Point,N/A,,
+Salt Circle,Enemy,1 Rnd,Level (X),All attacks are reduced by X. You may not attack with your other actions.,Hand,Boney Curse,Enemy,Instant,Attack,"If damage is dealt, target and targets within 5ft are marked",Exhaust,2 Health,N/A,,

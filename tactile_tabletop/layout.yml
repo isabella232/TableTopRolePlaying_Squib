@@ -65,8 +65,8 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :beer
-  stroke_color: :beer
+  fill_color: :metallic_orange
+  stroke_color: :metallic_orange
   height: 452
   radius: 8
   
@@ -195,24 +195,40 @@ topTargetBubble:
   extends: 
    - fromTopLeftSafeToMargin
    - bubble
+   
+icon:
+  extends: iconsWidthHeight
+  x: 100
+
+topTargetIcon:
+  extends: 
+   - topTargetBubble
+   - icon
+  y: -= 15
 
 topTarget:
   extends: topTargetBubble
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
   
 topDurationBubble:
   extends: topTargetBubble
   y: += 70
+  
+topDurationIcon:
+  extends: 
+   - topDurationBubble
+   - icon
+  y: -= 15
 
 topDuration:
   extends: topDurationBubble
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 # abilities
 
@@ -225,30 +241,32 @@ title:
   height: 50
   align: center
   font_size: 10
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 variables:
   font_size: 7.5
   height: 110
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
   
 rules:
   height: 240
   font_size: 7.5
   width: 550
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
   
 topTitle:
   extends: 
    - abilityHighText
    - title
    - fromTopSafeToMargin
+  color: :white
   
 topVariables:
   extends:
    - topTitle
    - variables
   y: += 60
+  color: :white
   
 topRules:
   extends: 
@@ -256,6 +274,7 @@ topRules:
    - rules
   x: 171
   y: += 100
+  color: :white
   
 ## Bottom Ability Section
 
@@ -275,18 +294,30 @@ bottomTarget:
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
+  
+bottomTargetIcon:
+  extends: 
+   - bottomTargetBubble
+   - icon
+  y: -= 15
   
 bottomDurationBubble:
   extends: bottomTargetBubble
   y: += 70
-
+  
 bottomDuration:
   extends: bottomDurationBubble
   y: += 10
   align: center
   font_size: 6
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
+
+bottomDurationIcon:
+  extends: 
+   - bottomDurationBubble
+   - icon
+  y: -= 15
 
 # Abilities
 
@@ -327,7 +358,7 @@ passivesTitle:
   height: 35
   align: left
   font_size: 7.5
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 #often `# health`, `# stats`, or both
 passivesBody:
@@ -349,7 +380,7 @@ requirementsTitle:
   height: 35
   align: left
   font_size: 7.5
-  font: 'Arial bold italic'
+  font: 'Benne Regular, arial'
 
 #depends on the card, usually N/A, otherwise Stat #
 requirementsBody:

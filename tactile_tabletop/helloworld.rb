@@ -25,8 +25,11 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Nam
   #rect layout: 'lineRightOfBubbles'
   rect layout: 'topTargetBubble'
   text str: data['Top Ability Target'], layout: 'topTarget'
+  svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topTargetIcon'
+  
   rect layout: 'topDurationBubble'
   text str: data['Top Ability Duration'], layout: 'topDuration'
+  svg data: GameIcons.get('stopwatch').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topDurationIcon'
 
   
   #rect layout: 'topTitle'
@@ -49,8 +52,11 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Nam
   #rect layout: 'bottomVariables'
   text str: data['Bottom Ability Name'], layout: 'bottomTitle'
   text str: data['Bottom Ability Die Roll/Scaler'], layout: 'bottomVariables'
+  svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomTargetIcon'
+  
   text str: data['Bottom Ability Rules'], layout: 'bottomRules'
   svg file: data['Bottom Ability Following Card Action'].map {|t| "to_#{t.downcase}.svg" }, layout: 'bottomAfterAbilityLocation'
+  svg data: GameIcons.get('stopwatch').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomDurationIcon'
 
   ## passives stuff
   
