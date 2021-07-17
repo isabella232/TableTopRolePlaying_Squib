@@ -3,12 +3,12 @@ Long Shot Weapon,D4,d0,D4,45,2-hands,"add defense die to attacks if attacking at
 long range = between 45 and 45+(5*level)"
 Short Shot Weapon,D4,D4,D4,40,2-hands,"attack value odd = +1 to attack value
 attack value even = +1 next defence value"
-Great Castor,D6,d0,D4,30,2-hands,`+2 damage whenever type token used
+Great Castor,D6,d0,D4,30,2-hands,Add 2 damage whenever type token used
 Great Weapon,D6,D4,D6,5,2-hands,damage exceeding a slain opponents remaining health are added to next attack
 Reach Weapon,D6,D4,D6,10,2-hands,"Can be thrown:
 Range = 5 * level
 Damage += level"
 Hand Castor,D4,d0,D4,15,1-hand,"On dealing damage, return a used type token"
-Hand Weapon,D4,D4,D4,Close,1-hand,`+1 damage for consecutive attacks on same opponent
+Hand Weapon,D4,D4,D4,Close,1-hand,Add 1 damage for consecutive attacks on same opponent
 Short Weapon,D6,d0,D6,5,1-hand,"if roll minimum on attack die, can reroll once (per attack)"
 Blocking Weapon,D4,d0,D8,5,1-hand,"if you successfully defend an attack, add +1 to next attack value"
