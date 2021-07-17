@@ -59,7 +59,7 @@ safe:
    - heightSafeArea
   radius: 8
   #dash: 3 3
-  fill_color: :burlywood
+  fill_color: :sandy_tan
 
 # adding 20 pixel buffer from safe area line for clean look
 
@@ -84,17 +84,17 @@ WeaponTitle:
    - fromTopLeftSafeToMargin
    - widthSafeArea
   align: center
-  font_size: 10
+  font_size: 14
   font: 'Benne Regular, arial, italic'
 
 AttackTitle:
   extends: WeaponTitle
-  y: += 75
+  y: += 95
   x: += 20
   align: left
-  font_size: 7.5
+  font_size: 10
   font: 'Benne Regular, arial'
-  width: 160
+  width: 200
   height: 75
 
 iconsWidthHeight:
@@ -106,7 +106,7 @@ AttackDie1:
    - AttackTitle
    - iconsWidthHeight
   x: += 160
-  y: -= 25
+  y: -= 5
   
 AttackDie2:
   extends: AttackDie1
@@ -114,46 +114,49 @@ AttackDie2:
   
 DefenseTitle:
   extends: AttackTitle
-  x: += 355
-  width: 190
+  x: += 345
+  width: 230
   
 DefenseDie:
   extends: 
    - DefenseTitle
    - iconsWidthHeight
   x: += 200
-  y: -= 25
+  y: -= 5
   
 RangeTitle:
   extends: AttackTitle
-  y: += 75
-  x: += 15
-  width: 110
+  y: += 125
+  width: 150
   
 RangeValue:
   extends: RangeTitle
-  x: += 120
+  x: += 150
   width: 110
   
 RequirementsTitle:
   extends: DefenseTitle
-  y: += 75
-  x: -= 25
-  width: 210
+  y: += 125
+  x: -= 110
+  width: 240
 
-RequirementsValue:
+RequirementsValue1:
   extends: 
    - RequirementsTitle
    - iconsWidthHeight
-  x: += 220
-  y: -= 25
+  x: += 200
+  y: -= 5
+
+RequirementsValue2:
+  extends: RequirementsValue1
+  x: += 75
 
 NotesTitle:
   extends: 
    - RangeTitle
    - heightSafeArea
    - widthSafeArea
-  y: += 75
+  y: += 100
   x: -= 20
   align: center
   width: -= 70
@@ -161,7 +164,7 @@ NotesTitle:
   
 NotesValue:
   extends: NotesTitle
-  y: += 75
+  y: += 100
   
 ## back of card
 
