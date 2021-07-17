@@ -1,74 +1,100 @@
 Top Ability Name,Top Ability Target,Top Ability Duration,Top Ability Die Roll/Scaler,Top Ability Rules,Top Ability Following Card Action,Bottom Ability Name,Bottom Ability Target,Bottom Ability Duration,Bottom Ability Die Roll/Scaler,Bottom Ability Rules,Bottom Ability Following Card Action,Passives,Requirements,,General Notes
-Nurture Nature,Plant,Instant,Level (X) + 1,Increase/decrease size of plant by X,Discard,Earthen Sculpture,Ground,Instant,"Influence (X)
-Level (Y)","Create 1 foot thick wall, X+Y tall and wide, X feet away",Exhaust,1 Skill Point,N/A,,Attack die are responded to with Defence Die
-Revive,Ally,Instant,Level (X),"Target is revived from downed state, their health is = X",Exhaust,Mend The Masses,Ally,Instant,"Influence (X)
-Level (Y)","X are targeted, healed by Y amount",Discard,1 Skill Point,N/A,,Influence die are responded to with Influence Die
-Thoughtful Strike,Enemy,Instant,Attack,Return card from discard after attack,Discard,Recollection of Events,Self,Instant,,Return 3 cards from discard,Exhaust,"1 Health, 1 Skill Point",N/A,,All targets must be within range or whatever your weapon is (within Close range if no weapon is present)
-Inspection,Enemy,Instant,,Know an enemies weaknesses or resistances,Discard,Pinpoint Punishment,Enemy,Instant,"Attack 
-Level (X)",Add X to attack value,Exhaust,"1 Health, 1 Skill Point",N/A,,
-Flip,Enemy,Instant,"Attack
-Level (X)",Topple if damage is dealt,Discard,Out,Enemy,1 Rnd,Attack ,Respond to every attack with an attack,Exhaust,2 Skill Points,N/A,,
+Nurture Nature,Plant,Recast,X = Level * 5,Summon a plant that can be up to X feet in height and width. It lasts until you cast Nuture Nature again,Discard,Earthen Sculpture,Ground,Day,"X = Influence
+Y = Level","Create 1 foot thick wall, X+Y tall and wide, X feet away",Exhaust,1 Skill Point,N/A,,Attack die are responded to with Defence Die
+Revive,Ally,Instant,X = Level,"Target is revived from downed state, their health is = X",Exhaust,Mend The Masses,Ally,Instant,"X = Influence
+Y = Level","X are targeted, healed by Y amount",Discard,1 Skill Point,N/A,,Influence die are responded to with Influence Die
+Thoughtful Strike,Enemy,Instant,Attack,Return card from discard after attack,Discard,Recollection of Events,Self,Instant,,Return 3 cards from discard,Exhaust,1 Skill Point,N/A,,All targets must be within range or whatever your weapon is (within Close range if no weapon is present)
+Inspection,Enemy,Instant,,Learn Target resistance or weakness,Discard,Pinpoint Punishment,Enemy,Instant,"Attack 
+X = Level",Add X to attack value,Discard,1 Health,N/A,,
+Flip,Enemy,Instant,Attack,Topple if damage is dealt,Discard,Out,Enemies,1 Rnd,Attack ,"For each attack made against you, immediately after attack that enemy",Exhaust,1 Health,N/A,,
 Mockery,Enemy,1 Rnd,"Influence
-Level (X)","On success, targets next roll of any kind is reduced by X",Hand,Encourage,Ally,1 Rnd,Influence (X),Target adds X to next attack or defense value,Hand,2 Skill Points,N/A,,
-Fated Fervor,Enemy,Instant,"Attack
-Level (X)","For every attack that deals damage, you may lose X health and attack again",Exhaust,Retribution Slap,Enemy,Instant,"Attack 
-Previous round Damage (X)",Add X to attack value,Discard,1 Health,N/A,,
+X = Level","On success, targets next roll of any kind is reduced by X",Hand,Encourage,Ally,1 Rnd,X = Influence,Target adds X to next attack or defense value,Hand,1 Skill Point,N/A,,
 Takedown,Enemy,Instant,"Attack
-Influence (X)","If marked, add influence to attack value, then unmark target",Discard,Setup,Enemy,Instant,Attack ,Mark target if damage is dealt,Discard,3 Skill Points,N/A,,
-Transmorph,Self,X Rnds,"Influence (X)
-Level (Y)","Transform into similar-sized creature. Add X to defence values, attack values, or health. After duration, lose Y in Health Points",Discard,Transmute,Self,X Rnds,"Influence (X)
-Level (Y)","Summon: 
-1) plant [all die=your influence die, range 5ft, health=X, no movement]
-2) creature [attack die=your attack die, defense=Y, range 5ft, health=Y, movement=your movement]",Exhaust,1 Health,N/A,,
+X = Influence * 3","If marked, add X to attack value, then unmark target",Discard,Setup,Enemy,Instant,Attack ,Mark target if damage is dealt,Hand,1 Skill Point,N/A,,
+Transmorph,Self,X Rnds,"X = Influence
+Y = Level","Transform into similar-sized creature. Add X to defence values or attack values. After duration, lose Y in Health Points",Discard,Transmute,Self,X Rnds,"X = Influence
+Y = Level","Summon either: 
+A plant [all die=your influence die, range 5ft, health=X, no movement]
+A creature [attack die=your attack die, defense=Y, range 5ft, health=Y, movement=your movement]",Exhaust,1 Skill Point,N/A,,
 Pay to Punish,Enemy,Instant,"Attack
-Level (X)","Lose X health points, attack target X times",Discard,Pay to Protect,Self,1 Rnd,"Defense
-Level (X)",Lose X health points. Increase all defense values by X,Discard,1 Health,N/A,,
-Aid,Ally,Instant,Influence (X),Heal target by X,Exhaust,Replenish,Ally,Instant,,Target returns 1 card from discard,Hand,"1 Health, 2 Skill Points",N/A,,
-Lunging Strike,Enemy,Instant,Attack,"Attack, increasing range by 5 feet and movement by 15 feet",Discard,Double Strike,Enemy,Instant,Attack ,"Attack target twice, lose 15 feet of movement",Discard,1 Health,N/A,,
-Bolster,Self,1 Rnd,"Defense
-Level (X)",Add X to next defense value,Discard,Baited Bash,Self,1 Rnd,Defense,"If next defense value is greater than opposing attack value, attacker takes difference in damage",Discard,"1 Health, 1 Skill Point",N/A,,
-Bread,Self,Instant,Influence (X),"Choose 2 of the following: 1) add 25 movement, 2) return card from discard, 3) add X to next influence roll",Discard,Butter,Enemy,Instant,"Attack
-Level (X)","Choose 1 of the following: 1) add X to next Attack, 2) add X to next defense, 3) attack target",Discard,"1 Health, 1 Skill Point",N/A,,
-Smoke Screen,Area,X Rnds,Influence (Y),"At a range of X*Y  feet, create a 25 ft diameter smoke screen. Applies No Sight to any creature within",Exhaust,Break Sight,Enemy,1 Rnd,Influence,"On success, target cannot target you with an action on their turn",Discard,2 Skill Points,N/A,,
-Convince,Enemy,Instant,Influence,"On success, target is forced to perform 1 specified non-self-harming act on their next turn",Exhaust,Foresight,Enemy,Instant,Influence,"On success, discard a card and gain knowledge of next actions",Discard,1 Skill Point,N/A,,
-Imbued Strike,Enemy,Instant,"Attack
-Type token amount (X)",Add X to attack value,Exhaust,Conservative Cost,Enemy,Instant,"Attack
-Level (X)
-Influence (Y)","If Y is less than X, you may return a used token to unused",Discard,2 Skill Points,N/A,,
-Pinned,Enemy,1 Rnd,Attack,"If marked, target movement is reduced to 0, then unmark target",Discard,Murder Markings,Enemies,Instant,Influence (X),"Attack X targets, damaged targes are marked",Exhaust,1 Skill Point,N/A,,
-Throw Projectiles,Enemy,Instant,"Influence
-Level (X)","Use type token. Attack target within 30 ft. X times, using Influence die instead of attack die",Exhaust,Solid Throw,Enemy,Instant,"Influence (X), Attack",Type token must be used. add X to attack value,Discard,1 Skill Point,N/A,,
-Demand Resilience,Ally,1 Rnd,Influence,Target adds your Influence Die to all their Attack/Defense values,Exhaust,Demand Weakness,Enemy,X Rnds,Influence (X),"Choose a type. On success, then target is weak to that type",Exhaust,1 Skill Point,N/A,,
+X = Level","Attack target up to X times, lose X health per attack",Exhaust,Pay to Protect,Self,1 Rnd,X = Level,Lose X health points. Increase all defense values by X,Discard,1 Health,N/A,,
+Aid,Ally,Instant,X = Influence,Heal target by X,Exhaust,Replenish,Ally,Instant,,Target returns 1 card from discard,Hand,1 Skill Point,N/A,,
+Lunging Strike,Enemy,Instant,Attack,Increase range by 5 feet and movement by 15 feet,Discard,Double Strike,Enemy,Instant,Attack ,"Attack target twice, lose 15 feet of movement",Discard,1 Health,N/A,,
+Bolster,Self,1 Rnd,X = Level,Add X to next defense value,Discard,Baited Bash,Self,1 Rnd,Defense,"If next defense value is greater than opposing attack value, attacker takes difference in damage",Discard,1 Health,N/A,,
+Bread,Self,Instant,X = Influence,Either add 25 movement or return a target card from discard. Add X to the next influence roll,Discard,Butter,Enemy,1 Rnd,"Attack
+X = Level",Either add X to next Attack Value or add X to your next Defense Value. ,Discard,1 Health,N/A,,
+Smoke Screen,Area,X Rnds,X = Level,"At a range of X*5 feet, create a 15 ft diameter smoke screen. Applies No Sight to any creature within",Exhaust,Break Sight,Enemy,1 Rnd,Influence,"On success, target cannot target you with an action on their turn",Hand,1 Skill Point,N/A,,
+Convince,Enemy,Instant,Influence,"On success, target is forced to perform 1 specified non-self-harming action on their next turn",Exhaust,Foresight,Enemy,Instant,Influence,"On success, discard a card and gain knowledge of enemies actions",Exhaust,1 Skill Point,N/A,,
+Imbued Strike,Enemy,Instant,Attack,"Use Type token. If damage is dealt, target is now weak to that type",Exhaust,Conservative Cost,Enemy,Instant,"Attack
+X = Damage Dealt",Return X used tokens,Exhaust,1 Health,N/A,,
+Pinned,Enemy,1 Rnd,Attack,"If marked, target movement is reduced to 0, then unmark target",Discard,Murder Markings,Enemies,Instant,X = Influence,"Attack up to X targets, damaged targes are marked",Exhaust,1 Skill Point,N/A,,
+Throw Projectiles,Enemy,Instant,"Attack
+X = Influence * 5",If type token is used then add X to your range.,Discard,Heavy Hit,Enemy,Instant,"Attack
+X = Influence","If type token is used, add X to attack",Discard,1 Skill Point,N/A,,
+Demand Resilience,Ally,1 Rnd,Influence,Target adds your Influence Die to all their Defense Values,Exhaust,Demand Weakness,Enemy,X Rnds,X = Influence,"Choose a type. On success, then target is weak to that type",Exhaust,1 Skill Point,N/A,,
 Carry Over,Enemy,1 Rnd,"Attack
-Attack Reduced (X)
-Level (Y)","Reduce this attack value by X, X cannot exceed Y, you may add X to your next attack value",Discard,Wager,Enemy,Instant,"Attack
-Attack Reduced (X)","Reduce this attack value by X. If damage is still dealt, deal X twice in damage",Discard,"1 Health, 1 Skill Point",N/A,,
-Truth Seeker,Enemy,Instant,Cards exhausted (X),Return X cards from discard and perform X of these abilities: 1: Learn Target Enemies abilities 2: Learn Target Enemies Attack/Defense/Influence Die 3: Learn Target Enemies gear and health,Discard,Pause Thoughts,Enemy,1 Rnd,Influence,"On success, exhaust a card, and target can only play one action on their next turn",Discard,2 Skill Points,N/A,,
-Appear Aggressive,Enemy,1 Rnd,Influence,"On success, discard a card, and target cannot attack you",Discard,Appear Meek,Enemy,Instant,Influence,"On success, discard a card, and target must attack you with at least one action. Must be within their range.",Discard,"1 Health, 1 Skill Point",N/A,,
-Summon the Many,Area,Day,"Influence (X)
-Level(Y)",Summon X beings with 1 health. Their defense die is a 1d4. Their Attack Value is Y. Their movement is equal to yours,Exhaust,Summon the Single,Area,Day,"Influence (X)
-Level(Y)",Summon a being with X health. Its Attack/Defense Value is 1d4 + Y. Its movement is equal to yours,Exhaust,1 Skill Point,N/A,,
-Painful Reflection,Self,Instant,Level (X),"Lose X health points, return X cards from discard",Discard,Re-Strategize,Self,Instant,,"Discard a card, exchange a card from discard with a card from your deck, which goes into discard",Exhaust,"1 Health, 1 Skill Point",N/A,,
-Order Up!,Enemy,Instant,"Attack
-Level(X)","If damage is dealt, target's next defense roll is reduced by X",Discard,You want a side?,Self,Instant,Influence (X),"If X%2, heal X. If X%3, recover discarded card. else, next attack value increases by 1",Discard,"2 Health, 1 Skill Points",N/A,,
-Cost of Living,Self,Instant,Cards discarded (X),"Discard X cards, heal for X",Exhaust,Cycle Thoughts,Self,Instant,Cards discarded (X),"Discard X card, return X cards from discard",Discard,2 Skill Points,N/A,,
-Quick Strike,Enemy,Instant,Attack,Discard a card,Hand,Basic Strike,Enemy,Instant,Attack,Attack target,Discard,"1 Health, 3 Skill Points",N/A,,
+X = Attack Reduced
+Y = Level","Reduce this attack value by X, X cannot exceed Y, you may add X to your next attack value",Discard,Wager,Enemy,Instant,"Attack
+X = Attack Reduced",Reduce this attack value by X. If damage is still dealt then deal X twice to damage to that target,Discard,1 Health,N/A,,
+Appear Aggressive,Enemy,1 Rnd,Influence,"On success, discard a card, and target cannot attack you",Discard,Appear Meek,Enemy,Instant,Influence,"On success, discard a card, and target must attack you with at least one action if you are in their range.",Discard,1 Skill Point,N/A,,
+Summon the Many,Area,Day,"X = Influence
+Y = Level",Summon X beings with 1 health. Their defense die is a 1d4. Their Attack Value is Y. Their movement is equal to yours,Exhaust,Summon the Single,Area,Day,"X = Influence
+Y = Level",Summon a being with X health. Its Attack/Defense Value is 1d4 + Y. Its movement is equal to yours,Exhaust,1 Skill Point,N/A,,
+Painful Reflection,Self,Instant,"X = Level
+Y = Health Lost","Lose up to X health points, return Y cards from discard",Discard,Re-Strategize,Self,Instant,,"Discard a card, exchange a card from discard with a card from your deck, which goes into discard",Exhaust,1 Skill Point,N/A,,
+Appetizer,Enemy,Instant,"Attack
+X = Level","If damage is dealt, target's next defense roll is reduced by X",Discard,Order Up,Self,Instant,X = Influence,"If X is even, recover a used token. If X is odd, recover a card from discard",Discard,1 Skill Point,N/A,,
+Cost of Living,Self,Instant,"X = Cards discarded
+Y = Level","Discard X cards, heal for X+Y",Exhaust,Cycle Thoughts,Self,Instant,X = Cards discarded,"Discard X card, return X cards from discard",Discard,1 Skill Point,N/A,,
+Quick Strike,Enemy,Instant,Attack,Discard a card,Hand,Basic Strike,Enemy,Instant,Attack,Attack target,Discard,1 Health,N/A,,
 Meal of the Marked,Enemy,Instant,"Attack
-Influence (X)","If target is marked, add X to attack value. Heal for however much damage was dealt, if any, then remove mark",Exhaust,Marked Mauling,Enemy,Instant,Attack,"If target is marked, topple target, then remove mark",Discard,1 Skill Point,N/A,,
+X = Influence","If target is marked, add X to attack value. Heal for however much damage was dealt, if any, then remove mark",Exhaust,Marked Mauling,Enemy,Instant,Attack,"If target is marked, topple target, then remove mark",Discard,1 Skill Point,N/A,,
 Weighted Slam,Enemy,Instant,"Attack
-Cards discarded (X)","Add X to attack value. On damage being dealt, enemy is moved X*5 feet away from you",Discard,Blasting Box,Area,Instant,"Attack (X)
-Cards discarded (Y)",Type token must be used. Discard Y cards. all targets in 5*Y ft area roll Defense against X.,Exhaust,1 Health,N/A,,
-All In,Enemy,Instant,"Attack
-Cards discarded (X)",Target up to X enemies. Attack each Target Enemy X times. Add X damage to each attack value,Exhaust,I'm In,Self,Instant,,Add 25 movement to your turn and return a target card from discard to your hand,Discard,"1 Health, 1 Skill Point",N/A,,
-Dodge,Self,1 Rnd,Level (X),"Until your next turn, if an attack is made against you roll a die. If even, take no damage. If odd, add X to your Defense Value.",Discard,Expect,Enemy,1 Rnd,"Attack
-Level (X)",If the targetted enemy attacks you before your next turrn then add X to your Defense Value,Discard,1 Skill Point,N/A,,
-Fly Swatter,Enemy,Instant,Attack,"If your attack kills the targetted enemy, gain another attack. Repeat this until you attack an enemy and they survive.",Exhaust,Bee Sting,Enemy,Instant,"Attack
-Level (X)",If your attack deals damage to target enemy then add X to your next attack if it is agaisnt that enemy,Discard,1 Health,N/A,,
-Dissassociate,Enemy,1 Rnd,Attack,"If your attack deals damage to Target Enemy, then that Target Enemys next Influence Roll will use a reduced die down to a minimum of a 1d4",Hand,Unsettled,Enemy,1 Rnd,Influence,If your Influence Value is greater than Target Enemys Influence Value then their next Attack or Defense roll will use reduced die/dice with a minimum od a d4.,Discard,3 Skill Points,N/A,,
-A#,Enemy,Instant,Attack,Increase attack value by 1 for every piercing token used,Hand,Eb,Enemy,Instant,Attack,Increase attack value by 1 for every blunt token used,Hand,"1 Health, 2 Skill Points",N/A,,
-One for One,Enemy,1 Rnd,"Attack
-Level (X)","For next attack against you, if damage is taken, attack in response. Otherwise, heal for X",Discard,Now I'm Your Problem,Enemy,1 Rnd,"Attack
-Level (X)","For next attack against you, if damage is taken, gain 20 ft movement. otherwise, add X to next attack",Discard,"1 Health, 1 Skill Point",N/A,,
+X = Cards discarded","Add X to attack value. On damage being dealt, enemy is moved X*5 feet away from you",Discard,Blasting Box,Area,Instant,"Attack
+X = Cards discarded",Use Type Token. All targets in 5*X ft area roll Defense against the attack,Exhaust,1 Health,N/A,,
+Dodge,Self,1 Rnd,X = Level,"Until your next turn, if an attack is made against you roll a die. If even, take no damage. If odd, add X to your Defense Value.",Discard,Expect,Enemy,1 Rnd,"Attack
+X = Level",If the targetted enemy attacks you before your next turrn then add X to your Defense Value,Hand,1 Health,N/A,,
+Dissassociate,Enemy,1 Rnd,Attack,"If your attack deals damage to Target, then that Targets next Influence Roll will use a reduced die down to a minimum of a 1d4",Hand,Unsettled,Enemy,1 Rnd,Influence,On success targets next Attack or Defense die are reduced down to a minimum 1d4.,Discard,1 Skill Point,N/A,,
+One for One,Enemy,1 Rnd,Attack,"For next attack against you, if damage is taken, attack in response. Otherwise, return a target card from discard",Discard,Now I'm Your Problem,Enemy,1 Rnd,Attack,"For next attack against you, if no damage is taken, target is toppled",Discard,1 Health,N/A,,
 Just a Bite,Enemy,Instant,"Attack
-Attack Reduced (X)","Reduce this attack value by X, if damage is still dealt then heal for X",Discard,Appetizer,Enemy,Instant,,Mark target,Discard,1 Skill Point,N/A,,
-Salt Circle,Enemy,1 Rnd,Level (X),All attacks are reduced by X. You may not attack with your other actions.,Hand,Boney Curse,Enemy,Instant,Attack,"If damage is dealt, target and targets within 5ft are marked",Exhaust,2 Health,N/A,,
+X = Attack Reduced","Reduce this attack value by X, if damage is still dealt then heal for X",Discard,Nibble,Enemy,Instant,,Mark Target,Exhaust,1 Skill Point,N/A,,
+Salt Circle,Enemy,1 Rnd,Level (X),All attacks against you are reduced by X. You may not attack with your other action,Hand,Boney Curse,Enemy,Instant,Attack,"If damage is dealt, target and targets within 5ft are marked",Exhaust,1 Health,N/A,,
+Changing Fate,Any,Instant,,Force a re-roll of target's next die roll within influence range,Hand,Destiny Swap,Any,Instant,,"Choose either:
+1) target's next min roll are treated as max roll
+2) target's next max roll are treated as min roll",Hand,1 Skill Point,N/A,,
+Bad Taste,Enemy,Instant,Influence,"On success, target's next die rolls are rolled twice, and the lower value must be used",Discard,Double Dipping,Self,Instant,,Use a consumable. Its effect happens twice,Exhaust,1 Skill Point,N/A,,
+Sprint,Self,Instant,,Gain  30 ft. of movement,Hand,Jump Pad,Area,1 Rnd,X = 5 * Level,"Select a direction. Select a space within 5ft of you. While active, anyone on that space may jump X ft in the selected direction",Discard,1 Skill Point,N/A,,
+Reposition,Enemy,Instant,Attack,"After your attack, gain 5 ft. of movement. This movement doesn't proc Overstep",Discard,Coward's Ultimatum,Enemies,X Rnds,X = level,Gain 1 Overstep Attack per round,Exhaust,1 Health,N/A,,
+Nature's Insight,Plant/Animal,Instant,"X = Influence
+Y = level","Target can be communed with for these effects depending on X:
+1-3: cause Distraction on enemy
+4-6: target attacks adjacent enemy (1d4)
+7+: target attacks adjacent enemy for Y rnds",Discard,Seasonal Planning,Self,X Rnds,X = Level,Gain +1 to influence rolls,Discard,1 Skill Point,N/A,,
+Land of Barbs,Area,Y Rnds,"X = level
+Y = Influence * 5","Square terrain of size Y (up to 30ft) is harmful: any movement into, out of, or through an area results in X damage for every 5 ft.",Exhaust,Fibrous Hold,Enemy,1 Rnd,Influence,"On success, target is rooted: unless attacked, roots around their feet prevent their movement",Discard,1 Skill Point,N/A,,
+Precision,Enemy,Instant,"Attack
+X = Level","If one of the die used for your Attack Value is less than X, you may reroll that die",Discard,Beaten Bash,Enemy,Instant,"Attack
+X = Level",Lose X life. ,Hand,1 Health,N/A,,
+Reply,Enemy,1 Rnd,Attack,"In response to the next Overstep Attack made against you, attack the aggressor",Discard,Leap and Strike,Enemy,Instant,"Attack
+X = Cards in Discard * 5",Gain X movement before or after your attack ,Hand,1 Health,N/A,,
+Composed,Enemy,Instant,Attack,If damage is dealt then return Target Card from the Discard Pile to your Hand,Discard,Repeat,Enemy,Instant,"Attack
+X = Level","You may reroll your attack roll, if you do then discard a card. This can be repeated up to X times. ",Discard,1 Skill Point,N/A,,
+Gain Confidence,Enemy,1 Rnd,"Attack
+X = Damage Dealt","After attacking target, add X to your next Defense Value",Discard,Risky Maneuver,Enemy,1 Rnd,"Attack
+X = Level",Add X to the Attack Value. Reduce your next Defense Value by X,Discard,1 Health,N/A,,
+Lockout,Enemy,1 Rnd,Attack,If damage would be dealt then instead Target cannot gain Health points,Discard,Knockout,Enemy,1 Rnd,Attack,If Attack Value is greater than or equal to double Target Defense Value then instead Target Skips their next turn and no damage is dealt,Exhaust,1 Skill Point,N/A,,
+Savage Strike,Enemy,1 Rnd,Attack,Your arms change form but remain human sized. Choose a type. The attack is dealt as the selected type.,Exhaust,Embody,Self,X Rnds,X = Level,Your flesh hardens adding X to all Defense Values,Exhaust,1 Skill Point,N/A,,Need to add to the rule book that if a card changes physical thigns about you then this could have ingame implications 
+Battlefield Assesment,Area,Instant,X = Enemies in Area,Select an area that is 25 feet by 25 feet. Discard X cards. Learn all enemies Resistances and Weaknesses in that area,Exhaust,Adjust Threat,Enemy,X Rnd,"Influence
+X = Level","On success, your attacks against that Target ignore resistances",Exhaust,1 Skill Point,N/A,,
+Mothers Shell,Self,X Rnds,"X = Level
+Y = X * 5",Conform the space around you to encapsulate you in a shell. While in the shell you cannot see out. The shell has Y health. ,Exhaust,Cement In ,Enemy,X Rnds,"Influence
+X = Level","On success, the enemy is encapsulated in a shell. The shell has X life. While the Target is in the shell they cannot see out. ",Exhaust,1 Skill Point,N/A,,
+Safety in Numbers,Self,X Rnds,X = Level,Create an aura on you that is 15 feet in diameter. All allies in this add X to their Defense Value,Exhaust,Approach with Caution,Self,X Rnds,X = Level,Create an aura on you that is 15 feet in diameter. Any enemy that walks into the aura takes X damage.,Exhaust,1 Skill Point,N/A,,
+Friend,Self,X Rnds,"X = Level
+Y = Influence + X",Summon a similar sized object/creature within 5 feet of you. It has no movement. Its Health is Y and it heals for X per turn. It has no attack/defense/influence die. If you take damage instead the summon takes the damage. ,Exhaust,Blood Friend,Enemy,X Rnds,X = Level,Summon a human sized object/creature within 5 feet of Target. The Summon has health and die equal to yours. While this Summon is active you cannot roll for Attack values.,Exhaust,1 Skill Point,N/A,,
+Keen Eye,Self,X Rnds,X = Level,"If an enemy moves in or out of your range, then respond with an attack",Exhaust,Threaten,Enemy,X Rnds,"X = Level
+Y = Influence",If Target moves in or out of range then attack Target and add Y to the Attack Value,Discard,1 Health,N/A,,
+Pocket Sand,Enemy,1 Rnd,Influence,"On success, target cannot make any Overstep Attacks",Discard,Slippery Escape,Area,X Rnds,X = Level,Pick an adjacent 5 ft. square. Movement through this space consumes an additional 10 ft. of movement,Discard,1 Skill Point,N/A,,
+Mistaken Step,Area,X Rnds,"X = Level
+Y = Influence",Exhaust a card. Pick an adjacent 5 ft. square. The next creature entering this area takes Y damage for X rnds,Discard,Trap,Area,X Rnds,"X = Level
+Y = Attack",Pick an adjacent 5 ft. square. The next creature entering this area must make a defense roll against Y,Discard,1 Skill Point,,,
