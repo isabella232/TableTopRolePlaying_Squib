@@ -33,7 +33,8 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
   
   text str: "Notes:", layout: 'NotesTitle'
   rect layout: 'NotesTitle'
-  #text str: data['Extra Notes'], layout: 'NotesValue'
+  text str: data['Extra Notes'], layout: 'NotesValue'
+  rect layout: 'NotesValue'
   
   # rect layout: 'topDurationBubble'
   # text str: data['Top Ability Duration'], layout: 'topDuration'

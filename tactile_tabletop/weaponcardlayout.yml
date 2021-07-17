@@ -159,7 +159,9 @@ NotesTitle:
   width: -= 70
   height: -= 350
   
-
+NotesValue:
+  extends: NotesTitle
+  y: += 75
   
 ## back of card
 
