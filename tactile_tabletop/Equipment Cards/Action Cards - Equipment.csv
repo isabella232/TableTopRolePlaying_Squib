@@ -1,0 +1,17 @@
+Equipment Name,Slot,Effect,How to Remove
+Thinking Hat,head,Add 1 intelligence stat,NA
+BiFocals,head,Add 1 perception stat,NA
+Amulet of Eating,chest,Add 1 vigor values,NA
+Magic Breastplate,chest,Add 1 defense values,NA
+Ring of Aulm,accessory 1,Add 1 spirituality,NA
+Magic Pen,accessory 2,Add 1 craftmanship,NA
+Bracer of Strength,arms,Add 1 strength,NA
+Band of Speed,arms,Add 1 attack value,NA
+Gloves of Fine Tuning,hands,Add 1 finesse,NA
+Attractive Pants,legs,Add 1 charisma,NA
+Well Made Shoes,feet,Add 5 movement each rnd,NA
+Broken Legs,legs,decrease movement by 10,Long Rest
+Broken Arms,arms,decrease attack value by 4,Long Rest
+Cursed Sword,Hands,Start each round with an attack. Target is randomly decided by a d8,Blessing
+Cursed Shoes,feet,gain 5ft. movement each turn. direction determined by d10,Blessing
+Familiar's Perch,Any,"Gain a permanent familiar of a small size. movement 40, defense 1d8, attack 1d4",NA
