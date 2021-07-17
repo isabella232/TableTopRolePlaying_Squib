@@ -7,13 +7,13 @@
   
 # box for cut line
 
-#822 - 750 = 72 ; 72 /2 = 36
+#820 - 750 = 70 ; 70 /2 = 35
 fromLeftBleedToCut:
-  x: 36
+  x: 35
   
-#1122 - 1050 = 72
+#820 - 750 = 70 ; 70 /2 = 35
 fromTopBleedToCut:
-  y: 36
+  y: 35
   
 fromTopLeftBleedToCut:
   extends:
@@ -24,21 +24,21 @@ fromTopLeftBleedToCut:
 cut:
   extends: fromTopLeftBleedToCut
   width: 750
-  height: 1050
+  height: 750
   radius: 16
   fill_color: '#111'
   
 # box for safe line
 
-#750 - 690 = 60
+#750 - 685 = 60
 fromLeftCutToSafe:
   extends: fromLeftBleedToCut
-  x: += 30
+  x: += 35
   
-#1050 - 990 = 60
+#750 - 685 = 60
 fromTopCutToSafe:
   extends: fromTopBleedToCut
-  y: += 30
+  y: += 35
 
 fromTopLeftCutToSafe:
   extends: 
@@ -46,10 +46,10 @@ fromTopLeftCutToSafe:
    - fromLeftCutToSafe
    
 widthSafeArea:
-  width: 690
+  width: 685
   
 heightSafeArea:
-  height: 990
+  height: 685
   
 # the "safe area line", everything inside of this area guaranteed to be saved
 safe:
