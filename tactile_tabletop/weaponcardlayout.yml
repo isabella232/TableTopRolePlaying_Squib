@@ -97,15 +97,32 @@ AttackTitle:
   width: 160
   height: 75
 
-AttackDie:
-  extends: AttackTitle
+iconsWidthHeight:
+  width: 75
+  height: 75
+
+AttackDie1:
+  extends: 
+   - AttackTitle
+   - iconsWidthHeight
   x: += 160
-  width: 160
+  y: -= 25
+  
+AttackDie2:
+  extends: AttackDie1
+  x: += 85
   
 DefenseTitle:
   extends: AttackTitle
-  x: += 285
+  x: += 355
   width: 190
+  
+DefenseDie:
+  extends: 
+   - DefenseTitle
+   - iconsWidthHeight
+  x: += 200
+  y: -= 25
   
 RangeTitle:
   extends: AttackTitle
@@ -113,11 +130,23 @@ RangeTitle:
   x: += 15
   width: 110
   
+RangeValue:
+  extends: RangeTitle
+  x: += 120
+  width: 110
+  
 RequirementsTitle:
   extends: DefenseTitle
   y: += 75
   x: -= 25
   width: 210
+
+RequirementsValue:
+  extends: 
+   - RequirementsTitle
+   - iconsWidthHeight
+  x: += 220
+  y: -= 25
 
 NotesTitle:
   extends: 
@@ -130,6 +159,7 @@ NotesTitle:
   width: -= 70
   height: -= 350
   
+
   
 ## back of card
 
