@@ -1,13 +1,13 @@
 require 'squib'
 require 'game_icons'
 
-data = Squib.csv file: 'Action Cards - CharacterCards.csv'
+data = Squib.csv file: 'Action Cards - Weapons.csv'
 #grabbing icons from https://game-icons.net/
 #using gem game_icons to be able to load them
 
 
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see poker-size.pdf
-Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Name'].size, layout: 'layout.yml')  do
+Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Weapon Name'].size, layout: 'layout.yml')  do
 
   ## overall card stuff
 
