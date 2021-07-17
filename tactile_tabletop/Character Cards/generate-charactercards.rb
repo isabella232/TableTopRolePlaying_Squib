@@ -1,7 +1,7 @@
 require 'squib'
 require 'game_icons'
 
-data = Squib.csv file: 'Action Cards - CharacterCards.csv'
+data = Squib.csv file: 'Tactile Tabletop Data - CharacterCards'
 #grabbing icons from https://game-icons.net/
 #using gem game_icons to be able to load them
 
