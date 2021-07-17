@@ -14,18 +14,9 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
   background color: 'black'
   rect layout: 'cut'
   rect layout: 'safe'
-  # rect layout: 'topAbilityColorBox'
-  # rect layout: 'topAbilityColorBoxBorderCover'
-  # rect layout: 'bottomAbilityColorBox'
-  # rect layout: 'passivesColorBox'
-  # rect layout: 'requirementsColorBox'
-  # rect layout: 'requirementsColorBoxBorderCover'
   
   ## top ability stuff
-  #rect layout: 'lineRightOfBubbles'
-  # rect layout: 'topTargetBubble'
-  # text str: data['Top Ability Target'], layout: 'topTarget'
-  # svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topTargetIcon'
+  text str: data['Weapon Name'], layout: 'WeaponName'
   
   # rect layout: 'topDurationBubble'
   # text str: data['Top Ability Duration'], layout: 'topDuration'
@@ -87,9 +78,7 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'weaponcard
   background color: 'black'
   rect layout: 'cut'
   rect layout: 'backOfCards'
-  svg data: GameIcons.get('rolling-dices').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'diceBack'
-  svg data: GameIcons.get('card-random').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'cardBack'
-  svg data: GameIcons.get('two-coins').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'tokensBack'
+  svg data: GameIcons.get('swords-emblem').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
   ## output file stuff
 
   save_png prefix: 'ttwc_BACK'
