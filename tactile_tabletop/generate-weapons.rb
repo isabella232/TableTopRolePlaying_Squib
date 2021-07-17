@@ -14,73 +14,73 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
   background color: 'black'
   rect layout: 'cut'
   rect layout: 'safe'
-  rect layout: 'topAbilityColorBox'
-  rect layout: 'topAbilityColorBoxBorderCover'
-  rect layout: 'bottomAbilityColorBox'
-  rect layout: 'passivesColorBox'
-  rect layout: 'requirementsColorBox'
-  rect layout: 'requirementsColorBoxBorderCover'
+  # rect layout: 'topAbilityColorBox'
+  # rect layout: 'topAbilityColorBoxBorderCover'
+  # rect layout: 'bottomAbilityColorBox'
+  # rect layout: 'passivesColorBox'
+  # rect layout: 'requirementsColorBox'
+  # rect layout: 'requirementsColorBoxBorderCover'
   
   ## top ability stuff
   #rect layout: 'lineRightOfBubbles'
-  rect layout: 'topTargetBubble'
-  text str: data['Top Ability Target'], layout: 'topTarget'
-  svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topTargetIcon'
+  # rect layout: 'topTargetBubble'
+  # text str: data['Top Ability Target'], layout: 'topTarget'
+  # svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topTargetIcon'
   
-  rect layout: 'topDurationBubble'
-  text str: data['Top Ability Duration'], layout: 'topDuration'
-  svg data: GameIcons.get('stopwatch').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topDurationIcon'
+  # rect layout: 'topDurationBubble'
+  # text str: data['Top Ability Duration'], layout: 'topDuration'
+  # svg data: GameIcons.get('stopwatch').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topDurationIcon'
 
   
-  #rect layout: 'topTitle'
-  #rect layout: 'topVariables'
-  #rect layout: 'topRules'
-  text str: data['Top Ability Name'], layout: 'topTitle'
-  text str: data['Top Ability Die Roll/Scaler'], layout: 'topVariables'
-  text str: data['Top Ability Rules'], layout: 'topRules'
-  svg file: data['Top Ability Following Card Action'].map {|t| "to_#{t.downcase}.svg" }, layout: 'topAfterAbilityLocation'
+  # #rect layout: 'topTitle'
+  # #rect layout: 'topVariables'
+  # #rect layout: 'topRules'
+  # text str: data['Top Ability Name'], layout: 'topTitle'
+  # text str: data['Top Ability Die Roll/Scaler'], layout: 'topVariables'
+  # text str: data['Top Ability Rules'], layout: 'topRules'
+  # svg file: data['Top Ability Following Card Action'].map {|t| "to_#{t.downcase}.svg" }, layout: 'topAfterAbilityLocation'
 
-  ## bottom ability stuff
+  # ## bottom ability stuff
   
-  rect layout: 'lineTopOfBottomAbility'
-  rect layout: 'bottomTargetBubble'
-  text str: data['Bottom Ability Target'], layout: 'bottomTarget'
-  rect layout: 'bottomDurationBubble'
-  text str: data['Bottom Ability Duration'], layout: 'bottomDuration'  
-  #rect layout: 'bottomTitle'
-  #rect layout: 'bottomRules'
-  #rect layout: 'bottomVariables'
-  text str: data['Bottom Ability Name'], layout: 'bottomTitle'
-  text str: data['Bottom Ability Die Roll/Scaler'], layout: 'bottomVariables'
-  svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomTargetIcon'
+  # rect layout: 'lineTopOfBottomAbility'
+  # rect layout: 'bottomTargetBubble'
+  # text str: data['Bottom Ability Target'], layout: 'bottomTarget'
+  # rect layout: 'bottomDurationBubble'
+  # text str: data['Bottom Ability Duration'], layout: 'bottomDuration'  
+  # #rect layout: 'bottomTitle'
+  # #rect layout: 'bottomRules'
+  # #rect layout: 'bottomVariables'
+  # text str: data['Bottom Ability Name'], layout: 'bottomTitle'
+  # text str: data['Bottom Ability Die Roll/Scaler'], layout: 'bottomVariables'
+  # svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomTargetIcon'
   
-  text str: data['Bottom Ability Rules'], layout: 'bottomRules'
-  svg file: data['Bottom Ability Following Card Action'].map {|t| "to_#{t.downcase}.svg" }, layout: 'bottomAfterAbilityLocation'
-  svg data: GameIcons.get('stopwatch').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomDurationIcon'
+  # text str: data['Bottom Ability Rules'], layout: 'bottomRules'
+  # svg file: data['Bottom Ability Following Card Action'].map {|t| "to_#{t.downcase}.svg" }, layout: 'bottomAfterAbilityLocation'
+  # svg data: GameIcons.get('stopwatch').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomDurationIcon'
 
-  ## passives stuff
+  # ## passives stuff
   
-  rect layout: 'lineTopOfPassives'
-  #rect layout: 'passivesTitle'
-  #rect layout: 'passivesBody'
-  text str: "Passives", layout: 'passivesTitle'
-  text str: data['Passives'], layout: 'passivesBody'
+  # rect layout: 'lineTopOfPassives'
+  # #rect layout: 'passivesTitle'
+  # #rect layout: 'passivesBody'
+  # text str: "Passives", layout: 'passivesTitle'
+  # text str: data['Passives'], layout: 'passivesBody'
   
-  ## requirements stuff
+  # ## requirements stuff
   
-  rect layout: 'lineTopOfRequirements'
-  #rect layout: 'requirementsTitle'
-  #rect layout: 'requirementsBody'
-  text str: "Requirements", layout: 'requirementsTitle'
-  text str: data['Requirements'], layout: 'requirementsBody'
+  # rect layout: 'lineTopOfRequirements'
+  # #rect layout: 'requirementsTitle'
+  # #rect layout: 'requirementsBody'
+  # text str: "Requirements", layout: 'requirementsTitle'
+  # text str: data['Requirements'], layout: 'requirementsBody'
 
-  ## output file stuff
+  # ## output file stuff
 
-  save_png prefix: 'ttcc_'
+  save_png prefix: 'ttwc_'
   #save_pdf trim: 37.5
 end
 
-Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: 1, layout: 'layout.yml')  do
+Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'weaponcardlayout.yml')  do
 
   ## overall card stuff
 
@@ -92,6 +92,6 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: 1, layout: 'layout.ym
   svg data: GameIcons.get('two-coins').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'tokensBack'
   ## output file stuff
 
-  save_png prefix: 'ttcc_BACK'
+  save_png prefix: 'ttwc_BACK'
   #save_pdf trim: 37.5
 end
