@@ -16,7 +16,23 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
   rect layout: 'safe'
   
   ## top ability stuff
-  text str: data['Weapon Name'], layout: 'WeaponName'
+  text str: data['Weapon Name'], layout: 'WeaponTitle'
+  
+  text str: "Attack Die:", layout: 'AttackTitle'
+  svg data: GameIcons.get(data['Attack Die 1']).recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'AttackDie'
+  svg data: GameIcons.get(data['Attack Die 2']).recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'AttackDie'
+
+  text str: "Defense Die:", layout: 'DefenseTitle'
+  #
+  
+  text str: "Range:", layout: 'RangeTitle'
+  #
+  
+  text str: "Requirements:", layout: 'RequirementsTitle'
+  #
+  
+  text str: "Notes:", layout: 'NotesTitle'
+  #
   
   # rect layout: 'topDurationBubble'
   # text str: data['Top Ability Duration'], layout: 'topDuration'

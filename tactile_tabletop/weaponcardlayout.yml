@@ -79,13 +79,58 @@ fromTopLeftSafeToMargin:
 ### Text Specification ###
 # Need to specify the font size, x co-ords, width, height, and alignment of all the text
 
-WeaponName:
+WeaponTitle:
   extends: 
    - fromTopLeftSafeToMargin
    - widthSafeArea
   align: center
+  font_size: 10
+  font: 'Benne Regular, arial, italic'
 
+AttackTitle:
+  extends: WeaponTitle
+  y: += 75
+  x: += 20
+  align: left
+  font_size: 7.5
+  font: 'Benne Regular, arial'
+  width: 160
+  height: 75
 
+AttackDie:
+  extends: AttackTitle
+  x: += 160
+  width: 160
+  
+DefenseTitle:
+  extends: AttackTitle
+  x: += 285
+  width: 190
+  
+RangeTitle:
+  extends: AttackTitle
+  y: += 75
+  x: += 15
+  width: 110
+  
+RequirementsTitle:
+  extends: DefenseTitle
+  y: += 75
+  x: -= 25
+  width: 210
+
+NotesTitle:
+  extends: 
+   - RangeTitle
+   - heightSafeArea
+   - widthSafeArea
+  y: += 75
+  x: -= 20
+  align: center
+  width: -= 70
+  height: -= 350
+  
+  
 ## back of card
 
 
