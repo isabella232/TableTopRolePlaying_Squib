@@ -18,18 +18,19 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
   ## top ability stuff
   text str: data['Weapon Name'], layout: 'WeaponTitle'
   
-  text str: "Attack Die:", layout: 'AttackTitle'
+  text str: "Attack:", layout: 'AttackTitle'
   svg file: data['Attack Die 1'].map {|t| "#{t.downcase}.svg" }, layout: 'AttackDie1'  
   svg file: data['Attack Die 2'].map {|t| "#{t.downcase}.svg" }, layout: 'AttackDie2'
   
-  text str: "Defense Die:", layout: 'DefenseTitle'
+  text str: "Defense:", layout: 'DefenseTitle'
   svg file: data['Defense Die'].map {|t| "#{t.downcase}.svg" }, layout: 'DefenseDie'
   
   text str: "Range:", layout: 'RangeTitle'
   text str: data['Range'], layout: 'RangeValue'
   
-  text str: "Requirements:", layout: 'RequirementsTitle'
-  svg file: data['Requirement'].map {|t| "#{t.downcase}.svg" }, layout: 'RequirementsValue'
+  text str: "Requires:", layout: 'RequirementsTitle'
+  svg file: data['Requirement1'].map {|t| "#{t.downcase}.svg" }, layout: 'RequirementsValue1'
+  svg file: data['Requirement2'].map {|t| "#{t.downcase}.svg" }, layout: 'RequirementsValue2'
   
   text str: "Notes:", layout: 'NotesTitle'
   text str: data['Extra Notes'], layout: 'NotesValue'
