@@ -17,13 +17,11 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Equipment Name']
   
   ## top ability stuff
   text str: data['Equipment Name'], layout: 'EquipmentTitle'
-  
+
   text str: "Slot:", layout: 'SlotTitle'
   text str: data['Slot'], layout: 'SlotValue'
-  
   text str: "Effect:", layout: 'EffectTitle'
   text str: data['Effect'], layout: 'EffectValue'
-  
 
   # ## output file stuff
 
@@ -31,16 +29,16 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Equipment Name']
   #save_pdf trim: 37.5
 end
 
-Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'weaponcardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'equipmentcardlayout.yml')  do
 
   ## overall card stuff
 
   background color: 'black'
   rect layout: 'cut'
   rect layout: 'backOfCards'
-  svg data: GameIcons.get('battlegear').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
+  svg data: GameIcons.get('battle-gear').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
   ## output file stuff
 
-  save_png prefix: 'ttwc_BACK'
+  save_png prefix: 'ttec_BACK'
   #save_pdf trim: 37.5
 end
