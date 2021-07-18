@@ -94,7 +94,7 @@ SlotTitle:
 
 SlotValue:
   extends: SlotTitle
-  y: += 50
+  y: += 60
   width: -= 20
 
 EffectTitle:
@@ -108,7 +108,7 @@ EffectTitle:
 EffectValue:
   extends: 
    - EffectTitle
-  y: += 100
+  y: += 60
   height: 500
   width: -= 20
   
