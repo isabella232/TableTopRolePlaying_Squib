@@ -42,14 +42,20 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Nam
   text str: data['Top Ability Name'], layout: 'topTitle'
   text str: data['Top Ability Die Roll/Scaler'], layout: 'topVariables'
   text str: data['Top Ability Rules'], layout: 'topRules'
-  rect layout: 'topRules'
   ## bottom ability stuff
   
   rect layout: 'lineTopOfBottomAbility'
   rect layout: 'bottomTargetBubble'
   text str: data['Bottom Ability Target'], layout: 'bottomTarget'
+  
   rect layout: 'bottomDurationBubble'
   text str: data['Bottom Ability Duration'], layout: 'bottomDuration'  
+
+  rect layout: 'bottomResultBubble'
+  text str: data['Bottom Ability Following Card Action'], layout: 'bottomResult'
+  svg data: GameIcons.get('arrow-dunk').recolor(fg: '888', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomResultIcon'
+
+  
   #rect layout: 'bottomTitle'
   #rect layout: 'bottomRules'
   #rect layout: 'bottomVariables'
