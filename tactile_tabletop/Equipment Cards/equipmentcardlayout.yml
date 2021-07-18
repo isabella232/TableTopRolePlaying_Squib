@@ -79,7 +79,7 @@ fromTopLeftSafeToMargin:
 ### Text Specification ###
 # Need to specify the font size, x co-ords, width, height, and alignment of all the text
 
-WeaponTitle:
+EquipmentTitle:
   extends: 
    - fromTopLeftSafeToMargin
    - widthSafeArea
