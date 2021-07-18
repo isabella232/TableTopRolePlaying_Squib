@@ -59,7 +59,7 @@ safe:
    - heightSafeArea
   radius: 8
   #dash: 3 3
-  fill_color: :sandy_tan
+  fill_color: :iceberg
 
 # adding 20 pixel buffer from safe area line for clean look
 
@@ -85,93 +85,39 @@ EquipmentTitle:
    - widthSafeArea
   align: center
   font_size: 14
-  font: 'Benne Regular, arial, italic'
-
-AttackTitle:
-  extends: WeaponTitle
-  y: += 95
-  x: += 20
-  align: left
-  font_size: 10
   font: 'Benne Regular, arial'
-  width: 200
-  height: 75
 
-iconsWidthHeight:
-  width: 75
-  height: 75
+SlotTitle:
+  extends: EquipmentTitle
+  y: += 95
+  font_size: 10
 
-AttackDie1:
+SlotValue:
+  extends: SlotTitle
+  y: += 50
+  width: -= 20
+
+EffectTitle:
   extends: 
-   - AttackTitle
-   - iconsWidthHeight
-  x: += 160
-  y: -= 5
-  
-AttackDie2:
-  extends: AttackDie1
-  x: += 85
-  
-DefenseTitle:
-  extends: AttackTitle
-  x: += 345
-  width: 230
-  
-DefenseDie:
-  extends: 
-   - DefenseTitle
-   - iconsWidthHeight
-  x: += 200
-  y: -= 5
-  
-RangeTitle:
-  extends: AttackTitle
-  y: += 125
-  width: 150
-  
-RangeValue:
-  extends: RangeTitle
-  x: += 150
-  width: 110
-  
-RequirementsTitle:
-  extends: DefenseTitle
-  y: += 125
-  x: -= 110
-  width: 240
-
-RequirementsValue1:
-  extends: 
-   - RequirementsTitle
-   - iconsWidthHeight
-  x: += 200
-  y: -= 5
-
-RequirementsValue2:
-  extends: RequirementsValue1
-  x: += 75
-
-NotesTitle:
-  extends: 
-   - RangeTitle
-   - heightSafeArea
+   - SlotTitle
    - widthSafeArea
-  y: += 100
-  x: -= 20
   align: center
-  width: -= 70
-  height: -= 350
+  font_size: 10
+  y: += 150
   
-NotesValue:
-  extends: NotesTitle
+EffectValue:
+  extends: 
+   - EffectTitle
   y: += 100
+  height: 500
+  width: -= 20
   
 ## back of card
 
 
 backOfCards:
   extends: safe
-  fill_color: :raw_umber
+  fill_color: :navy_blue
 
 emblemBack:
   x: 85
