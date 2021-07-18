@@ -1,6 +1,7 @@
 card_*.png
 ttcc*.png
 ttwc*.png
+ttec*.png
 ~$*
 .DS_Store
 *.lock
