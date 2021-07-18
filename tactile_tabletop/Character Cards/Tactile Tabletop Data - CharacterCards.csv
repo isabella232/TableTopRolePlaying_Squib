@@ -65,8 +65,8 @@ Changing Fate,Any,Instant,,Force a re-roll of target's next die roll within infl
 Bad Taste,Enemy,Instant,Influence,"On success, target's next die rolls are rolled twice, and the lower value must be used",Discard,Double Dipping,Self,Instant,,Use a consumable. Its effect happens twice,Exhaust,1 Skill Point,N/A,,
 Sprint,Self,Instant,,Gain  30 ft. of movement,Hand,Jump Pad,Area,1 Rnd,X = 5 * Level,"Select a direction. Select a space within 5ft of you. While active, anyone on that space may jump X ft in the selected direction",Discard,1 Skill Point,N/A,,
 Reposition,Enemy,Instant,Attack,"After your attack, gain 5 ft. of movement. This movement doesn't proc Overstep",Discard,Coward's Ultimatum,Enemies,X Rnds,X = level,Gain 1 Overstep Attack per round,Exhaust,1 Health,N/A,,
-Nature's Insight,Plant/Animal,Instant,"X = Influence
-Y = level","Target can be communed with for these effects depending on X:
+Nature's Insight,Animal,Instant,"X = Influence
+Y = level","Effects depending on X:
 1-3: cause Distraction on enemy
 4-6: target attacks adjacent enemy (1d4)
 7+: target attacks adjacent enemy for Y rnds",Discard,Seasonal Planning,Self,X Rnds,X = Level,Gain +1 to influence rolls,Discard,1 Skill Point,N/A,,
