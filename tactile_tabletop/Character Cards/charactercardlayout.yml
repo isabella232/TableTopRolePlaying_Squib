@@ -253,13 +253,14 @@ title:
 
 variables:
   font_size: 7.5
-  height: 110
+  height: 70
   font: 'Benne-Regular, arial'
   
 rules:
+  extends: widthSafeArea
   height: 240
   font_size: 7.5
-  width: 550
+  width: -= 40
   font: 'Benne-Regular, arial'
   
 topTitle:
@@ -283,23 +284,25 @@ topRules:
   extends: 
    - topVariables
    - rules
-   - widthSafeArea
-  y: += 100
+  y: += 60
   color: :white
-  width: -= 40
   
 ## Bottom Ability Section
 
 # Bubbles
   
 bottomTargetBubble:
-  extends: lineTopOfBottomAbility
+  extends: 
+  - lineTopOfBottomAbility
+  - bubble
   y: += 20
   x: += 20
-  width: 110
-  height: 50
-  radius: 8
-  fill_color: :alice_blue
+  
+bottomTargetIcon:
+  extends: 
+   - bottomTargetBubble
+   - icon
+  y: -= 15
 
 bottomTarget:
   extends: bottomTargetBubble
@@ -308,15 +311,17 @@ bottomTarget:
   font_size: 6
   font: 'Benne-Regular, arial'
   
-bottomTargetIcon:
-  extends: 
-   - bottomTargetBubble
-   - icon
-  y: -= 15
   
 bottomDurationBubble:
   extends: bottomTargetBubble
-  y: += 70
+  x: += 225
+  
+bottomDurationIcon:
+  extends: 
+   - bottomDurationBubble
+   - icon
+  y: -= 15
+  X: -= 15
   
 bottomDuration:
   extends: bottomDurationBubble
@@ -325,11 +330,25 @@ bottomDuration:
   font_size: 6
   font: 'Benne-Regular, arial'
 
-bottomDurationIcon:
+
+bottomResultBubble:
+  extends: bottomDurationBubble
+  x: += 225
+  
+bottomResultIcon:
   extends: 
-   - bottomDurationBubble
+   - bottomResultBubble
    - icon
   y: -= 15
+  X: += 15
+
+bottomResult:
+  extends: bottomResultBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
 
 # Abilities
 
@@ -339,9 +358,8 @@ bottomTitle:
    - topOfBottomAbility
    - fromLeftSafeToMargin
    - widthSafeArea
-  y: += 20
   color: :white
-  y: += 70
+  y: += 80
   align: center
   width: -= 40
 
@@ -354,10 +372,9 @@ bottomVariables:
 
 bottomRules:
   extends: 
-   - bottomDuration
+   - bottomVariables
    - rules
-  x: 171
-  y: += 90
+  y: += 60
   color: :white
   
   
