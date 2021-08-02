@@ -131,13 +131,14 @@ RangeTitle:
   
 RangeValue:
   extends: RangeTitle
-  x: += 150
+  x: += 30
+  y: += 50
   width: 110
   
 RequirementsTitle:
   extends: DefenseTitle
   y: += 125
-  x: -= 110
+  x: -= 90
   width: 240
 
 RequirementsValue1:
@@ -156,7 +157,7 @@ NotesTitle:
    - RangeTitle
    - heightSafeArea
    - widthSafeArea
-  y: += 100
+  y: += 120
   x: -= 20
   align: center
   width: -= 70
@@ -164,7 +165,7 @@ NotesTitle:
   
 NotesValue:
   extends: NotesTitle
-  y: += 100
+  y: += 60
   
 ## back of card
 

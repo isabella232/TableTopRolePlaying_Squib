@@ -1,14 +1,16 @@
 Weapon Name,Attack Die 1,Attack Die 2,Defense Die,Range,Requirement1,Requirement2,Extra Notes
-Long Shot Weapon,D4,NA,D4,45,1-hand,1-hand,"add defense die to attacks if attacking at long range
-long range = between 45 and 45+(5*level)"
-Short Shot Weapon,D4,D4,D4,40,1-hand,1-hand,"attack value odd = +1 to attack value
-attack value even = +1 next defence value"
-Great Castor,D6,NA,D4,30,1-hand,1-hand,Add 2 damage whenever type token used
-Great Weapon,D6,D4,D6,5,1-hand,1-hand,damage exceeding a slain opponents remaining health are added to next attack
+Long Shot Weapon,D4,NA,D4,60,1-hand,1-hand,"If attacking between 30 and 60 ft, increase attack by 1d4"
+Short Shot Weapon,D4,D4,D4,40,1-hand,1-hand,"If attack value odd, attack value += 1
+If attack value even, next defence value += 1"
+Great Castor,D6,NA,D4,30,1-hand,1-hand,Add 5 damage whenever type token used
+Great Weapon,D6,D4,D6,5,1-hand,1-hand,"If you slay an enemy, add 1d4 to your next attack"
 Reach Weapon,D6,D4,D6,10,1-hand,1-hand,"Can be thrown:
-Range = 5 * level
-Damage += level"
+Range = 25
+Damage += 1d6"
 Hand Castor,D4,NA,D4,15,1-hand,NA,"On dealing damage, return a used type token"
 Hand Weapon,D4,D4,D4,Close,1-hand,NA,Add 1 damage for consecutive attacks on same opponent
-Short Weapon,D6,NA,D6,5,1-hand,NA,"if roll minimum on attack die, can reroll once (per attack)"
-Blocking Weapon,D4,NA,D8,5,1-hand,NA,"if you successfully defend an attack, add +1 to next attack value"
+Short Weapon,D6,NA,D6,5,1-hand,NA,"If roll minimum on attack die, can reroll once (per combat)"
+Blocking Weapon,D4,NA,D8,5,1-hand,NA,"If you successfully defend an attack, deal 1 damage to enemy"
+Enchanged Long Shot Weapon 1,D4,NA,D4,45 + (5*level),1-hand,1-hand,"Add defense die to attacks if attacking at long range
+long range = between 45 and current range"
+Enchanted Great Weapon 1,D6,D4,D6,5,1-hand,1-hand,Damage exceeding a slain opponents remaining health are added to next attack
