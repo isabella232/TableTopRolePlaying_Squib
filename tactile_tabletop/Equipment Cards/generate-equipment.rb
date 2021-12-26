@@ -16,11 +16,16 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Equipment Name']
   rect layout: 'safe'
   
   ## top ability stuff
+  #rect layout: 'EquipmentTitle'
   text str: data['Equipment Name'], layout: 'EquipmentTitle'
 
+  #rect layout: 'SlotTitle'
   text str: "Slot:", layout: 'SlotTitle'
+  #rect layout: 'SlotValue'
   text str: data['Slot'], layout: 'SlotValue'
+  #rect layout: 'EffectTitle'
   text str: "Effect:", layout: 'EffectTitle'
+  #rect layout: 'EffectValue'
   text str: data['Effect'], layout: 'EffectValue'
 
   # ## output file stuff
