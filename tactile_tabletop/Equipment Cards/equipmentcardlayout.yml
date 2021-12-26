@@ -86,21 +86,22 @@ EquipmentTitle:
   align: center
   font_size: 14
   font: 'Benne Regular, arial'
+  width: -= 40
+  height: 70
 
 SlotTitle:
   extends: EquipmentTitle
   y: += 95
   font_size: 10
+  height: 60
 
 SlotValue:
   extends: SlotTitle
   y: += 60
-  width: -= 20
 
 EffectTitle:
   extends: 
    - SlotTitle
-   - widthSafeArea
   align: center
   font_size: 10
   y: += 150
@@ -109,8 +110,7 @@ EffectValue:
   extends: 
    - EffectTitle
   y: += 60
-  height: 500
-  width: -= 20
+  height: 330
   
 ## back of card
 
