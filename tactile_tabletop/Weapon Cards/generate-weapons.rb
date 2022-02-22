@@ -17,6 +17,7 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
   
   ## top ability stuff
   text str: data['Weapon Name'], layout: 'WeaponTitle'
+  #rect layout: 'WeaponTitle'
   
   text str: "Attack:", layout: 'AttackTitle'
   svg file: data['Attack Die 1'].map {|t| "#{t.downcase}.svg" }, layout: 'AttackDie1'  
@@ -26,7 +27,9 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
   svg file: data['Defense Die'].map {|t| "#{t.downcase}.svg" }, layout: 'DefenseDie'
   
   text str: "Range:", layout: 'RangeTitle'
+  #rect layout: 'RangeTitle'
   text str: data['Range'], layout: 'RangeValue'
+  #rect layout: 'RangeValue'
   
   text str: "Requires:", layout: 'RequirementsTitle'
   svg file: data['Requirement1'].map {|t| "#{t.downcase}.svg" }, layout: 'RequirementsValue1'
