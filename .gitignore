@@ -5,3 +5,4 @@ ttec*.png
 ~$*
 .DS_Store
 *.lock
+.~*
