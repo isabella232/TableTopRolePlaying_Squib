@@ -11,6 +11,6 @@ Hand Castor,D4,NA,D4,15,1-hand,NA,"On dealing damage, return a used type token"
 Hand Weapon,D4,D4,D4,Close,1-hand,NA,Add 1 damage for consecutive attacks on same opponent
 Short Weapon,D6,NA,D6,5,1-hand,NA,"If roll minimum on attack die, can reroll once (per combat)"
 Blocking Weapon,D4,NA,D8,5,1-hand,NA,"If you successfully defend an attack, deal 1 damage to enemy"
-Enchanged Long Shot Weapon 1,D4,NA,D4,45 + (5*level),1-hand,1-hand,"Add defense die to attacks if attacking at long range
+Ench. Long Shot Weapon 1,D4,NA,D4,45 + (5*level),1-hand,1-hand,"Add defense die to attacks if attacking at long range
 long range = between 45 and current range"
-Enchanted Great Weapon 1,D6,D4,D6,5,1-hand,1-hand,Damage exceeding a slain opponents remaining health are added to next attack
+Ench. Great Weapon 1,D6,D4,D6,5,1-hand,1-hand,Damage exceeding a slain opponents remaining health are added to next attack
