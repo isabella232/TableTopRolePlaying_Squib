@@ -1,18 +1,13 @@
 Weapon Name,Attack Die 1,Attack Die 2,Defense Die,Range,Requirement1,Requirement2,Extra Notes
-Long Shot Weapon,D4,NA,D4,60,1-hand,1-hand,"If attacking beyond 30 feet, increase attack by 1d6"
-Great Castor,D6,NA,D4,40,1-hand,1-hand,"When attacking an enemy, add 3 damage for every different type of token on that enemy"
+Long Shot Weapon,D4,NA,D4,60,1-hand,1-hand,If attacking beyond 30 feet increase attack by 1d6
+Great Castor,D6,NA,D4,40,1-hand,1-hand,When attacking an enemy add 3 damage for every different type of token on that enemy
 Reach Weapon,D6,D4,D6,10,1-hand,1-hand,"Can be thrown at ranges beyond 10 ft:
 Range = 25
 Damage += 1d6"
-Great Weapon,D6,D4,D6,5,1-hand,1-hand,"If you slay an enemy, add 1d6 to your next attack"
-Short Shot Weapon,D4,NA,D4,25,1-hand,NA,"If you use two hands on this weapon, add 1d6 to damage and 10 feet to range"
-Hand Castor,D4,NA,D4,20,1-hand,NA,"On dealing damage, return a consumed type token"
-Short Weapon,D6,NA,D6,5,1-hand,NA,"If your attack die rolls a 1, reroll that die (once per attack roll)"
-Blocking Weapon,D4,NA,D8,5,1-hand,NA,"If you successfully defend an attack, deal 1 damage to enemy"
+Great Weapon,D6,D4,D6,5,1-hand,1-hand,If you slay an enemy add 1d6 to your next attack
+Short Shot Weapon,D4,NA,D4,25,1-hand,NA,If you use two hands on this weapon add 1d6 to damage and 10 feet to range
+Hand Castor,D4,NA,D4,20,1-hand,NA,On dealing damage return a consumed type token
+Short Weapon,D6,NA,D6,5,1-hand,NA,If your attack die rolls a 1 reroll that die (once per attack roll)
+Blocking Weapon,D4,NA,D8,5,1-hand,NA,If you successfully defend an attack deal 1 damage to enemy
 Hand Weapon,D4,NA,D4,Close,1-hand,NA,Add 1 damage for consecutive attacks on same opponent
-Unnarmed,D2,NA,D2,Close,1-hand,NA,
-,,,,,,,
-(below are examples of higher level weapons maybe),,,,,,,
-Enchanged Long Shot Weapon 1,D4,NA,D4,45 + (5*level),1-hand,1-hand,"If attacking beyond 30 feet, increase attack by 1d4
-If attacking beyond 45 feet, increase attack additionally by defense die"
-Enchanted Great Weapon 1,D6,D4,D6,5,1-hand,1-hand,Increase next attack by amount of excessive damage to slain enemy
+Unnarmed,D2,NA,D2,Close,1-hand,NA,NA
