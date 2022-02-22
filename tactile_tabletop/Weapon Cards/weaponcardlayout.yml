@@ -46,7 +46,7 @@ fromTopLeftCutToSafe:
    - fromLeftCutToSafe
    
 widthSafeArea:
-  width: 685
+  width: 645
   
 heightSafeArea:
   height: 685
@@ -55,8 +55,8 @@ heightSafeArea:
 safe:
   extends: 
    - fromTopLeftCutToSafe
-   - widthSafeArea
    - heightSafeArea
+  width: 685
   radius: 8
   #dash: 3 3
   fill_color: '#eee'
@@ -67,10 +67,12 @@ safe:
 fromLeftSafeToMargin:
   extends: fromLeftCutToSafe
   x: += 20
+  width: 665
   
 fromTopSafeToMargin:
   extends: fromTopCutToSafe
   y: += 20
+  height: 645
 
 fromTopLeftSafeToMargin:
   extends:
@@ -85,73 +87,74 @@ WeaponTitle:
    - fromTopLeftSafeToMargin
    - widthSafeArea
   align: center
-  font_size: 14
+  font_size: 18
   font: 'Benne Regular, arial, italic'
 
 AttackTitle:
   extends: WeaponTitle
-  y: += 95
+  y: += 105
   x: += 20
   align: left
-  font_size: 10
+  font_size: 12
   font: 'Benne Regular, arial'
   width: 200
   height: 75
 
 iconsWidthHeight:
-  width: 90
-  height: 90
+  width: 85
+  height: 85
 
 AttackDie1:
   extends: 
    - AttackTitle
    - iconsWidthHeight
-  x: += 140
+  x: += 150
   y: -= 5
   
 AttackDie2:
   extends: AttackDie1
-  x: += 95
+  x: += 85
   
 DefenseTitle:
   extends: AttackTitle
-  x: += 345
+  x: += 325
   width: 230
   
 DefenseDie:
   extends: 
    - DefenseTitle
    - iconsWidthHeight
-  x: += 180
+  x: += 200
   y: -= 5
   
 RangeTitle:
   extends: AttackTitle
   y: += 125
-  width: 150
+  x: += 15
+  width: 170
   
 RangeValue:
   extends: RangeTitle
-  x: += 30
-  y: += 50
-  width: 110
+  y: += 60
+  width: 170
+  align: center
   
 RequirementsTitle:
   extends: DefenseTitle
   y: += 125
-  x: -= 120
+  x: -= 110
   width: 240
 
 RequirementsValue1:
   extends: 
    - RequirementsTitle
    - iconsWidthHeight
-  x: += 200
+  x: += 215
   y: -= 5
 
 RequirementsValue2:
   extends: RequirementsValue1
-  x: += 100
+  x: += 90
 
 NotesTitle:
   extends: 
@@ -159,7 +162,6 @@ NotesTitle:
    - heightSafeArea
    - widthSafeArea
   y: += 120
-  x: -= 20
   align: center
   width: -= 70
   height: -= 350
