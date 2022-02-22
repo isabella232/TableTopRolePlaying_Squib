@@ -11,7 +11,7 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
 
   ## overall card stuff
 
-  background color: 'black'
+  background color: 'white'
   rect layout: 'cut'
   rect layout: 'safe'
   
@@ -45,7 +45,7 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'weaponcard
 
   ## overall card stuff
 
-  background color: 'black'
+  background color: 'white'
   rect layout: 'cut'
   rect layout: 'backOfCards'
   svg data: GameIcons.get('swords-emblem').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
