@@ -26,7 +26,7 @@ cut:
   width: 750
   height: 750
   radius: 16
-  fill_color: '#111'
+  fill_color: '#555'
   
 # box for safe line
 
@@ -59,7 +59,8 @@ safe:
    - heightSafeArea
   radius: 8
   #dash: 3 3
-  fill_color: :sandy_tan
+  fill_color: '#eee'
+  #fill_color: :sandy_tan
 
 # adding 20 pixel buffer from safe area line for clean look
 
@@ -98,19 +99,19 @@ AttackTitle:
   height: 75
 
 iconsWidthHeight:
-  width: 75
-  height: 75
+  width: 90
+  height: 90
 
 AttackDie1:
   extends: 
    - AttackTitle
    - iconsWidthHeight
-  x: += 160
+  x: += 140
   y: -= 5
   
 AttackDie2:
   extends: AttackDie1
-  x: += 85
+  x: += 95
   
 DefenseTitle:
   extends: AttackTitle
@@ -121,7 +122,7 @@ DefenseDie:
   extends: 
    - DefenseTitle
    - iconsWidthHeight
-  x: += 200
+  x: += 180
   y: -= 5
   
 RangeTitle:
@@ -138,7 +139,7 @@ RangeValue:
 RequirementsTitle:
   extends: DefenseTitle
   y: += 125
-  x: -= 90
+  x: -= 120
   width: 240
 
 RequirementsValue1:
@@ -150,7 +151,7 @@ RequirementsValue1:
 
 RequirementsValue2:
   extends: RequirementsValue1
-  x: += 75
+  x: += 100
 
 NotesTitle:
   extends: 
@@ -172,7 +173,8 @@ NotesValue:
 
 backOfCards:
   extends: safe
-  fill_color: :raw_umber
+  #fill_color: :raw_umber
+  fill_color: '#bbb'
 
 emblemBack:
   x: 85
