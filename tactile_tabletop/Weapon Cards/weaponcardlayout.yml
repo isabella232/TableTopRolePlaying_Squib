@@ -87,7 +87,7 @@ WeaponTitle:
    - fromTopLeftSafeToMargin
    - widthSafeArea
   align: center
-  font_size: 18
+  font_size: 17
   font: 'Benne Regular, arial, italic'
 
 AttackTitle:
