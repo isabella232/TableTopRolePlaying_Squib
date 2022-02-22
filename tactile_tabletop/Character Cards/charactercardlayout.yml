@@ -418,9 +418,8 @@ requirementsTitle:
 #depends on the card, usually N/A, otherwise Stat #
 requirementsBody:
   extends: requirementsTitle
-  x: += 100
-  width: 400
-  height: 60
+  x: += 210
+  width: 450
   align: center
 
 
