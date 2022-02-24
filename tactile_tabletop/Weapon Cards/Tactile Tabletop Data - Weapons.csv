@@ -11,4 +11,4 @@ Short Weapon,D6,NA,D6,5,1-hand,NA,If your attack die rolls a 1 reroll that die (
 Blocking Weapon,D4,NA,D8,5,1-hand,NA,If you successfully defend an attack deal 1 damage to enemy
 Hand Weapon,D4,NA,D4,Close,1-hand,NA,Add 1 damage for each consecutive attacks on same opponent
 Unnarmed,D2,NA,D2,Close,1-hand,NA,NA
-Utility Weapon,D4,NA,D6,35,1-hand,1-hand,"At the start of your turn, roll a die. If even, choose an ally: They return a random card from their discard pile to their hand."
+Utility Weapon,D4,NA,D6,35,1-hand,1-hand,"Roll a die at start of turn. If even, an ally can return a random card from discard"
