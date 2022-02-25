@@ -65,8 +65,10 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :metallic_orange
-  stroke_color: :metallic_orange
+  # fill_color: :metallic_orange
+  # stroke_color: :metallic_orange
+  fill_color: '#444'
+  stroke_color: '#444'
   height: 452
   radius: 8
   
@@ -80,8 +82,10 @@ bottomAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :purple_plum
-  stroke_color: :purple_plum
+  # fill_color: :purple_plum
+  # stroke_color: :purple_plum
+  fill_color: '#666'
+  stroke_color: '#666'
   y: += 452
   height: 433
   
@@ -90,8 +94,10 @@ passivesColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :baby_blue
-  stroke_color: :baby_blue
+  # fill_color: :baby_blue
+  # stroke_color: :baby_blue
+  fill_color: '#ccc'
+  stroke_color: '#ccc'
   y: += 888
   height: 50
 
@@ -99,8 +105,10 @@ requirementsColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :blizzard_blue
-  stroke_color: :blizzard_blue
+  # fill_color: :blizzard_blue
+  # stroke_color: :blizzard_blue
+  fill_color: '#bbb'
+  stroke_color: '#bbb'
   y: += 938
   height: 51
   radius: 8
@@ -181,7 +189,8 @@ bubble:
   width: 150
   height: 50
   radius: 8
-  fill_color: :alice_blue
+  # fill_color: :alice_blue
+  fill_color: '#eee'
 
 topTargetBubble:
   extends: 
@@ -439,7 +448,8 @@ iconsWidthHeight:
 
 backOfCards:
   extends: safe
-  fill_color: :raw_umber
+  # fill_color: :raw_umber
+  fill_color: '#444'
 
 diceBack:
   x: 430
