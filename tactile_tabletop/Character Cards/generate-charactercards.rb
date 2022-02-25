@@ -1,8 +1,8 @@
 require 'squib'
 require 'game_icons'
 
-#data = Squib.csv file: 'Tactile Tabletop Data - Level 1 CC.csv'
-data = Squib.csv file: 'Tactile Tabletop Data - Level 2 CC.csv'
+data = Squib.csv file: 'Tactile Tabletop Data - Level 1 CC.csv'
+#data = Squib.csv file: 'Tactile Tabletop Data - Level 2 CC.csv'
 #grabbing icons from https://game-icons.net/
 #using gem game_icons to be able to load them
 
@@ -12,7 +12,7 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: data['Top Ability Nam
 
   ## overall card stuff
 
-  background color: 'black'
+  background color: 'white'
   rect layout: 'cut'
   rect layout: 'safe'
   rect layout: 'topAbilityColorBox'
@@ -93,7 +93,7 @@ Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: 1, layout: 'character
 
   ## overall card stuff
 
-  background color: 'black'
+  background color: 'white'
   rect layout: 'cut'
   rect layout: 'backOfCards'
   svg data: GameIcons.get('rolling-dices').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'diceBack'
