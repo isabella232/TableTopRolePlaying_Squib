@@ -26,7 +26,7 @@ cut:
   width: 750
   height: 1050
   radius: 16
-  fill_color: '#111'
+  fill_color: '#aaa'
   
 # box for safe line
 
@@ -67,8 +67,8 @@ topAbilityColorBox:
    - widthSafeArea
   # fill_color: :metallic_orange
   # stroke_color: :metallic_orange
-  fill_color: '#444'
-  stroke_color: '#444'
+  fill_color: '#bbb'
+  stroke_color: '#bbb'
   height: 452
   radius: 8
   
@@ -84,8 +84,8 @@ bottomAbilityColorBox:
    - widthSafeArea
   # fill_color: :purple_plum
   # stroke_color: :purple_plum
-  fill_color: '#666'
-  stroke_color: '#666'
+  fill_color: '#ccc'
+  stroke_color: '#ccc'
   y: += 452
   height: 433
   
@@ -96,8 +96,8 @@ passivesColorBox:
    - widthSafeArea
   # fill_color: :baby_blue
   # stroke_color: :baby_blue
-  fill_color: '#ccc'
-  stroke_color: '#ccc'
+  fill_color: '#ddd'
+  stroke_color: '#ddd'
   y: += 888
   height: 50
 
@@ -107,8 +107,8 @@ requirementsColorBox:
    - widthSafeArea
   # fill_color: :blizzard_blue
   # stroke_color: :blizzard_blue
-  fill_color: '#bbb'
-  stroke_color: '#bbb'
+  fill_color: '#eee'
+  stroke_color: '#eee'
   y: += 938
   height: 51
   radius: 8
@@ -190,7 +190,7 @@ bubble:
   height: 50
   radius: 8
   # fill_color: :alice_blue
-  fill_color: '#eee'
+  fill_color: '#fff'
 
 topTargetBubble:
   extends: 
@@ -277,24 +277,29 @@ topTitle:
    - title
    - fromTopLeftSafeToMargin
    - widthSafeArea
-  color: :white
+  color: :black
   y: += 70
   align: center
   width: -= 40
+  
+topWeaponOrInfluence:
+  extends:
+   - topTitle
+   - fromLeftSafeToMargin
   
 topVariables:
   extends:
    - topTitle
    - variables
   y: += 60
-  color: :white
+  color: :black
   
 topRules:
   extends: 
    - topVariables
    - rules
   y: += 60
-  color: :white
+  color: :black
   
 ## Bottom Ability Section
 
@@ -367,24 +372,29 @@ bottomTitle:
    - topOfBottomAbility
    - fromLeftSafeToMargin
    - widthSafeArea
-  color: :white
+  color: :black
   y: += 80
   align: center
   width: -= 40
 
+bottomWeaponOrInfluence:
+  extends:
+   - bottomTitle
+   - fromLeftSafeToMargin
+   
 bottomVariables:
   extends: 
    - bottomTitle
    - variables
   y: += 60
-  color: :white
+  color: :black
 
 bottomRules:
   extends: 
    - bottomVariables
    - rules
   y: += 60
-  color: :white
+  color: :black
   
   
 
