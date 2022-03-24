@@ -6,7 +6,7 @@ Range = 25
 Damage += 1d6"
 Great Weapon,D6,D4,D6,5,1-hand,1-hand,If you slay an enemy add 1d6 to your next attack
 Short Shot Weapon,D4,NA,D4,25,1-hand,NA,If you use two hands on this weapon add 1d6 to damage and 10 feet to range
-Hand Castor,D4,NA,D4,20,1-hand,NA,On dealing damage return a consumed type token
+Hand Castor,D4,NA,D4,20,1-hand,NA,On dealing damage return a consumed contact token
 Short Weapon,D6,NA,D6,5,1-hand,NA,If your attack die rolls a 1 reroll that die (once per attack roll)
 Blocking Weapon,D4,NA,D8,5,1-hand,NA,If you successfully defend an attack deal 1 damage to enemy
 Hand Weapon,D4,NA,D4,Close,1-hand,NA,Add 1 damage for each consecutive attacks on same opponent
