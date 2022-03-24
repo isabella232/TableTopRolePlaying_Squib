@@ -284,8 +284,9 @@ topTitle:
   
 topWeaponOrInfluence:
   extends:
-   - topTitle
-   - fromLeftSafeToMargin
+   - topTarget
+   - iconsWidthHeight
+  y: += 60
   
 topVariables:
   extends:
@@ -379,8 +380,9 @@ bottomTitle:
 
 bottomWeaponOrInfluence:
   extends:
-   - bottomTitle
-   - fromLeftSafeToMargin
+   - bottomTarget
+   - iconsWidthHeight
+  y: += 60
    
 bottomVariables:
   extends: 
