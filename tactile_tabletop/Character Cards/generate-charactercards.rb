@@ -1,7 +1,13 @@
 require 'squib'
 require 'game_icons'
 
-data = Squib.csv file: 'Tactile_Tabletop_Data-Level_1_CC.csv'
+
+if ARGV[0].nil?
+  data = Squib.csv file: 'Tactile_Tabletop_Data-Level_1_CC.csv'
+else
+  data = Squib.csv file: ARGV[0]
+end
+
 #data = Squib.csv file: 'Tactile_Tabletop_Data-Level_2_CC.csv'
 #grabbing icons from https://game-icons.net/
 #using gem game_icons to be able to load them
