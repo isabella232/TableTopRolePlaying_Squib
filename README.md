@@ -1,7 +1,7 @@
 # Tactile Tabletop
 
 In order for any of this to work, install Squib!
-https://squib.readthedocs.io/en/v0.16.0/install.html
+https://squib.readthedocs.io/en/v0.18.0/install.html
 guide doesn't spell this out, but after installing ruby (which _does_ take forever) you should have a ruby command-line option in your start applications. that's where all the commands function. The minimum you need are:
 
 gem install squib
