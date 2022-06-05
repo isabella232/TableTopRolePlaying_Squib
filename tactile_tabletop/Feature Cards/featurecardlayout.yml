@@ -1,0 +1,126 @@
+### Borders & Boundaries ###
+
+#width/height (and calculated x/y offsets) provided by template from BoardGameMaker.com, see poker-size.pdf
+#overall card size in manufacturing: width: 822, height: 1122 (2.74 x 3.74)
+  
+## Card Overall Dimensions
+  
+# box for cut line
+
+#820 - 750 = 70 ; 70 /2 = 35
+fromLeftBleedToCut:
+  x: 35
+  
+#820 - 750 = 70 ; 70 /2 = 35
+fromTopBleedToCut:
+  y: 35
+  
+fromTopLeftBleedToCut:
+  extends:
+   - fromLeftBleedToCut
+   - fromTopBleedToCut
+   
+# The "cut area line", everything outside of this area guaranteed to be lost
+cut:
+  extends: fromTopLeftBleedToCut
+  width: 750
+  height: 750
+  radius: 16
+  fill_color: '#111'
+  
+# box for safe line
+
+#750 - 685 = 60
+fromLeftCutToSafe:
+  extends: fromLeftBleedToCut
+  x: += 35
+  
+#750 - 685 = 60
+fromTopCutToSafe:
+  extends: fromTopBleedToCut
+  y: += 35
+
+fromTopLeftCutToSafe:
+  extends: 
+   - fromTopCutToSafe
+   - fromLeftCutToSafe
+   
+widthSafeArea:
+  width: 685
+  
+heightSafeArea:
+  height: 685
+  
+# the "safe area line", everything inside of this area guaranteed to be saved
+safe:
+  extends: 
+   - fromTopLeftCutToSafe
+   - widthSafeArea
+   - heightSafeArea
+  radius: 8
+  #dash: 3 3
+  fill_color: :iceberg
+
+# adding 20 pixel buffer from safe area line for clean look
+
+fromLeftSafeToMargin:
+  extends: fromLeftCutToSafe
+  x: += 20
+  
+fromTopSafeToMargin:
+  extends: fromTopCutToSafe
+  y: += 20
+
+fromTopLeftSafeToMargin:
+  extends:
+   - fromLeftSafeToMargin
+   - fromTopSafeToMargin
+  
+### Text Specification ###
+# Need to specify the font size, x co-ords, width, height, and alignment of all the text
+
+FeatureTitle:
+  extends: 
+   - fromTopLeftSafeToMargin
+   - widthSafeArea
+  align: center
+  font_size: 14
+  font: 'Benne Regular, arial'
+  width: -= 40
+  height: 70
+
+SlotTitle:
+  extends: FeatureTitle
+  y: += 95
+  font_size: 10
+  height: 60
+
+SlotValue:
+  extends: SlotTitle
+  y: += 60
+
+EffectTitle:
+  extends: 
+   - SlotTitle
+  align: center
+  font_size: 10
+  y: += 150
+  
+EffectValue:
+  extends: 
+   - EffectTitle
+  y: += 60
+  height: 330
+  
+## back of card
+
+
+backOfCards:
+  extends: safe
+  fill_color: :navy_blue
+
+emblemBack:
+  x: 85
+  y: 85
+  width: 650
+  height: 650
