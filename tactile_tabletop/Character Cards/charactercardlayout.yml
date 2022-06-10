@@ -194,6 +194,7 @@ bubble:
   # fill_color: :alice_blue
   fill_color: '#fff'
 
+#target
 topTargetBubble:
   extends: 
    - fromTopLeftSafeToMargin
@@ -216,9 +217,29 @@ topTarget:
   font_size: 7.5
   font: 'Benne-Regular, arial'
   
-topDurationBubble:
+#range
+topRangeBubble:
   extends: topTargetBubble
-  x: += 225
+  x: += 166
+  
+topRangeIcon:
+  extends: 
+   - topRangeBubble
+   - icon
+  y: -= 15
+  X: -= 15
+
+topRange:
+  extends: topRangeBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+  
+#duration
+topDurationBubble:
+  extends: topRangeBubble
+  x: += 167
   
 topDurationIcon:
   extends: 
@@ -234,9 +255,10 @@ topDuration:
   font_size: 7.5
   font: 'Benne-Regular, arial'
   
+#result
 topResultBubble:
   extends: topDurationBubble
-  x: += 225
+  x: += 167
   
 topResultIcon:
   extends: 
@@ -251,6 +273,7 @@ topResult:
   align: center
   font_size: 7.5
   font: 'Benne-Regular, arial'
+  
 
 # abilities
 
@@ -284,11 +307,11 @@ topTitle:
   align: center
   width: -= 40
   
-topWeaponOrInfluence:
-  extends:
-   - topTarget
-   - iconsWidthHeight
-  y: += 60
+#topWeaponOrInfluence:
+#  extends:
+#   - topTarget
+#   - iconsWidthHeight
+#  y: += 60
   
 topVariables:
   extends:
@@ -308,6 +331,7 @@ topRules:
 
 # Bubbles
   
+#target
 bottomTargetBubble:
   extends: 
   - lineTopOfBottomAbility
@@ -328,10 +352,29 @@ bottomTarget:
   font_size: 6
   font: 'Benne-Regular, arial'
   
-  
-bottomDurationBubble:
+#range
+bottomRangeBubble:
   extends: bottomTargetBubble
-  x: += 225
+  x: += 166
+  
+bottomRangeIcon:
+  extends: 
+   - bottomRangeBubble
+   - icon
+  y: -= 15
+  X: -= 15
+
+bottomRange:
+  extends: bottomRangeBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+  
+#duration
+bottomDurationBubble:
+  extends: bottomRangeBubble
+  x: += 167
   
 bottomDurationIcon:
   extends: 
@@ -347,10 +390,10 @@ bottomDuration:
   font_size: 6
   font: 'Benne-Regular, arial'
 
-
+#result
 bottomResultBubble:
   extends: bottomDurationBubble
-  x: += 225
+  x: += 167
   
 bottomResultIcon:
   extends: 
