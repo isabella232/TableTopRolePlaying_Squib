@@ -35,6 +35,12 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   text str: data['Top Ability Target'], layout: 'topTarget'
   svg data: GameIcons.get('crosshair').recolor(fg: 'aaa', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topTargetIcon'
   
+  rect layout: 'topRangeBubble'
+  #svg file: data['Top Weapon Or Influence'].map {|t| "#{t.downcase}.svg" }, layout: 'topRange'
+  text str: data['Top Weapon Or Influence'], layout: 'topRange'
+  text str: data['Top Ability Target'], layout: 'topTarget'
+  svg data: GameIcons.get('binoculars').recolor(fg: 'aaa', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topRangeIcon'
+  
   rect layout: 'topDurationBubble'
   text str: data['Top Ability Duration'], layout: 'topDuration'
   svg data: GameIcons.get('stopwatch').recolor(fg: 'aaa', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'topDurationIcon'
@@ -48,7 +54,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   #rect layout: 'topVariables'
   #rect layout: 'topRules'
   text str: data['Top Ability Name'], layout: 'topTitle'
-  svg file: data['Top Weapon Or Influence'].map {|t| "#{t.downcase}.svg" }, layout: 'topWeaponOrInfluence'
+  #svg file: data['Top Weapon Or Influence'].map {|t| "#{t.downcase}.svg" }, layout: 'topWeaponOrInfluence'
   text str: data['Top Ability Die Roll/Scaler'], layout: 'topVariables'
   text str: data['Top Ability Rules'], layout: 'topRules'
   ## bottom ability stuff
@@ -56,6 +62,12 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   rect layout: 'lineTopOfBottomAbility'
   rect layout: 'bottomTargetBubble'
   text str: data['Bottom Ability Target'], layout: 'bottomTarget'
+  
+  rect layout: 'bottomRangeBubble'
+  #svg file: data['Bottom Weapon Or Influence'].map {|t| "#{t.downcase}.svg" }, layout: 'bottomRange'
+  text str: data['Bottom Weapon Or Influence'], layout: 'bottomRange'
+  text str: data['Bottom Ability Target'], layout: 'bottomTarget'
+  svg data: GameIcons.get('binoculars').recolor(fg: 'aaa', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomRangeIcon'
   
   rect layout: 'bottomDurationBubble'
   text str: data['Bottom Ability Duration'], layout: 'bottomDuration'  
@@ -69,7 +81,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   #rect layout: 'bottomRules'
   #rect layout: 'bottomVariables'
   text str: data['Bottom Ability Name'], layout: 'bottomTitle'
-  svg file: data['Bottom Weapon Or Influence'].map {|t| "#{t.downcase}.svg" }, layout: 'bottomWeaponOrInfluence'
+  #svg file: data['Bottom Weapon Or Influence'].map {|t| "#{t.downcase}.svg" }, layout: 'bottomWeaponOrInfluence'
   text str: data['Bottom Ability Die Roll/Scaler'], layout: 'bottomVariables'
   svg data: GameIcons.get('crosshair').recolor(fg: '777', bg: '000', fg_opacity: 0.6, bg_opacity: 0).string, layout: 'bottomTargetIcon'
   
