@@ -110,7 +110,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   #save_pdf trim: 37.5
 end
 
-Squib::Deck.new(dpi: 300, width: 822, height: 1122, cards: 1, layout: 'charactercardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: 1, layout: 'charactercardlayout.yml')  do
 
   ## overall card stuff
 
