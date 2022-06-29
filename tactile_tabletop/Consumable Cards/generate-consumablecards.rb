@@ -21,14 +21,18 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Consumable Name
   background color: 'white'
   rect layout: 'cut'
   rect layout: 'safe'
-   rect layout: 'topTitle'
-   rect layout: 'topVariables'
-   rect layout: 'topRules'
+  # rect layout: 'ttitle'
+  # rect layout: 'vvariables'
+  # rect layout: 'rrules'
+  # rect layout: 'ccost'
+  # rect layout: 'ccostTitle'
   
 
-  text str: data['Consumable Name'], layout: 'topTitle'
-  text str: data['Consumable Variables'], layout: 'topVariables'
-  text str: data['Consumable Rules'], layout: 'topRules'
+  text str: data['Consumable Name'], layout: 'ttitle'
+  text str: data['Consumable Variables'], layout: 'vvariables'
+  text str: data['Consumable Rules'], layout: 'rrules'
+  text str: data['Consumable Cost'], layout: 'ccost'
+  text str: "Cost:", layout: 'ccostTitle'
 
   ## output file stuff
 

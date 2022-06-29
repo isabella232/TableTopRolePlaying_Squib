@@ -101,12 +101,12 @@ variables:
   
 rules:
   extends: widthSafeArea
-  height: 480
+  height: 500
   font_size: 7.5
   width: -= 40
   font: 'Benne-Regular, arial'
   
-topTitle:
+ttitle:
   extends: 
    - title
    - fromTopLeftSafeToMargin
@@ -122,19 +122,37 @@ topTitle:
 #   - iconsWidthHeight
 #  y: += 60
   
-topVariables:
+vvariables:
   extends:
-   - topTitle
+   - ttitle
    - variables
   y: += 120
   color: :black
   
-topRules:
+rrules:
   extends: 
-   - topVariables
+   - vvariables
    - rules
   y: += 170
   color: :black
+
+ccostTitle:
+  extends: 
+   - rrules
+   - variables
+  y: += 520
+  height: 70
+  color: :black
+  align: left
+  
+ccost:
+  extends: 
+   - ccostTitle
+  x: += 60
+  height: 70
+  width: -= 60
+  color: :black
+  align: center
   
 
 
