@@ -24,7 +24,7 @@ foreach ($outputFolder in $listOfOutputFolders)
 }
 
 #generate new output folders
-$listOfCharacterCardDocuments = Get-ChildItem | Where-Object {$_.FullName -match "_CC.xlsx"}
+$listOfCharacterCardDocuments = Get-ChildItem | Where-Object {$_.FullName -match ".xlsx"}
 write-host ""
 Write-Host "iterating over documents to generate card pngs"
 $failureFound = $false
