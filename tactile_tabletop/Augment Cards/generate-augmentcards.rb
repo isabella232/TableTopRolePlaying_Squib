@@ -91,27 +91,28 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   
   rect layout: 'lineTopOfPassives'
   #rect layout: 'passivesTitle'
+  #rect layout: 'passivesTitle1'
   #rect layout: 'passivesBody'
-  text str: data['Passive Name'], layout: 'passivesTitle'
+  text str: "Passives:", layout: 'passivesTitle'
+  text str: data['Passive Name'], layout: 'passivesTitle1'
   text str: data['Passive Rules'], layout: 'passivesBody'
   
-  rect layout: 'verticalLine'
+  #rect layout: 'verticalLine'
   #rect layout: 'tierTitle'
   #rect layout: 'tierBody'
-  text str: "Tier:", layout: 'tierTitle'
-  text str: data['Tier'], layout: 'tierBody'
+  #text str: "Tier:", layout: 'tierTitle'
+  #text str: data['Tier'], layout: 'tierBody'
 
   ## requirements stuff
   
   rect layout: 'lineTopOfRequirements'
   #rect layout: 'requirementsTitle'
   #rect layout: 'requirementsBody'
-  text str: "Conditions to Remove", layout: 'requirementsTitle'
+  text str: "Conditions to Remove:", layout: 'requirementsTitle'
   text str: data['Requirements'], layout: 'requirementsBody'
   
   rect layout: 'cardNumberCircle'
   text str: data['ID'], layout: 'cardNumber'
-
 
   ## output file stuff
 
