@@ -468,6 +468,35 @@ passivesBody:
   align: center
 
 
+#line to break up the tier/card number
+verticalLine:
+  extends: 
+   - passivesBody
+  x: += 450
+  y: -= 10
+  width: 1.5
+  height: 50
+
+
+#text "Tier"
+tierTitle:
+  extends: 
+   - passivesTitle
+  x: += 550
+  width: 70
+  height: 35
+  align: left
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
+#a number
+tierBody:
+  extends: tierTitle
+  x: += 60
+  width: 30
+  height: 35
+  align: center
+
 
 #doesn't ever change, the word "Requirements
 requirementsTitle:
@@ -490,6 +519,22 @@ requirementsBody:
 
 
 
+cardNumber:
+  extends: 
+   - requirementsBody
+  x: -= 10
+  align: right
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
+cardNumberCircle:
+  extends: 
+   - cardNumber
+  x: += 409
+  align: right
+  width: 50
+  height: 34
+  radius: 18
 ## locations of graphics
 
 
