@@ -8,3 +8,4 @@ ttconsc*.png
 .DS_Store
 *.lock
 .~*
+*.bak
