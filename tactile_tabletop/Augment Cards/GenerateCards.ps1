@@ -74,6 +74,7 @@ foreach ($characterCardDocument in $listOfCharacterCardDocuments)
     {
         Write-Host "executing ruby script on the generated csv"
         Write-Host "++++++++++++++++++++++++++++++++++++++++++"
+        #ruby generate-augmentcards.rb $csvNameOfDocument
         ruby generate-augmentcards.rb $csvNameOfDocument
 
         $xlsxNameOfDocument -match "_Data-(?<content>.*).xlsx"

@@ -71,13 +71,13 @@ topAbilityColorBox:
   # stroke_color: :metallic_orange
   fill_color: '#bbb'
   stroke_color: '#bbb'
-  height: 220
+  height: 452
   radius: 8
   
 topAbilityColorBoxBorderCover:
   extends: topAbilityColorBox
   height: 50
-  y: += 170
+  y: += 402
   radius: 0
   
 bottomAbilityColorBox:
@@ -88,8 +88,8 @@ bottomAbilityColorBox:
   # stroke_color: :purple_plum
   fill_color: '#ccc'
   stroke_color: '#ccc'
-  y: += 220
-  height: 200
+  y: += 452
+  height: 433
   
 
 passivesColorBox:
@@ -100,8 +100,8 @@ passivesColorBox:
   # stroke_color: :baby_blue
   fill_color: '#ddd'
   stroke_color: '#ddd'
-  y: += 420
-  height: 400
+  y: += 888
+  height: 50
 
 requirementsColorBox:
   extends: 
@@ -111,8 +111,8 @@ requirementsColorBox:
   # stroke_color: :blizzard_blue
   fill_color: '#eee'
   stroke_color: '#eee'
-  y: += 800
-  height: 190
+  y: += 938
+  height: 51
   radius: 8
   
 requirementsColorBoxBorderCover:
@@ -149,7 +149,7 @@ horizontalLine:
 #445 + 445 + 50 + 50 = 990
 topOfBottomAbility:
   extends: fromTopSafeToMargin
-  y: += 200
+  y: += 432
 
 lineTopOfBottomAbility:
   extends: 
@@ -160,13 +160,13 @@ lineTopOfBottomAbility:
 #445 + 445 + 50 + 50 = 990
 lineTopOfPassives:
   extends: lineTopOfBottomAbility
-  y: += 200
+  y: += 435
 
 #line to separate out the requirements from the passives above it
 #445 + 445 + 50 + 50 = 990
 lineTopOfRequirements:
   extends: lineTopOfPassives
-  y: += 380
+  y: += 50
 
 #10 (margin) + 30 (text) + 10 = height of requirements = 50
 #10 + 30 + 10 = height of passives = 50
@@ -458,26 +458,13 @@ passivesTitle:
   align: left
   font_size: 7.5
   font: 'Benne-Regular, arial'
-  
-#actual passive title
-passivesTitle1:
-  extends: 
-   - lineTopOfPassives
-  x: += 170
-  y: += 20
-  width: 500
-  height: 100
-  align: center
-  font_size: 9
-  font: 'Benne-Regular, arial, bold'
-
 
 #often `# health`, `# stats`, or both
 passivesBody:
   extends: passivesTitle
-  y: += 150
-  width: 650
-  height: 120
+  x: += 75
+  width: 475
+  height: 60
   align: center
 
 
@@ -517,7 +504,7 @@ requirementsTitle:
    - lineTopOfRequirements
   x: += 20
   y: += 10
-  width: 350
+  width: 210
   height: 35
   align: left
   font_size: 7.5
@@ -526,17 +513,16 @@ requirementsTitle:
 #depends on the card, usually N/A, otherwise Stat #
 requirementsBody:
   extends: requirementsTitle
-  y: += 60
-  width: 650
-  height: 100
+  x: += 210
+  width: 450
   align: center
 
 
 
 cardNumber:
   extends: 
-   - requirementsTitle
-  x: += 270
+   - requirementsBody
+  x: -= 10
   align: right
   font_size: 7.5
   font: 'Benne-Regular, arial'
@@ -544,7 +530,7 @@ cardNumber:
 cardNumberCircle:
   extends: 
    - cardNumber
-  x: += 300
+  x: += 409
   align: right
   width: 50
   height: 34
