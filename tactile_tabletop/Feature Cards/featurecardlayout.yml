@@ -71,7 +71,7 @@ topAbilityColorBox:
   # stroke_color: :metallic_orange
   fill_color: '#bbb'
   stroke_color: '#bbb'
-  height: 452
+  height: 402
   radius: 8
   
 topAbilityColorBoxBorderCover:
@@ -88,7 +88,7 @@ bottomAbilityColorBox:
   # stroke_color: :purple_plum
   fill_color: '#ccc'
   stroke_color: '#ccc'
-  y: += 452
+  y: += 402
   height: 433
   
 
@@ -100,8 +100,8 @@ passivesColorBox:
   # stroke_color: :baby_blue
   fill_color: '#ddd'
   stroke_color: '#ddd'
-  y: += 888
-  height: 50
+  y: += 788
+  height: 150
 
 requirementsColorBox:
   extends: 
@@ -146,10 +146,11 @@ horizontalLine:
 
 
 #line to separate the top ability from bottom ability
-#445 + 445 + 50 + 50 = 990
+#top and bottom sections, and the requirements & passives, must equal the size of the safe area
+#395 + 395 + 150 + 50 = 990
 topOfBottomAbility:
   extends: fromTopSafeToMargin
-  y: += 432
+  y: += 382
 
 lineTopOfBottomAbility:
   extends: 
@@ -157,16 +158,14 @@ lineTopOfBottomAbility:
    - topOfBottomAbility
   
 #line to separate out the passives from the bottom action above it
-#445 + 445 + 50 + 50 = 990
 lineTopOfPassives:
   extends: lineTopOfBottomAbility
-  y: += 435
+  y: += 385
 
 #line to separate out the requirements from the passives above it
-#445 + 445 + 50 + 50 = 990
 lineTopOfRequirements:
   extends: lineTopOfPassives
-  y: += 50
+  y: += 150
 
 #10 (margin) + 30 (text) + 10 = height of requirements = 50
 #10 + 30 + 10 = height of passives = 50
@@ -462,9 +461,9 @@ passivesTitle:
 #often `# health`, `# stats`, or both
 passivesBody:
   extends: passivesTitle
-  x: += 75
-  width: 475
-  height: 60
+  x: += 145
+  width: 495
+  height: 130
   align: center
 
 

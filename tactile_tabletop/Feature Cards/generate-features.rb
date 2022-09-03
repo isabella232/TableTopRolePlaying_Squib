@@ -7,7 +7,7 @@ data = Squib.csv file: 'Tactile Tabletop Data - Feature Cards.csv'
 
 
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see poker-size.pdf
-Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Name'].size, layout: 'featurecardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Name'].size, layout: 'featurecardlayout.yml')  do
 
   ## overall card stuff
 
@@ -84,16 +84,10 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Name'].size, lay
   
   rect layout: 'lineTopOfPassives'
   #rect layout: 'passivesTitle'
-  #rect layout: 'passivesBody'
+  rect layout: 'passivesBody'
   text str: "Passives", layout: 'passivesTitle'
   text str: data['Passives'], layout: 'passivesBody'
   
-  rect layout: 'verticalLine'
-  #rect layout: 'tierTitle'
-  #rect layout: 'tierBody'
-  text str: "Tier:", layout: 'tierTitle'
-  text str: data['Tier'], layout: 'tierBody'
-
   ## requirements stuff
   
   rect layout: 'lineTopOfRequirements'
@@ -111,16 +105,16 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Name'].size, lay
   #save_pdf trim: 37.5
 end
 
-Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'featurecardlayout.yml')  do
+# Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'featurecardlayout.yml')  do
 
-  ## overall card stuff
+  # ## overall card stuff
 
-  background color: 'black'
-  rect layout: 'cut'
-  rect layout: 'backOfCards'
-  svg data: GameIcons.get('battle-gear').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
-  ## output file stuff
+  # background color: 'black'
+  # rect layout: 'cut'
+  # rect layout: 'backOfCards'
+  # svg data: GameIcons.get('battle-gear').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
+  # ## output file stuff
 
-  save_png prefix: 'ttec_BACK'
-  #save_pdf trim: 37.5
-end
+  # save_png prefix: 'ttec_BACK'
+  # #save_pdf trim: 37.5
+# end
