@@ -7,13 +7,15 @@
   
 # box for cut line
 
-#820 - 750 = 70 ; 70 /2 = 35
+#822 - 750 = 72 ; 72 /2 = 36
 fromLeftBleedToCut:
-  x: 35
+  #x: 36
+  x: 0
   
-#820 - 750 = 70 ; 70 /2 = 35
+#1122 - 1050 = 72
 fromTopBleedToCut:
-  y: 35
+  #y: 36
+  y: 0
   
 fromTopLeftBleedToCut:
   extends:
@@ -24,21 +26,21 @@ fromTopLeftBleedToCut:
 cut:
   extends: fromTopLeftBleedToCut
   width: 750
-  height: 750
+  height: 1050
   radius: 16
-  fill_color: '#111'
+  fill_color: '#aaa'
   
 # box for safe line
 
-#750 - 685 = 60
+#750 - 690 = 60
 fromLeftCutToSafe:
   extends: fromLeftBleedToCut
-  x: += 35
+  x: += 30
   
-#750 - 685 = 60
+#1050 - 990 = 60
 fromTopCutToSafe:
   extends: fromTopBleedToCut
-  y: += 35
+  y: += 30
 
 fromTopLeftCutToSafe:
   extends: 
@@ -46,10 +48,10 @@ fromTopLeftCutToSafe:
    - fromLeftCutToSafe
    
 widthSafeArea:
-  width: 685
+  width: 690
   
 heightSafeArea:
-  height: 685
+  height: 990
   
 # the "safe area line", everything inside of this area guaranteed to be saved
 safe:
@@ -59,7 +61,64 @@ safe:
    - heightSafeArea
   radius: 8
   #dash: 3 3
-  fill_color: :iceberg
+  fill_color: '#fff'
+
+topAbilityColorBox:
+  extends: 
+   - fromTopLeftCutToSafe
+   - widthSafeArea
+  # fill_color: :metallic_orange
+  # stroke_color: :metallic_orange
+  fill_color: '#bbb'
+  stroke_color: '#bbb'
+  height: 452
+  radius: 8
+  
+topAbilityColorBoxBorderCover:
+  extends: topAbilityColorBox
+  height: 50
+  y: += 402
+  radius: 0
+  
+bottomAbilityColorBox:
+  extends: 
+   - fromTopLeftCutToSafe
+   - widthSafeArea
+  # fill_color: :purple_plum
+  # stroke_color: :purple_plum
+  fill_color: '#ccc'
+  stroke_color: '#ccc'
+  y: += 452
+  height: 433
+  
+
+passivesColorBox:
+  extends: 
+   - fromTopLeftCutToSafe
+   - widthSafeArea
+  # fill_color: :baby_blue
+  # stroke_color: :baby_blue
+  fill_color: '#ddd'
+  stroke_color: '#ddd'
+  y: += 888
+  height: 50
+
+requirementsColorBox:
+  extends: 
+   - fromTopLeftCutToSafe
+   - widthSafeArea
+  # fill_color: :blizzard_blue
+  # stroke_color: :blizzard_blue
+  fill_color: '#eee'
+  stroke_color: '#eee'
+  y: += 938
+  height: 51
+  radius: 8
+  
+requirementsColorBoxBorderCover:
+  extends: requirementsColorBox
+  height: 20
+  radius: 0
 
 # adding 20 pixel buffer from safe area line for clean look
 
@@ -75,52 +134,441 @@ fromTopLeftSafeToMargin:
   extends:
    - fromLeftSafeToMargin
    - fromTopSafeToMargin
+
+## lines
+
+#just a horizontal line, to be placed within safe boundary and at various y co-ords
+horizontalLine:
+  extends: 
+   - fromLeftCutToSafe
+   - widthSafeArea
+  height: 1.5
+
+
+#line to separate the top ability from bottom ability
+#445 + 445 + 50 + 50 = 990
+topOfBottomAbility:
+  extends: fromTopSafeToMargin
+  y: += 432
+
+lineTopOfBottomAbility:
+  extends: 
+   - horizontalLine
+   - topOfBottomAbility
+  
+#line to separate out the passives from the bottom action above it
+#445 + 445 + 50 + 50 = 990
+lineTopOfPassives:
+  extends: lineTopOfBottomAbility
+  y: += 435
+
+#line to separate out the requirements from the passives above it
+#445 + 445 + 50 + 50 = 990
+lineTopOfRequirements:
+  extends: lineTopOfPassives
+  y: += 50
+
+#10 (margin) + 30 (text) + 10 = height of requirements = 50
+#10 + 30 + 10 = height of passives = 50
+#space for bottom stuff = 50 + 50 = 100
+#990-100 = 890
+#890 / 2 = 445
+
+verticalLine:
+  y: 66
+  width: 1.5
+  height: 918
+
   
 ### Text Specification ###
 # Need to specify the font size, x co-ords, width, height, and alignment of all the text
 
-FeatureTitle:
+## Top Ability Section
+
+# Bubbles
+
+bubble:
+  width: 150
+  height: 50
+  radius: 8
+  # fill_color: :alice_blue
+  fill_color: '#fff'
+
+#target
+topTargetBubble:
   extends: 
    - fromTopLeftSafeToMargin
-   - widthSafeArea
+   - bubble
+   
+icon:
+  extends: iconsWidthHeight
+
+topTargetIcon:
+  extends: 
+   - topTargetBubble
+   - icon
+  y: -= 15
+  X: -= 15
+
+topTarget:
+  extends: topTargetBubble
+  y: += 10
   align: center
-  font_size: 14
-  font: 'Benne Regular, arial'
-  width: -= 40
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+  
+#range
+topRangeBubble:
+  extends: topTargetBubble
+  x: += 166
+  
+topRangeIcon:
+  extends: 
+   - topRangeBubble
+   - icon
+  y: -= 15
+  X: -= 15
+
+topRange:
+  extends: topRangeBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+  
+#duration
+topDurationBubble:
+  extends: topRangeBubble
+  x: += 167
+  
+topDurationIcon:
+  extends: 
+   - topDurationBubble
+   - icon
+  y: -= 15
+  X: -= 15
+
+topDuration:
+  extends: topDurationBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+  
+#result
+topResultBubble:
+  extends: topDurationBubble
+  x: += 167
+  
+topResultIcon:
+  extends: 
+   - topResultBubble
+   - icon
+  y: -= 15
+  X: += 15
+
+topResult:
+  extends: topResultBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+  
+
+# abilities
+
+  
+title:
+  height: 50
+  align: center
+  font_size: 10
+  #font: 'Benne Regular, arial'
+  font: 'Benne-Regular, arial'
+
+variables:
+  font_size: 7.5
   height: 70
-
-SlotTitle:
-  extends: FeatureTitle
-  y: += 95
-  font_size: 10
-  height: 60
-
-SlotValue:
-  extends: SlotTitle
-  y: += 60
-
-EffectTitle:
+  font: 'Benne-Regular, arial'
+  
+rules:
+  extends: widthSafeArea
+  height: 240
+  font_size: 7.5
+  width: -= 40
+  font: 'Benne-Regular, arial'
+  
+topTitle:
   extends: 
-   - SlotTitle
+   - title
+   - fromTopLeftSafeToMargin
+   - widthSafeArea
+  color: :black
+  y: += 70
   align: center
-  font_size: 10
-  y: += 150
+  width: -= 40
   
-EffectValue:
-  extends: 
-   - EffectTitle
+#topWeaponOrInfluence:
+#  extends:
+#   - topTarget
+#   - iconsWidthHeight
+#  y: += 60
+  
+topVariables:
+  extends:
+   - topTitle
+   - variables
   y: += 60
-  height: 330
+  color: :black
   
+topRules:
+  extends: 
+   - topVariables
+   - rules
+  y: += 60
+  color: :black
+  
+## Bottom Ability Section
+
+# Bubbles
+  
+#target
+bottomTargetBubble:
+  extends: 
+  - lineTopOfBottomAbility
+  - bubble
+  y: += 20
+  x: += 20
+  
+bottomTargetIcon:
+  extends: 
+   - bottomTargetBubble
+   - icon
+  y: -= 15
+
+bottomTarget:
+  extends: bottomTargetBubble
+  y: += 10
+  align: center
+  font_size: 6
+  font: 'Benne-Regular, arial'
+  
+#range
+bottomRangeBubble:
+  extends: bottomTargetBubble
+  x: += 166
+  
+bottomRangeIcon:
+  extends: 
+   - bottomRangeBubble
+   - icon
+  y: -= 15
+  X: -= 15
+
+bottomRange:
+  extends: bottomRangeBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+  
+#duration
+bottomDurationBubble:
+  extends: bottomRangeBubble
+  x: += 167
+  
+bottomDurationIcon:
+  extends: 
+   - bottomDurationBubble
+   - icon
+  y: -= 15
+  X: -= 15
+  
+bottomDuration:
+  extends: bottomDurationBubble
+  y: += 10
+  align: center
+  font_size: 6
+  font: 'Benne-Regular, arial'
+
+#result
+bottomResultBubble:
+  extends: bottomDurationBubble
+  x: += 167
+  
+bottomResultIcon:
+  extends: 
+   - bottomResultBubble
+   - icon
+  y: -= 15
+  X: += 15
+
+bottomResult:
+  extends: bottomResultBubble
+  y: += 10
+  align: center
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
+
+# Abilities
+
+bottomTitle:
+  extends: 
+   - title 
+   - topOfBottomAbility
+   - fromLeftSafeToMargin
+   - widthSafeArea
+  color: :black
+  y: += 80
+  align: center
+  width: -= 40
+
+bottomWeaponOrInfluence:
+  extends:
+   - bottomTarget
+   - iconsWidthHeight
+  y: += 60
+   
+bottomVariables:
+  extends: 
+   - bottomTitle
+   - variables
+  y: += 60
+  color: :black
+
+bottomRules:
+  extends: 
+   - bottomVariables
+   - rules
+  y: += 60
+  color: :black
+  
+  
+
+  
+
+#doesn't ever change, the word "Passives"
+passivesTitle:
+  extends: 
+   - lineTopOfPassives
+  x: += 20
+  y: += 10
+  width: 150
+  height: 35
+  align: left
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
+#often `# health`, `# stats`, or both
+passivesBody:
+  extends: passivesTitle
+  x: += 75
+  width: 475
+  height: 60
+  align: center
+
+
+#line to break up the tier/card number
+verticalLine:
+  extends: 
+   - passivesBody
+  x: += 450
+  y: -= 10
+  width: 1.5
+  height: 50
+
+
+#text "Tier"
+tierTitle:
+  extends: 
+   - passivesTitle
+  x: += 550
+  width: 70
+  height: 35
+  align: left
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
+#a number
+tierBody:
+  extends: tierTitle
+  x: += 60
+  width: 30
+  height: 35
+  align: center
+
+
+#doesn't ever change, the word "Requirements
+requirementsTitle:
+  extends: 
+   - lineTopOfRequirements
+  x: += 20
+  y: += 10
+  width: 210
+  height: 35
+  align: left
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
+#depends on the card, usually N/A, otherwise Stat #
+requirementsBody:
+  extends: requirementsTitle
+  x: += 210
+  width: 450
+  align: center
+
+
+
+cardNumber:
+  extends: 
+   - requirementsBody
+  x: -= 10
+  align: right
+  font_size: 7.5
+  font: 'Benne-Regular, arial'
+
+cardNumberCircle:
+  extends: 
+   - cardNumber
+  x: += 409
+  align: right
+  width: 50
+  height: 34
+  radius: 18
+## locations of graphics
+
+
+# icons have specific locations, this section defines what those are
+
+iconsWidthHeight:
+  width: 75
+  height: 75
+
+
 ## back of card
 
 
 backOfCards:
   extends: safe
-  fill_color: :navy_blue
+  # fill_color: :raw_umber
+  fill_color: '#444'
 
-emblemBack:
-  x: 85
-  y: 85
-  width: 650
-  height: 650
+diceBack:
+  x: 430
+  y: 420
+  width: 250
+  height: 250
+  angle: 2
+
+cardBack:
+  x: 550
+  y: 290
+  width: 250
+  height: 250
+  angle: 120
+  
+tokensBack:
+  x: 270
+  y: 500
+  width: 250
+  height: 250
