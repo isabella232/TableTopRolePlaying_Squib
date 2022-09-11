@@ -1,0 +1,27 @@
+Consumable Name,Consumable Variables,Consumable Rules,Consumable Cost
+Large Quartz Gem,,"reflective (2 inch round surface), and verr pretti",1
+Rope,,"30 feet of rope! Made of hemp. Odorless, impregnable, and coil-able!",1
+Wooden Pole,,"10 feet long! Can be in 2 or 3 segment: either side has internal threading or pegs that can interface with the threading. 1in diameter, and super strong!",1
+Rubber Wedge,,"can keep a door open, no matter its weight! As long as that weight is less than about 40 points",1
+Magnet,,Detects the existence of all metals! Every one! There is no metal that this magnet can't detect!,1
+Matchsticks,,"10 of them, They can start a small flame. A flame that's small. Not big. Unless you're not careful! :o",1
+Firewood,,"a bunch of logs, they're pretty heavy because they are actually a bunch of firewood.",1
+Hatchet,,"a short weapon (1d6, 5ft range), but otherwise can cut up plants (+3), turn wood into firewood, can be wielded menacingly, ",1
+Spare knife,,"can be used as a weak hand weapon (1d4, Close range), but otherwise can cut rope, scour a painting, threaten an unarmed person, ",1
+Paint Bucket,,"Coat something in a color! Makes things easier to see, or identify compared to others. Also verr pretti!",1
+Small Health Potion,,"a glass vial the size of a thumb, full of a deep red liquid. Heals 1d4+3 health immediately",1
+Medium Health Potion,,"a glass vial the size of 2 thumbs, full of a deep reed liquid. Heals 2d4+6 immediately, reduces next die roll by 2",2
+Large Health Potion,,"a glass vial the size of 3 thumbs, full of a deep reeed liquid. Heals 3d4+9 immediately, reduces next die roll by 8",3
+Molotov Cocktail,,"When you need to [REDACTED] the [REDACTED]. Pretty hefty, but you can throw them ~30 feet, does 2d4 damage that then does 1d4 after a round.",1
+Teleportation Stone,,"Don't ask where I got this. You can set your new location to anywhere within 30 feet, but because of the nausea your next die roll is -2",2
+Instant Pit,,"looks like a normal coin, but when thrown on the ground will instantly create a 10 ft deep pit. Only lasts for a few seconds (1 round), but sends whatever is at the bottom upwards!",1
+Long Gun,,"yunno, guns? It's a longer one of those, with enough ammunition that you won't have to worry about it. This one does an extra d8 instead of a d6 at +30ft",2
+Odachi,,"<Pretend Squib handled Japanese text and I put ""Hey Skyler"" here> (great weapon). If you deal 5 damage, then enemy takes 1d4 additional damage at the end of their turn",2
+Lazer Gun,,"Can be charged for a bigger blast, though it's hard to wield often this way (Great Castor). Add 4 damage instead of 3 for each type token on an enemy",2
+Killer YoYo,,"a sick yoyo, with fire decals and neon yellow highlights (Reach Weapon). When thrown, explodes and deals the thrown damage in a 5ft area",2
+Gauntlets of Ki Blast,,"Hold your fist aloft to send a medium range blast (Short Shot Weapon), and increase your health by 2",2
+A Mighty Pen,,"By drawing a sigil in the air, you can launch a blast of energy (Hand Castor). You can draw one symbol (at a time) that suspends in the air withstanding 500 pounds of force (can hold close a door, aid in climbing, etc.)",2
+Troublesome Sword,,This sword (Short Weapon) has a hardened glass bubble in the hilt. Can re-roll a 1 or a 2 once per attack roll,2
+Steely Resolve,,"With a gesture, you can brace your arm and to deflect incoming damage (Blocking Weapon). More than just being cool, once per combat you can get a +3 to an influence roll",2
+"Ring of Infinite Strike, level 1",,A legendary ring granting improved punches (Hand Weapon). Damage is 1d4+1,2
+Book of Puns/Jokes,,"Puns so bad, and jokes so good, you'll be the maestro of the party (Utility Weapon). Return an ally's card every turn instead of 50% of the time, and increase damage from this weapon by +2",2
