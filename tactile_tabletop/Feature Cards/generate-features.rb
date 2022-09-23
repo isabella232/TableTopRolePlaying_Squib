@@ -84,7 +84,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   
   rect layout: 'lineTopOfPassives'
   #rect layout: 'passivesTitle'
-  rect layout: 'passivesBody'
+  #rect layout: 'passivesBody'
   text str: "Passives", layout: 'passivesTitle'
   text str: data['Passives'], layout: 'passivesBody'
   
