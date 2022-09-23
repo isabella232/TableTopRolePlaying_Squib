@@ -28,7 +28,7 @@ cut:
   width: 750
   height: 1050
   radius: 16
-  fill_color: '#aaa'
+  fill_color: '#fff'
   
 # box for safe line
 
