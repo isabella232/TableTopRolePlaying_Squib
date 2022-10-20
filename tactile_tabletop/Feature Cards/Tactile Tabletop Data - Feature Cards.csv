@@ -11,7 +11,7 @@ ID,Top Ability Name,Top Ability Target,Top Ability Duration,Top Ability Die Roll
 10,Cataclysm,Enemy,Instant,Attack,Weapon,Roll attack dice for 1 weapon twice for this attack. Draw a card from your deck,Exhaust,Whipping Strike,Enemy,Instant,Attack    X = Level,Weapon,Increase attack value by X,Hand,Reduce the handed-ness requirement of a 2-handed weapon by 1 hand,,,,
 11,Effective Rationing,Self,Instant,,N/A,Gain the advantage of a consumable without consuming that consumable. Draw a card from your deck.,Exhaust,Momentous Dash,Self,Instant,,N/A,"Gain 10 ft. of movement. For every 10 feet of movement this turn, add +1 to your next roll",Hand,Gain a non-card action each turn,,,,
 12,Soup Kitchen,Allies,Instant,,Influence,You may return any consumed tokens. Draw a card from your deck.,Exhaust,Under Control,Self,1 Rnd,,N/A,Ally tokens now apply to your rolls,Hand,Your contact token buffs apply for allies as well,,,,
-,,,,,,,,,,,,,,,,,,,
+13,When a plan comes together,Enemy,Instant,,N/A,"Consume X mark tokens on enemy. Draw up to X cards from the top of your deck, and play an action from each card against target enemy if possible. Draw a card from your deck.",Exhaust,Optimizing Opportunity,Enemy,Instant,,Influence,Consume a mark. Return a card from discard. Mark enemy,Hand,"When placing a mark token, place an additional mark token if target has less than 3 marks",,,,
 ,,,,,,,,,,,,,,,,,,,
 8,Effective Recall,Self,Instant,,N/A,Return an active card to your hand. Draw a card from your deck.,Exhaust,Extend,Target,Instant,,N/A,Exhaust a random card from your deck and then return an active card to your hand ,Hand,Increase amount of active cards that can be in play by 1,,,,
 ,Power Overwhelming,,,,,,,,,,,,,,,,,,
