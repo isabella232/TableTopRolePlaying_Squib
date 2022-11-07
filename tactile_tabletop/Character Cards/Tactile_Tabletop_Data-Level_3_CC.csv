@@ -1,8 +1,5 @@
 Top Ability Name,Top Ability Target,Top Ability Duration,Top Ability Die Roll/Scaler,Top Ability Rules,Top Ability Following Card Action,Bottom Ability Name,Bottom Ability Target,Bottom Ability Duration,Bottom Ability Die Roll/Scaler,Bottom Ability Rules,Bottom Ability Following Card Action,Passives,Requirements,,General Notes
-Upgrade,Self,X Rnds,X = Level   Y = Influence,Exhaust a card. Add Y to each Defense or Attack roll you make,Discard,Built from Scraps,Self,Instant,X = Exhausted cards from Discard,"Spend X to perform the following: 
-1) Add 25 feet to your movement
-3) Attack target enemy, they cannot defend
-5) Take an additional turn after this one",Exhaust,,"1 Perception, 2 Vigor, 3 Finesse, 1 Knowledge",,perception 9
+Upgrade,Self,X Rnds,X = Level   Y = Influence,Exhaust a card. Add Y to each Defense or Attack roll you make,Discard,Built from Scraps,Self,Instant,X = Exhausted cards from Discard,"Spend X to perform the following:     1) Add 25 feet to your movement    3) Attack target enemy, they cannot defend    5) Take an additional turn after this one",Exhaust,,"1 Perception, 2 Vigor, 3 Finesse, 1 Knowledge",,perception 9
 Well of Life,Self,1 Rnd,X = Influence,"Only this action can be played this turn. At start of next turn, recover all discarded cards, heal for X, and add X to defence values",Exhaust,Guided Strike,Enemy,1 Rnd,Attack,"Attack target once this turn, again at start of next turn",Discard,,"2 Strength, 2 Knowledge, 3 Vigor",,vigor 26
 Neck Cracker,Enemy,Instant,Attack    X = Level,"Make an Unarmed attack, add X to the Attack Value. If you deal damage Attack Target Enemy again. Target Enemy cannot use movement on their next turn.",Hand,Shatter Weapon,Enemy,Instant,Attack    X = Level,"Make an Unarmed attack against an enemy. Lose X life. If you deal damage, you may choose to destroy one of their equipped weapons",Exhaust,,"2 Charisma, 5 Strength",,finesse 12
 Turn Warp,Self,Instant,X = Level,"Lose X life. Take an extra turn after this turn ends and then lose X life again. After taking your extra turn, you must skip your next turn. ",Exhaust,Extra Steps,Self,Instant,X = Level,"Perform X non-action abilities, and lose 1 life for each one taken.",Exhaust,,7 Knowledge,,knowledge 34
@@ -10,26 +7,6 @@ Organize,Self,Instant,X = Level,"Decide, layout, and expose the actions for your
 Gravity Well,Area,X Rnds,X = Level ,Target area 5 feet by 5 feet. All Enemies in and adjacanet to that area cannot move more than 5 feet from targetted area unless they take and succeed an influence check against you.,Discard,Inversion,Area,X Rnds,X = Level,Target area 5 feet by 5 feet. Enemies cannot move onto or adjacent to the targetted area unless they make and succeed an influence roll against you.,Discard,,"3 Charisma, 4 Craftsmanship",,spirituality 31
 Hookshot,Area,Instant,,Target 5 by 5 foot area within 45 feet and jump to that location,Discard,Lasso,Ally,Instant,,Target Ally within 45 feet and pull them adjacent to you.,Discard,,"4 Finesse, 3 Charisma",,charisma 21
 Teamwork,Enemy,Instant,Attack ,"Choose an ally. Attack Target enemy. If they attack the same target you attack with this action during this round, then return this card to your hand from discard and then you each may return one card from discard to your hand.",Discard,Dreamwork,Ally,1 Rnd,X = Level,"If Target Ally heals or buffs you, add X to their value.",Hand,,"5 Spirituality, 2 Knowledge",,craftmanship 42
-Take my Hand,Ally,Instant,,"Choose an ally within 15 feet, they may move to your location. Each of you may now move up to 10 feet.",Discard,Duplicate,Ally,1 Rnd,,"Copy targets next action if the action is valid with your equipment and skills, and then play it after targets turn ends.",Hand,,"4 Charisma, 3 Knowledge",,
-Faithful Watch,Area,X Rnds,X = Influence   Y = Level,Create a summon on a 5 by 5 space. It has a range of 45 and an attack of X + Y. It's health is equal to your health at the time of casting. Discard a card.,Discard,Swap,Summon,Instant,,Swap places with a target summon. Gain 15 feet of movement,Discard,,"6 Spirituality, 1 Finesse",,
-Recycle,Summon,Instant,X = Life of Summon,Destroy target summon you control. Heal for X life. Return two cards from discard.,Exhaust,Comitted,Summon,Instant,X = Life,"Lose X life, target summon heals for X life.",Discard,,"4 Spirituality, 2 Vigor, 1 Knowledge",,
-Teleport,Target,Instant,Influence,Roll influence if target is unwilling. Teleport target to a 5 by 5 surface. Exhaust a card.,Discard,Respawn,Area,Day,,Mark 5 by 5 area. Teleport to target spot no matter the location,Exhaust,,"5 Spirituality, 2 Charisma",,
-Doorway,,5 Rnds,,Exhaust a card. Summon two doorways. Willing beings can walk through one to come out the other.,Discard,Box,Area,3 Rnds,,Discard a card. Create a 10 by 10 by 10 box over a space. It has 50 hitpoints.,Discard,,7 Spirituality,,
-Push,Target,Instant,Influence,If unwilling roll Influence. Push target up to 25 feet in a direction.,Discard,Pull,Target,Instant,Influence,If unwilling roll influence. Pull a target in your direction up to 25 feet.,Discard,,7 Charisma,,
-Resolve,Self,2 Rnds,X = Level,Set your life total to X. You cannot take damage from attacks.,Exhaust,Heroic Defense,Self,2 Rnds,,Double all Defense Values. You cannot make an attack. ,Discard,,"1 Craftsmanship, 6 Vigor",,
-Limit Break,Self,X Rnds,X = Level,"Increase either an attack die or defense die of one of your equipped weapons, and then decrease an opposite die on thatr weapon. (d4 -> d2, d2 -> 0)",Discard,Craftsman Work,Self/Ally,X Rnds,X = Level,Target equipped weapon. It gets +1 to all Rolls.,Discard,,7 Craftsmanship,,
-Predator,Enemy,X Rnds,X = Level,"At the beginning of each of your turns, mark target enemy",Exhaust,Ambush,Enemy,Instant,,Remove mark from target enemy. Gain 20 feet of movement. Play two additional actions this turn.,Exhaust,,"4 Perception, 1 Finesse, 2 Knowledge",,
-Soothing Touch,Ally/Self,Instant,X = Influence,Heal adjacent Targets up to X hitpoints each,Exhaust,Give Haste,Ally,X Rnds,X = Level,"While Active you can only play one action per turn, and target ally can play one additional action per turn.",Discard,,"4 Spirituality, 2 Knowledge, 1 Vigor",,
-Harvest,Enemy,Instant,"Influence,  X = marked tokens consumed","If X = 1, gain 50 ft. movement. If X = 2, attack target twice (if able). If X = 3, return all cards from discard and draw a card.",Discard,Forced Reduction,Enemies,X Rnds,"Influence, X = level","For each mark on enemies, reduce their movement by 10 ft.",Exhaust,,"1 Intelligence, 1 Strength, 1 Finesse, 4 Perception",,
-Top Ability Name,Top Ability Target,Top Ability Duration,Top Ability Die Roll/Scaler,Top Ability Rules,Top Ability Following Card Action,Bottom Ability Name,Bottom Ability Target,Bottom Ability Duration,Bottom Ability Die Roll/Scaler,Bottom Ability Rules,Bottom Ability Following Card Action,Passives,Requirements,,
-Upgrade,Self,X Rnds,X = Level   Y = Influence,Exhaust a card. Add Y to each Defense or Attack roll you make,Discard,Built from Scraps,Self,Instant,X = Exhausted cards from Discard,"Spend X to perform the following:     1) Add 25 feet to your movement    3) Attack target enemy, they cannot defend    5) Take an additional turn after this one",Exhaust,,"1 Perception, 2 Vigor, 3 Finesse, 1 Knowledge",,
-Well of Life,Self,1 Rnd,X = Influence,"Only this action can be played this turn. At start of next turn, recover all discarded cards, heal for X, and add X to defence values",Exhaust,Guided Strike,Enemy,1 Rnd,Attack,"Attack target once this turn, again at start of next turn",Discard,,"2 Strength, 2 Knowledge, 3 Vigor",,
-Neck Cracker,Enemy,Instant,Attack    X = Level,"Make an Unarmed attack, add X to the Attack Value. If you deal damage Attack Target Enemy again. Target Enemy cannot use movement on their next turn.",Hand,Shatter Weapon,Enemy,Instant,Attack    X = Level,"Make an Unarmed attack against an enemy. Lose X life. If you deal damage, you may choose to destroy one of their equipped weapons",Exhaust,,"2 Charisma, 5 Strength",,
-Turn Warp,Self,Instant,X = Level,"Lose X life. Take an extra turn after this turn ends and then lose X life again. After taking your extra turn, you must skip your next turn. ",Exhaust,Extra Steps,Self,Instant,X = Level,"Perform X non-action abilities, and lose 1 life for each one taken.",Exhaust,,7 Knowledge,,
-Organize,Self,Instant,X = Level,"Decide, layout, and expose the actions for your next turn. Everyone/everything around you knows your next turn. Recover X life, return X cards from discard, and add X to your next roll.",Exhaust,Scheme,Self,Instant,,"During the next round, you may play either of your two actions at any point not during an active turn. At the end of that round, play any actions you have not already. ",Return to Hand,,"5 Knowledge, 2 Vigor",,
-Gravity Well,Area,X Rnds,X = Level ,Target area 5 feet by 5 feet. All Enemies in and adjacanet to that area cannot move more than 5 feet from targetted area unless they take and succeed an influence check against you.,Discard,Inversion,Area,X Rnds,X = Level,Target area 5 feet by 5 feet. Enemies cannot move onto or adjacent to the targetted area unless they make and succeed an influence roll against you.,Discard,,"3 Charisma, 4 Craftsmanship",,
-Hookshot,Area,Instant,,Target 5 by 5 foot area within 45 feet and jump to that location,Discard,Lasso,Ally,Instant,,Target Ally within 45 feet and pull them adjacent to you.,Discard,,"4 Finesse, 3 Charisma",,
-Teamwork,Enemy,Instant,Attack ,"Choose an ally. Attack Target enemy. If they attack the same target you attack with this action during this round, then return this card to your hand from discard and then you each may return one card from discard to your hand.",Discard,Dreamwork,Ally,1 Rnd,X = Level,"If Target Ally heals or buffs you, add X to their value.",Hand,,"5 Spirituality, 2 Knowledge",,
 Take my Hand,Ally,Instant,,"Choose an ally within 15 feet, they may move to your location. Each of you may now move up to 10 feet.",Discard,Duplicate,Ally,1 Rnd,,"Copy targets next action if the action is valid with your equipment and skills, and then play it after targets turn ends.",Hand,,"4 Charisma, 3 Knowledge",,
 Faithful Watch,Area,X Rnds,X = Influence   Y = Level,Create a summon on a 5 by 5 space. It has a range of 45 and an attack of X + Y. It's health is equal to your health at the time of casting. Discard a card.,Discard,Swap,Summon,Instant,,Swap places with a target summon. Gain 15 feet of movement,Discard,,"6 Spirituality, 1 Finesse",,
 Recycle,Summon,Instant,X = Life of Summon,Destroy target summon you control. Heal for X life. Return two cards from discard.,Exhaust,Comitted,Summon,Instant,X = Life,"Lose X life, target summon heals for X life.",Discard,,"4 Spirituality, 2 Vigor, 1 Knowledge",,
@@ -52,3 +29,23 @@ River of Kowledge,Self,X Rnds,X = Level,"At the start of your turn, you may Exha
 Barricade,Area,Day,X = Level,Discard a card. Create a 1 by 5*X wall that is 15 feet high. It has 10 * X Health.,Discard,Improvised Explosive,,Instant ,,"Exhaust a card. Create a bomb cosnumable item that has an explosion radius of 10 feet, and has an Attack Value of 20.",Exhaust,,7 Craftmanship,,
 Mud Pit,Area,Instant,Influence,Create an area that is 10 feet x 10 feet. Movement through this area is halved rounded down. ,Discard,Bridge of Improvisation ,Area,Day,X = Level,"Create a bridge between two points within X * 10 of each other. Exhaust this card, or exhaust a card from your deck.",Discard,,7 Craftmanship,,
 Intently Concentrating ,Self,X Rnds,X = Level,You may have up to two more active cards in play,Discard,Big Brain Play,Self,X Rnds,X = Level    Y = Active cards in play,You have no limit on Active cards in play. Take Y damage at the end of your turn and discard a card. ,Exhaust ,,7 Vigor,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
