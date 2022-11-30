@@ -9,3 +9,5 @@ ttconsc*.png
 *.lock
 .~*
 *.bak
+*.numbers
+*.pages
