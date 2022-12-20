@@ -67,10 +67,10 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :metallic_orange
-  # stroke_color: :metallic_orange
-  fill_color: '#bbb'
-  stroke_color: '#bbb'
+  fill_color: '(0,0)(800,800) coral_red@0.0white@1.0' #:CORAL_red
+  stroke_color: '(0,0)(800,800) coral_red@0.0white@1.0' #:CORAL_red
+  #fill_color: '#bbb'
+  #stroke_color: '#bbb'
   height: 452
   radius: 8
   
@@ -84,10 +84,10 @@ bottomAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :purple_plum
-  # stroke_color: :purple_plum
-  fill_color: '#ccc'
-  stroke_color: '#ccc'
+  fill_color: '(0,0)(800,800) cyan_cornflower_blue@0.0white@1.0' #:cyan_cornflower_blue
+  stroke_color: '(0,0)(800,800) cyan_cornflower_blue@0.0white@1.0' #:cyan_cornflower_blue
+  #fill_color: '#ccc'
+  #stroke_color: '#ccc'
   y: += 452
   height: 433
   
@@ -96,10 +96,10 @@ passivesColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :baby_blue
-  # stroke_color: :baby_blue
-  fill_color: '#ddd'
-  stroke_color: '#ddd'
+  fill_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0' #:wild_strawberry
+  stroke_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0' #:wild_strawberry
+  #fill_color: '#ddd'
+  #stroke_color: '#ddd'
   y: += 888
   height: 50
 
@@ -107,10 +107,10 @@ requirementsColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :blizzard_blue
-  # stroke_color: :blizzard_blue
-  fill_color: '#eee'
-  stroke_color: '#eee'
+  fill_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
+  stroke_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
+  #fill_color: '#eee'
+  #stroke_color: '#eee'
   y: += 938
   height: 51
   radius: 8
@@ -191,8 +191,8 @@ bubble:
   width: 150
   height: 50
   radius: 8
-  # fill_color: :alice_blue
-  fill_color: '#fff'
+  fill_color: :alice_blue
+  #fill_color: '#fff'
 
 #target
 topTargetBubble:
@@ -514,7 +514,7 @@ requirementsTitle:
 requirementsBody:
   extends: requirementsTitle
   x: += 210
-  width: 450
+  width: 350
   align: center
 
 
@@ -522,7 +522,7 @@ requirementsBody:
 cardNumber:
   extends: 
    - requirementsBody
-  x: -= 10
+  x: += 100
   align: right
   font_size: 7.5
   font: 'Benne-Regular, arial'
@@ -530,9 +530,9 @@ cardNumber:
 cardNumberCircle:
   extends: 
    - cardNumber
-  x: += 409
-  align: right
-  width: 50
+  x: += 305
+  #align: right
+  width: 54
   height: 34
   radius: 18
 ## locations of graphics
@@ -550,8 +550,8 @@ iconsWidthHeight:
 
 backOfCards:
   extends: safe
-  # fill_color: :raw_umber
-  fill_color: '#444'
+  fill_color: :raw_umber
+  #fill_color: '#444'
 
 diceBack:
   x: 430

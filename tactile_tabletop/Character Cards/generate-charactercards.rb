@@ -21,7 +21,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
 
   background color: 'white'
   rect layout: 'cut'
-  rect layout: 'safe'
+  #rect layout: 'safe'
   rect layout: 'topAbilityColorBox'
   rect layout: 'topAbilityColorBoxBorderCover'
   rect layout: 'bottomAbilityColorBox'
