@@ -105,27 +105,41 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   text str: data['Bottom Ability Rules'], layout: 'bottomRules'
 
   ## passives stuff
+  #similar to abilities section but for passives
   
+  #create a horizontal line separating the bottom ability and passives section
   rect layout: 'lineTopOfPassives'
+  
   #rect layout: 'passivesTitle'
   #rect layout: 'passivesBody'
   text str: "Passives", layout: 'passivesTitle'
+  #passives body is usually 2 level points
   text str: data['Passives'], layout: 'passivesBody'
+
+  ## Tier stuff
   
+  #add a vertical line to the right of the Passives section, where this tier stuff wil be
   rect layout: 'verticalLine'
   #rect layout: 'tierTitle'
   #rect layout: 'tierBody'
   text str: "Tier:", layout: 'tierTitle'
+  #tier is a shorthand for how many stat points are required, indicates how powerful they are
+  #0 state requirements are tier 1, 4 state requirements are tier 2, and 7 state requirements are tier 3
   text str: data['Tier'], layout: 'tierBody'
 
   ## requirements stuff
   
+  #add a horizontal line to separate passives and requirements
   rect layout: 'lineTopOfRequirements'
+  
   #rect layout: 'requirementsTitle'
   #rect layout: 'requirementsBody'
   text str: "Requirements", layout: 'requirementsTitle'
+  #requirements are any number of stat requirements (needing 4 strength, or 2 perception and 2 knowledge, etc.)
   text str: data['Requirements'], layout: 'requirementsBody'
   
+  #to keep track of cards in a tier, we create a circle and put in a number of its index from the .csv
+  #the specific number holds no meaning, we can later swap the order of cards if we need to, right now it's jus the order that it is in the .csv
   rect layout: 'cardNumberCircle'
   text str: data['ID'], layout: 'cardNumber'
 
@@ -133,6 +147,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
 
   save_png prefix: 'ttcc_'
   #save_pdf trim: 37.5
+  save_sheet sprue: 'letter_poker_card_9up.yml'
 end
 
 Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: 1, layout: 'charactercardlayout.yml')  do
