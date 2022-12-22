@@ -15,7 +15,6 @@ Squib::Deck.new(dpi: 300, width: 530, height: 530, cards: data['Weapon Name'].si
   rect layout: 'cut'
   rect layout: 'safe'
   
-  ## top ability stuff
   text str: data['Weapon Name'], layout: 'WeaponTitle'
   #rect layout: 'WeaponTitle'
   
