@@ -7,7 +7,7 @@ data = Squib.csv file: 'Tactile Tabletop Data - Weapons.csv'
 
 
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see poker-size.pdf
-Squib::Deck.new(dpi: 300, width: 600, height: 600, cards: data['Weapon Name'].size, layout: 'weaponcardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 530, height: 530, cards: data['Weapon Name'].size, layout: 'weaponcardlayout.yml')  do
 
   ## overall card stuff
 
@@ -20,10 +20,12 @@ Squib::Deck.new(dpi: 300, width: 600, height: 600, cards: data['Weapon Name'].si
   #rect layout: 'WeaponTitle'
   
   text str: "Attack:", layout: 'AttackTitle'
+  #rect layout: 'AttackTitle'
   svg file: data['Attack Die 1'].map {|t| "#{t.downcase}.svg" }, layout: 'AttackDie1'  
   svg file: data['Attack Die 2'].map {|t| "#{t.downcase}.svg" }, layout: 'AttackDie2'
   
   text str: "Defense:", layout: 'DefenseTitle'
+  #rect layout: 'DefenseTitle'
   svg file: data['Defense Die'].map {|t| "#{t.downcase}.svg" }, layout: 'DefenseDie'
   
   text str: "Range:", layout: 'RangeTitle'
@@ -32,11 +34,14 @@ Squib::Deck.new(dpi: 300, width: 600, height: 600, cards: data['Weapon Name'].si
   #rect layout: 'RangeValue'
   
   text str: "Requires:", layout: 'RequirementsTitle'
+  #rect layout: 'RequirementsTitle'
   svg file: data['Requirement1'].map {|t| "#{t.downcase}.svg" }, layout: 'RequirementsValue1'
   svg file: data['Requirement2'].map {|t| "#{t.downcase}.svg" }, layout: 'RequirementsValue2'
   
   text str: "Notes:", layout: 'NotesTitle'
+  #rect layout: 'NotesTitle'
   text str: data['Extra Notes'], layout: 'NotesValue'
+  #rect layout: 'NotesValue'
 
   # ## output file stuff
 
