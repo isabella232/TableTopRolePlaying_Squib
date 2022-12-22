@@ -7,7 +7,7 @@ data = Squib.csv file: 'Tactile Tabletop Data - Weapons.csv'
 
 
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see poker-size.pdf
-Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].size, layout: 'weaponcardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 600, height: 600, cards: data['Weapon Name'].size, layout: 'weaponcardlayout.yml')  do
 
   ## overall card stuff
 
@@ -42,6 +42,7 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].si
 
   save_png prefix: 'ttwc_'
   #save_pdf trim: 37.5
+  save_sheet sprue: 'letter_poker_card_9up.yml'
 end
 
 Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'weaponcardlayout.yml')  do
