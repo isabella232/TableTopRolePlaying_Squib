@@ -63,7 +63,7 @@ safe:
    - widthSafeArea
   radius: 8
   #fill_color: '#eee'
-  fill_color: :sandy_tan
+  fill_color: :cyclamen
 
 # adding 20 pixel buffer from safe area line for clean look
 
