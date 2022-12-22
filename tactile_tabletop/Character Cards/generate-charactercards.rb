@@ -150,6 +150,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   save_sheet sprue: 'letter_poker_card_9up.yml'
 end
 
+#this is for creading the back of the card, right now a single image
 Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: 1, layout: 'charactercardlayout.yml')  do
 
   ## overall card stuff
