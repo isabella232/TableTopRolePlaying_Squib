@@ -2,11 +2,13 @@
 
 In order for any of this to work, install Squib!
 https://squib.readthedocs.io/en/v0.18.0/install.html
-guide doesn't spell this out, but after installing ruby (which _does_ take forever) you should have a ruby command-line option in your start applications. that's where all the commands function. The minimum you need are:
+or in summary:
+1. install Ruby with devkit
+2. gem install squib
+3. gem install game_icons
+4. bundle install
 
-gem install squib
-gem install game_icons
-bundle install
+guide doesn't spell this out, but after installing ruby (which _does_ take forever) you should have a ruby command-line option in your start applications. that's where all the commands function
 
 And then when you want to make the cards:
 
