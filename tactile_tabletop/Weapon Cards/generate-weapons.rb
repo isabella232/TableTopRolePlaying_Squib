@@ -46,10 +46,11 @@ Squib::Deck.new(dpi: 300, width: 530, height: 530, cards: data['Weapon Name'].si
 
   save_png prefix: 'ttwc_'
   #save_pdf trim: 37.5
-  save_sheet sprue: 'letter_poker_card_9up.yml'
+  save_sheet prefix: 'ttwc-print_', columns: 3, rows: 5, margin: 0, gap: 5, trim: 35
+
 end
 
-Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'weaponcardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Weapon Name'].size, layout: 'weaponcardlayout.yml')  do
 
   ## overall card stuff
 
@@ -59,6 +60,7 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'weaponcard
   svg data: GameIcons.get('swords-emblem').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
   ## output file stuff
 
-  save_png prefix: 'ttwc_BACK'
+  #save_png prefix: 'ttwc_BACK'
   #save_pdf trim: 37.5
+  save_sheet prefix: 'ttwc-print_BACK', columns: 3, rows: 5, margin: 0, gap: 5, trim: 35
 end
