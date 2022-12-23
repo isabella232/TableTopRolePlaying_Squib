@@ -68,8 +68,8 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) coral_red@0.0white@1.0' #:CORAL_red
-  stroke_color: '(0,0)(800,800) coral_red@0.0white@1.0' #:CORAL_red
+  fill_color: '(0,0)(800,800) beer@0.0white@1.0' #:CORAL_red
+  stroke_color: '(0,0)(800,800) beer@0.0white@1.0' #:CORAL_red
   #fill_color: '#bbb'
   #stroke_color: '#bbb'
   height: 452
@@ -85,8 +85,8 @@ bottomAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) cyan_cornflower_blue@0.0white@1.0' #:cyan_cornflower_blue
-  stroke_color: '(0,0)(800,800) cyan_cornflower_blue@0.0white@1.0' #:cyan_cornflower_blue
+  fill_color: '(0,0)(800,800) spring_green@0.0white@1.0' #:cyan_cornflower_blue
+  stroke_color: '(0,0)(800,800) spring_green@0.0white@1.0' #:cyan_cornflower_blue
   #fill_color: '#ccc'
   #stroke_color: '#ccc'
   y: += 452
