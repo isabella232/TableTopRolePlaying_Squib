@@ -9,11 +9,13 @@
 
 #820 - 750 = 70 ; 70 /2 = 35
 fromLeftBleedToCut:
-  x: 35
+  #x: 35
+  x: 0
   
 #820 - 750 = 70 ; 70 /2 = 35
 fromTopBleedToCut:
-  y: 35
+  #y: 35
+  y: 0
   
 fromTopLeftBleedToCut:
   extends:
@@ -23,19 +25,17 @@ fromTopLeftBleedToCut:
 # The "cut area line", everything outside of this area guaranteed to be lost
 cut:
   extends: fromTopLeftBleedToCut
-  width: 750
-  height: 750
+  width: 530
+  height: 530
   radius: 16
   fill_color: '#888'
   
 # box for safe line
 
-#750 - 685 = 60
 fromLeftCutToSafe:
   extends: fromLeftBleedToCut
   x: += 35
   
-#750 - 685 = 60
 fromTopCutToSafe:
   extends: fromTopBleedToCut
   y: += 35
@@ -45,11 +45,12 @@ fromTopLeftCutToSafe:
    - fromTopCutToSafe
    - fromLeftCutToSafe
    
+#total width (530) - 35 buffer on both sides (35*2=70) = 460
 widthSafeArea:
-  width: 685
+  width: 460
   
 heightSafeArea:
-  height: 685
+  height: 460
   
 # the "safe area line", everything inside of this area guaranteed to be saved
 safe:
@@ -58,9 +59,8 @@ safe:
    - widthSafeArea
    - heightSafeArea
   radius: 8
-  #dash: 3 3
-  #fill_color: :sandy_tan
-  fill_color: '#eee'
+  fill_color: :weldon_blue
+  #fill_color: '#eee'
 
 # adding 20 pixel buffer from safe area line for clean look
 
@@ -85,20 +85,16 @@ ArmorTitle:
    - fromTopLeftSafeToMargin
    - widthSafeArea
   align: center
-  font_size: 14
-  font: 'Benne Regular, arial, italic'
+  font: 'Garamond 16'
   width: -= 40
   height: 70
 
+#height = total safe area height (460) - buffers from above and below (20*2=40) - height of title (70) - 20 buffer between title and text = 330
 ArmorAbility:
   extends: ArmorTitle
   y: += 95
-  x: += 20
-  align: left
-  font_size: 10
-  width: -= 20
-  font: 'Benne Regular, arial'
-  height: 540
+  font: 'Garamond 12'
+  height: 330
 
 
 ## back of card
@@ -106,10 +102,11 @@ ArmorAbility:
 
 backOfCards:
   extends: safe
-  fill_color: :raw_umber
+  fill_color: :bluebonnet
 
+#x = total width (530) - buffers on both side (85*2=170) = 360
 emblemBack:
   x: 85
-  y: 85
-  width: 650
-  height: 650
+  y: 95
+  width: 360
+  height: 340

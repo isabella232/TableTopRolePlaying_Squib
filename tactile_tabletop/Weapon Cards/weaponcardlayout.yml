@@ -48,13 +48,12 @@ fromTopLeftCutToSafe:
    
 # the "safe area line", everything inside of this area guaranteed to be saved
 
-#530 - 470 = 60
+#total width (530) - 35 buffer on both sides (35*2=70) = 460
 widthSafeArea:
-  width: 470
+  width: 460
 
-#530 - 470 = 60
 heightSafeArea:
-  height: 470
+  height: 460
   
 safe:
   extends: 
@@ -63,7 +62,7 @@ safe:
    - widthSafeArea
   radius: 8
   #fill_color: '#eee'
-  fill_color: :sandy_tan
+  fill_color: :cyclamen
 
 # adding 20 pixel buffer from safe area line for clean look
 
