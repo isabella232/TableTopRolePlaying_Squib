@@ -7,13 +7,15 @@
   
 # box for cut line
 
-#820 - 750 = 70 ; 70 /2 = 35
+#600 - 530 = 70 ; 70 /2 = 35
 fromLeftBleedToCut:
-  x: 35
+  x: 0
+  #x: 35
   
-#820 - 750 = 70 ; 70 /2 = 35
+#600 - 530 = 70 ; 70 /2 = 35
 fromTopBleedToCut:
-  y: 35
+  y: 0
+  #y: 35
   
 fromTopLeftBleedToCut:
   extends:
@@ -23,19 +25,17 @@ fromTopLeftBleedToCut:
 # The "cut area line", everything outside of this area guaranteed to be lost
 cut:
   extends: fromTopLeftBleedToCut
-  width: 750
-  height: 750
+  width: 530
+  height: 530
   radius: 16
   fill_color: '#555'
   
 # box for safe line
 
-#750 - 685 = 60
 fromLeftCutToSafe:
   extends: fromLeftBleedToCut
   x: += 35
   
-#750 - 685 = 60
 fromTopCutToSafe:
   extends: fromTopBleedToCut
   y: += 35
@@ -45,34 +45,39 @@ fromTopLeftCutToSafe:
    - fromTopCutToSafe
    - fromLeftCutToSafe
    
-widthSafeArea:
-  width: 645
-  
-heightSafeArea:
-  height: 685
-  
+   
 # the "safe area line", everything inside of this area guaranteed to be saved
+
+#530 - 470 = 60
+widthSafeArea:
+  width: 470
+
+#530 - 470 = 60
+heightSafeArea:
+  height: 470
+  
 safe:
   extends: 
    - fromTopLeftCutToSafe
    - heightSafeArea
-  width: 685
+   - widthSafeArea
   radius: 8
-  #dash: 3 3
-  fill_color: '#eee'
-  #fill_color: :sandy_tan
+  #fill_color: '#eee'
+  fill_color: :sandy_tan
 
 # adding 20 pixel buffer from safe area line for clean look
 
+#470 - (20+20) = 430
 fromLeftSafeToMargin:
   extends: fromLeftCutToSafe
   x: += 20
-  width: 665
+  width: 430
   
+#470 - (20+20) = 430
 fromTopSafeToMargin:
   extends: fromTopCutToSafe
   y: += 20
-  height: 645
+  height: 430
 
 fromTopLeftSafeToMargin:
   extends:
@@ -86,89 +91,100 @@ WeaponTitle:
   extends: 
    - fromTopLeftSafeToMargin
    - widthSafeArea
+  width: -= 40
+  height: 45
   align: center
-  font_size: 17
-  font: 'Benne Regular, arial, italic'
+  font: 'Garamond 10'
 
+#y = height of title we're deriving from (45) + 20 pixel buffer
 AttackTitle:
   extends: WeaponTitle
-  y: += 105
-  x: += 20
+  y: += 65
+  #x: += 20
   align: left
-  font_size: 12
-  font: 'Benne Regular, arial'
+  font: 'Garamond 9'
   width: 200
-  height: 75
+  height: 40
 
 iconsWidthHeight:
-  width: 85
-  height: 85
+  width: 55
+  height: 55
 
 AttackDie1:
   extends: 
    - AttackTitle
    - iconsWidthHeight
-  x: += 150
+  x: += 110
   y: -= 5
   
 AttackDie2:
   extends: AttackDie1
-  x: += 85
+  x: += 50
   
+#x = width of attack die (200) + 40 buffer = 240
+#width = total space (430) - offset (220) = 210
 DefenseTitle:
   extends: AttackTitle
-  x: += 325
-  width: 230
+  x: += 230
+  width: 210
   
 DefenseDie:
   extends: 
    - DefenseTitle
    - iconsWidthHeight
-  x: += 200
+  x: += 140
   y: -= 5
   
+#y = height of attack title we're deriving from (40) + 20 buffer
 RangeTitle:
   extends: AttackTitle
-  y: += 125
-  x: += 15
-  width: 164
+  y: += 60
+  #x: += 15
+  width: 100
   
+#x = width of range tutle (100), buffer handled with width and center alignment, as long as both add up to 160
 RangeValue:
   extends: RangeTitle
-  y: += 60
-  width: 160
+  x: += 100
+  width: 100
   align: center
   
+#y = height of defense title (40) + 20 buffer = 60
+#x = same as defense title (220) - extra space to the right of range (40)
 RequirementsTitle:
   extends: DefenseTitle
-  y: += 125
-  x: -= 110
-  width: 240
+  y: += 60
+  x: -= 40
+  width: 140
 
+#x = length of RequirementsTitle (140) + 20 pixel buffer
 RequirementsValue1:
   extends: 
    - RequirementsTitle
    - iconsWidthHeight
-  x: += 230
+  x: += 140
   y: -= 5
 
 RequirementsValue2:
   extends: RequirementsValue1
-  x: += 90
+  x: += 50
 
+#width - 20*2 buffer on either side
 NotesTitle:
   extends: 
    - RangeTitle
    - heightSafeArea
    - widthSafeArea
-  y: += 120
+  y: += 60
   align: center
-  width: -= 70
-  height: -= 350
+  width: -= 40
+  height: 50
   
+#height = total height (430) - height used up for attack/defense and buffer (60) - height used up for range/requirements (60) - height of notes title and buffer (70) -20? = 220
 NotesValue:
   extends: NotesTitle
-  y: += 60
+  y: += 40
+  height: 185
   
 ## back of card
 
