@@ -67,8 +67,8 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :shandy
-  stroke_color: :shandy
+  fill_color: '(0,0)(800,800) dandelion@0.0white@1.0'
+  stroke_color: '(0,0)(800,800) dandelion@0.0white@1.0'
   height: 402
   radius: 8
   
@@ -82,8 +82,8 @@ bottomAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :vivid_orchid
-  stroke_color: :vivid_orchid
+  fill_color: '(0,0)(800,800) dark_magenta@0.0white@1.0'
+  stroke_color: '(0,0)(800,800) dark_magenta@0.0white@1.0'
   y: += 402
   height: 433
   
@@ -92,8 +92,8 @@ passivesColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :wild_strawberry
-  stroke_color: :wild_strawberry
+  fill_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0'
+  stroke_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0'
   y: += 788
   height: 150
 
@@ -101,8 +101,8 @@ requirementsColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: :pale_aqua
-  stroke_color: :pale_aqua
+  fill_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
+  stroke_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
   y: += 938
   height: 51
   radius: 8
@@ -205,8 +205,7 @@ topTarget:
   extends: topTargetBubble
   y: += 10
   align: center
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
   
 #range
 topRangeBubble:
@@ -224,8 +223,7 @@ topRange:
   extends: topRangeBubble
   y: += 10
   align: center
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
   
 #duration
 topDurationBubble:
@@ -243,8 +241,7 @@ topDuration:
   extends: topDurationBubble
   y: += 10
   align: center
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
   
 #result
 topResultBubble:
@@ -262,8 +259,7 @@ topResult:
   extends: topResultBubble
   y: += 10
   align: center
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
   
 
 # abilities
@@ -272,21 +268,17 @@ topResult:
 title:
   height: 50
   align: center
-  font_size: 10
-  #font: 'Benne Regular, arial'
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 10'
 
 variables:
-  font_size: 7.5
   height: 70
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
   
 rules:
   extends: widthSafeArea
   height: 240
-  font_size: 7.5
   width: -= 40
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
   
 topTitle:
   extends: 
@@ -340,8 +332,7 @@ bottomTarget:
   extends: bottomTargetBubble
   y: += 10
   align: center
-  font_size: 6
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 6'
   
 #range
 bottomRangeBubble:
@@ -359,8 +350,7 @@ bottomRange:
   extends: bottomRangeBubble
   y: += 10
   align: center
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
   
 #duration
 bottomDurationBubble:
@@ -378,8 +368,7 @@ bottomDuration:
   extends: bottomDurationBubble
   y: += 10
   align: center
-  font_size: 6
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
 
 #result
 bottomResultBubble:
@@ -397,8 +386,7 @@ bottomResult:
   extends: bottomResultBubble
   y: += 10
   align: center
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
 
 
 # Abilities
@@ -447,8 +435,7 @@ passivesTitle:
   width: 150
   height: 35
   align: left
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
 
 #often `# health`, `# stats`, or both
 passivesBody:
@@ -477,8 +464,7 @@ tierTitle:
   width: 70
   height: 35
   align: left
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
 
 #a number
 tierBody:
@@ -498,8 +484,7 @@ requirementsTitle:
   width: 210
   height: 35
   align: left
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
 
 #depends on the card, usually N/A, otherwise Stat #
 requirementsBody:
@@ -515,8 +500,7 @@ cardNumber:
    - requirementsBody
   x: -= 10
   align: right
-  font_size: 7.5
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 7.5'
 
 cardNumberCircle:
   extends: 
