@@ -67,10 +67,8 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :metallic_orange
-  # stroke_color: :metallic_orange
-  fill_color: '#bbb'
-  stroke_color: '#bbb'
+  fill_color: :shandy
+  stroke_color: :shandy
   height: 402
   radius: 8
   
@@ -84,10 +82,8 @@ bottomAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :purple_plum
-  # stroke_color: :purple_plum
-  fill_color: '#ccc'
-  stroke_color: '#ccc'
+  fill_color: :vivid_orchid
+  stroke_color: :vivid_orchid
   y: += 402
   height: 433
   
@@ -96,10 +92,8 @@ passivesColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :baby_blue
-  # stroke_color: :baby_blue
-  fill_color: '#ddd'
-  stroke_color: '#ddd'
+  fill_color: :wild_strawberry
+  stroke_color: :wild_strawberry
   y: += 788
   height: 150
 
@@ -107,10 +101,8 @@ requirementsColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  # fill_color: :blizzard_blue
-  # stroke_color: :blizzard_blue
-  fill_color: '#eee'
-  stroke_color: '#eee'
+  fill_color: :pale_aqua
+  stroke_color: :pale_aqua
   y: += 938
   height: 51
   radius: 8
