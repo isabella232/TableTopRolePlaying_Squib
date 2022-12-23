@@ -7,7 +7,7 @@ data = Squib.csv file: 'Tactile Tabletop Data - Armor.csv'
 
 
 #width/height/dpi measurements provided by template from BoardGameMaker.com, see poker-size.pdf
-Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Armor Name'].size, layout: 'armorcardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 530, height: 530, cards: data['Armor Name'].size, layout: 'armorcardlayout.yml')  do
 
   ## overall card stuff
 
@@ -16,18 +16,19 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: data['Armor Name'].siz
   rect layout: 'safe'
   
   ## top ability stuff
-  #rect layout: 'ArmorTitle'
+  rect layout: 'ArmorTitle'
   text str: data['Armor Name'], layout: 'ArmorTitle'
-  #rect layout: 'ArmorAbility'
+  rect layout: 'ArmorAbility'
   text str: data['Set Ability 1'], layout: 'ArmorAbility'
 
   # ## output file stuff
 
   save_png prefix: 'ttwc_'
   #save_pdf trim: 37.5
+  save_sheet prefix: 'ttwc-print_', columns: 3, rows: 5, margin: 0, gap: 5, trim: 35
 end
 
-Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'armorcardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 530, height: 530, cards: data['Armor Name'].size, layout: 'armorcardlayout.yml')  do
 
   ## overall card stuff
 
@@ -37,6 +38,7 @@ Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'armorcardl
   svg data: GameIcons.get('swords-emblem').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
   ## output file stuff
 
-  save_png prefix: 'ttwc_BACK'
+  #save_png prefix: 'ttwc_BACK'
   #save_pdf trim: 37.5
+  save_sheet prefix: 'ttwc-print_BACK', columns: 3, rows: 5, margin: 0, gap: 5, trim: 35
 end
