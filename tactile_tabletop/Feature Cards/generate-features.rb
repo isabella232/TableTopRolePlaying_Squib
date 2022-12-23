@@ -13,7 +13,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
 
   background color: 'white'
   rect layout: 'cut'
-  rect layout: 'safe'
+  #rect layout: 'safe'
   rect layout: 'topAbilityColorBox'
   rect layout: 'topAbilityColorBoxBorderCover'
   rect layout: 'bottomAbilityColorBox'
@@ -85,7 +85,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   rect layout: 'lineTopOfPassives'
   #rect layout: 'passivesTitle'
   #rect layout: 'passivesBody'
-  text str: "Passives", layout: 'passivesTitle'
+  text str: "Passive", layout: 'passivesTitle'
   text str: data['Passives'], layout: 'passivesBody'
   
   ## requirements stuff
@@ -101,20 +101,21 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
 
   ## output file stuff
 
-  save_png prefix: 'ttec_'
+  save_png prefix: 'ttfc_'
   #save_pdf trim: 37.5
+  save_sheet sprue: 'letter_poker_card_9up.yml'
 end
 
-# Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'featurecardlayout.yml')  do
+Squib::Deck.new(dpi: 300, width: 820, height: 820, cards: 1, layout: 'featurecardlayout.yml')  do
 
-  # ## overall card stuff
+  ## overall card stuff
 
-  # background color: 'black'
+  background color: 'black'
   # rect layout: 'cut'
   # rect layout: 'backOfCards'
-  # svg data: GameIcons.get('battle-gear').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
-  # ## output file stuff
+  svg data: GameIcons.get('battle-gear').recolor(fg: 'fff', bg: '000', fg_opacity: 1, bg_opacity: 0).string, layout: 'emblemBack'
+  ## output file stuff
 
-  # save_png prefix: 'ttec_BACK'
-  # #save_pdf trim: 37.5
-# end
+  save_png prefix: 'ttec_BACK'
+  #save_pdf trim: 37.5
+end

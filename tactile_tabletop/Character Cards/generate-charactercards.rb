@@ -20,14 +20,14 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   rect layout: 'cut'
   
   # #aaa is the same as the border, so it's effectively zero'd out
-  perceptionBorderColor = data['Perception Requirements'].map {|c| c > 0 ? '#00ffff' : '#aaa'}
-  vigorBorderColor = data['Vigor Requirements'].map {|c| c > 0 ? '#008000' : '#aaa'}
-  finesseBorderColor = data['Finesse Requirements'].map {|c| c > 0 ? '#ffc0cb' : '#aaa'}
-  knowledgeBorderColor = data['Knowledge Requirements'].map {|c| c > 0 ? '#0000ff' : '#aaa'}
-  strengthBorderColor = data['Strength Requirements'].map {|c| c > 0 ? '#ff0000' : '#aaa'}
-  spiritualityBorderColor = data['Spirituality Requirements'].map {|c| c > 0 ? '#800080' : '#aaa'}
-  charismaBorderColor = data['Charisma Requirements'].map {|c| c > 0 ? '#ffd700' : '#aaa'}
-  craftmanshipBorderColor = data['Craftmanship Requirements'].map {|c| c > 0 ? '#000000' : '#aaa'}
+  perceptionBorderColor = data['Perception Requirements'].map {|c| c > 0 ? '#00ffff' : '#000'}
+  vigorBorderColor = data['Vigor Requirements'].map {|c| c > 0 ? '#008000' : '#000'}
+  finesseBorderColor = data['Finesse Requirements'].map {|c| c > 0 ? '#ffc0cb' : '#000'}
+  knowledgeBorderColor = data['Knowledge Requirements'].map {|c| c > 0 ? '#0000ff' : '#000'}
+  strengthBorderColor = data['Strength Requirements'].map {|c| c > 0 ? '#ff0000' : '#000'}
+  spiritualityBorderColor = data['Spirituality Requirements'].map {|c| c > 0 ? '#800080' : '#000'}
+  charismaBorderColor = data['Charisma Requirements'].map {|c| c > 0 ? '#ffd700' : '#000'}
+  craftmanshipBorderColor = data['Craftmanship Requirements'].map {|c| c > 0 ? '#ffffff' : '#000'}
   
   rect x: 750, y: 675, width: 1000, height: 30, angle: 10, fill_color: perceptionBorderColor, stroke_width: 0
   rect x: 750, y: 705, width: 1000, height: 30, angle: 10, fill_color: vigorBorderColor, stroke_width: 0
@@ -132,7 +132,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   
   #rect layout: 'passivesTitle'
   #rect layout: 'passivesBody'
-  text str: "Passives", layout: 'passivesTitle'
+  text str: "Passive", layout: 'passivesTitle'
   #passives body is usually 2 level points
   text str: data['Passives'], layout: 'passivesBody'
 
