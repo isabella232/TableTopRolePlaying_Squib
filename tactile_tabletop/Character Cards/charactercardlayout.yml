@@ -28,8 +28,8 @@ cut:
   width: 750
   height: 1050
   radius: 16
-  fill_color: '#aaa'
-  stroke_color: '#aaa'
+  fill_color: '#000' #'#aaa'
+  stroke_color: '#000' #'#aaa'
     
 # box for safe line
 
@@ -68,10 +68,10 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) pumpkin@0.0white@1.0' #:CORAL_red
-  stroke_color: '(0,0)(800,800) pumpkin@0.0white@1.0' #:CORAL_red
-  #fill_color: '#bbb'
-  #stroke_color: '#bbb'
+  #fill_color: '(0,0)(800,800) pumpkin@0.0white@1.0' #:CORAL_red
+  #stroke_color: '(0,0)(800,800) pumpkin@0.0white@1.0' #:CORAL_red
+  fill_color: :alice_blue
+  stroke_color: :alice_blue
   height: 452
   radius: 8
   
@@ -85,8 +85,10 @@ bottomAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) royal_green@0.0white@1.0' #:cyan_cornflower_blue
-  stroke_color: '(0,0)(800,800) royal_green@0.0white@1.0' #:cyan_cornflower_blue
+  #fill_color: '(0,0)(800,800) royal_green@0.0white@1.0' #:cyan_cornflower_blue
+  #stroke_color: '(0,0)(800,800) royal_green@0.0white@1.0' #:cyan_cornflower_blue
+  fill_color: :alice_blue
+  stroke_color: :alice_blue
   #fill_color: '#ccc'
   #stroke_color: '#ccc'
   y: += 452
@@ -97,8 +99,10 @@ passivesColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0' #:wild_strawberry
-  stroke_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0' #:wild_strawberry
+  #fill_color: '(0,0)(800,800) shandy@0.0white@1.0' #:wild_strawberry
+  #stroke_color: '(0,0)(800,800) shandy@0.0white@1.0' #:wild_strawberry
+  fill_color: :shandy
+  stroke_color: :shandy
   #fill_color: '#ddd'
   #stroke_color: '#ddd'
   y: += 888
@@ -108,8 +112,10 @@ requirementsColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
-  stroke_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
+  #fill_color: '(0,0)(800,800) shandy@0.9white@1.0' #:water
+  #stroke_color: '(0,0)(800,800) shandy@0.9white@1.0' #:water
+  fill_color: :shandy
+  stroke_color: :shandy
   #fill_color: '#eee'
   #stroke_color: '#eee'
   y: += 938
@@ -192,8 +198,8 @@ bubble:
   width: 150
   height: 50
   radius: 8
-  fill_color: :alice_blue
-  #fill_color: '#fff'
+  fill_color: :water
+  #fill_color: ':alice_blue'
 
 #target
 topTargetBubble:

@@ -28,7 +28,7 @@ cut:
   width: 750
   height: 1050
   radius: 16
-  fill_color: '#fff'
+  fill_color: :gold
   
 # box for safe line
 
@@ -67,8 +67,10 @@ topAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) dandelion@0.0white@1.0'
-  stroke_color: '(0,0)(800,800) dandelion@0.0white@1.0'
+  #fill_color: '(0,0)(800,800) dandelion@0.0white@1.0'
+  #stroke_color: '(0,0)(800,800) dandelion@0.0white@1.0'
+  fill_color: :alice_blue
+  stroke_color: :alice_blue
   height: 402
   radius: 8
   
@@ -82,8 +84,10 @@ bottomAbilityColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) dark_magenta@0.0white@1.0'
-  stroke_color: '(0,0)(800,800) dark_magenta@0.0white@1.0'
+  #fill_color: '(0,0)(800,800) dark_magenta@0.0white@1.0'
+  #stroke_color: '(0,0)(800,800) dark_magenta@0.0white@1.0'
+  fill_color: :alice_blue
+  stroke_color: :alice_blue
   y: += 402
   height: 433
   
@@ -92,8 +96,10 @@ passivesColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0'
-  stroke_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0'
+  #fill_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0'
+  #stroke_color: '(0,0)(800,800) wild_strawberry@0.0white@1.0'
+  fill_color: :classic_rose
+  stroke_color: :classic_rose
   y: += 788
   height: 150
 
@@ -101,8 +107,10 @@ requirementsColorBox:
   extends: 
    - fromTopLeftCutToSafe
    - widthSafeArea
-  fill_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
-  stroke_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
+  #fill_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
+  #stroke_color: '(0,0)(800,800) pale_aqua@0.9white@1.0' #:water
+  fill_color: :classic_rose
+  stroke_color: :classic_rose
   y: += 938
   height: 51
   radius: 8
@@ -183,7 +191,7 @@ bubble:
   height: 50
   radius: 8
   # fill_color: :alice_blue
-  fill_color: '#fff'
+  fill_color: :water
 
 #target
 topTargetBubble:
