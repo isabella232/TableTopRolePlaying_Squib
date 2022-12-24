@@ -28,7 +28,7 @@ cut:
   width: 1050
   height: 750
   radius: 16
-  fill_color: '#aaa'
+  fill_color: :black
   
 # box for safe line
 
@@ -61,7 +61,7 @@ safe:
    - heightSafeArea
   radius: 8
   #dash: 3 3
-  fill_color: '#fff'
+  fill_color: :tuscan
   
 # adding 20 pixel buffer from safe area line for clean look
 
