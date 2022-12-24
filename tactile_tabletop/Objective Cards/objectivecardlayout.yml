@@ -87,8 +87,7 @@ title:
    - widthSafeArea
   height: 150
   align: center
-  font_size: 14
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 14'
   color: :black
   align: center
   width: -= 40
@@ -102,20 +101,18 @@ lineUnderTitle:
 rules:
   extends: lineUnderTitle
   height: 240
-  font_size: 9
   x: += 40
   width: -= 80
   y: += 50
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 9'
   
 reward:
   extends: rules
   height: 40
-  font_size: 11
   width: 40
   x: += 510
   y: += 280
-  font: 'Benne-Regular, arial'
+  font: 'Garamond 11'
 
 rewardHeader:
   extends: reward
