@@ -30,4 +30,4 @@ Duplication,"2 enemies player's choose will be cloned (or one enemy will be clon
 Half-Life,Player's Active card effects must not persist beyond half their usual time rounded up,2,PCO,
 Weakness,"Whenever damage from player is dealt, deal half damage roudned up instead",5,ID,
 Clown,"Clown added to battlefield. Cannot be hurt, moves 15 ft and plays a trick each round",1,ID,
-,"Each time a card is played, instead of going to discard/exhaust/hand, it is replaced with a randomly chosen card from the player's deck",3,ID,
+Disorientation,"Each time a card is played, instead of going to discard/exhaust/hand, it is replaced with a randomly chosen card from the player's deck",3,ID,
