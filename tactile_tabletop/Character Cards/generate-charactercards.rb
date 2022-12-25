@@ -24,7 +24,7 @@ Squib::Deck.new(dpi: 300, width: 750, height: 1050, cards: data['Top Ability Nam
   #we want these bars to cover multiple parts of the border so its easy to see regardless of how the card is oriented, so it has a high width
   defaultwidth = 2000
   #we want these bars to be otherwise not too high, so that we can stack them together. we also want to grow them downwards, so they shoulw be negative
-  defaultHeight = -30
+  defaultHeight = -40
   #having a skewed angle allows them to cover both sides of the border, and it looks snazzy
   defaultAngle = 10
   #the x offset sets where the bar starts horizontally, and we want it to be low and to the right, shooting left and up.
